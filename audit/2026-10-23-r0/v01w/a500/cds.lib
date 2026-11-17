@@ -1,0 +1,7 @@
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE tsmcN65 /eda/1P9M/TSMC065_1P9M/tsmcN65
+DEFINE vlV01_a500 ./vlV01_a500
+DEFINE vlV01_a800 ./vlV01_a800
+DEFINE vlV01_a1u ./vlV01_a1u

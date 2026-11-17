@@ -1,0 +1,97 @@
+{
+ "files": {
+  "v01.py": {
+   "size": 7644,
+   "sha256": "11f037343bc73f3a"
+  },
+  "v01cfg/a500.json": {
+   "size": 47,
+   "sha256": "800ee2dd11eb5cbc"
+  },
+  "v01cfg/a800.json": {
+   "size": 47,
+   "sha256": "690195629b0b7702"
+  },
+  "v01cfg/a1u.json": {
+   "size": 44,
+   "sha256": "510f6ae732136e48"
+  },
+  "v01w/a800/requests.log": {
+   "size": 1390,
+   "sha256": "c24e86dbab3182c0"
+  },
+  "v01w/a800/netlist.ocn": {
+   "size": 93,
+   "sha256": "c8373bd7e9527f34"
+  },
+  "v01w/a800/netlist.log": {
+   "size": 2786,
+   "sha256": "bb1d432f5411d723"
+  },
+  "v01w/a800/CDS.log": {
+   "size": 5621,
+   "sha256": "531628acf84bc74d"
+  },
+  "v01w/a800/evidence.json": {
+   "size": 2274,
+   "sha256": "b3414673378bbc15"
+  },
+  "v01w/a800/.cadence/perf/HM_HOST_root_4152953/HOST_root_4152953_HM-CDSLOG_20261023_173848": {
+   "size": 3595,
+   "sha256": "7bd65105a132fb14"
+  },
+  "v01w/a1u/requests.log": {
+   "size": 1390,
+   "sha256": "1279230e7c6f04bf"
+  },
+  "v01w/a1u/netlist.ocn": {
+   "size": 92,
+   "sha256": "d658624924a1616c"
+  },
+  "v01w/a1u/netlist.log": {
+   "size": 2785,
+   "sha256": "fce7075fd1e7cd95"
+  },
+  "v01w/a1u/CDS.log": {
+   "size": 5618,
+   "sha256": "435d0b1f20a4e303"
+  },
+  "v01w/a1u/evidence.json": {
+   "size": 2267,
+   "sha256": "072c39db2baf7e81"
+  },
+  "v01w/a1u/.cadence/perf/HM_HOST_root_4153599/HOST_root_4153599_HM-CDSLOG_20261023_173854": {
+   "size": 3594,
+   "sha256": "10c8f71339934f2d"
+  },
+  "v01w/a500/requests.log": {
+   "size": 1390,
+   "sha256": "df26d52034359b44"
+  },
+  "v01w/a500/netlist.ocn": {
+   "size": 93,
+   "sha256": "1b45b03a8df1c950"
+  },
+  "v01w/a500/cds.lib": {
+   "size": 311,
+   "sha256": "507c3fa8d28318b6"
+  },
+  "v01w/a500/netlist.log": {
+   "size": 3213,
+   "sha256": "4977c26cd7c061a8"
+  },
+  "v01w/a500/CDS.log": {
+   "size": 6066,
+   "sha256": "513f344cc48e3b22"
+  },
+  "v01w/a500/evidence.json": {
+   "size": 2274,
+   "sha256": "88a462ffc7bc8ee1"
+  },
+  "v01w/a500/.cadence/perf/HM_HOST_root_4155635/HOST_root_4155635_HM-CDSLOG_20261023_173937": {
+   "size": 4133,
+   "sha256": "d9326c0522c3b988"
+  }
+ },
+ "n": 23
+}

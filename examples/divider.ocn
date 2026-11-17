@@ -1,0 +1,10 @@
+; OCEAN 批处理：扫分压比，打印输出
+design("demolib" "divider_var" "schematic")
+element("V1 (in 0) vsource dc=3")
+element("VGND (gnd 0) vsource dc=0")
+analysis('dc ?oppoint "rawfile")
+foreach(r '("1k" "2k" "3k")
+  desVar("r2" r)
+  run()
+  selectResult('dc)
+  ocnPrint(v("/out")) )

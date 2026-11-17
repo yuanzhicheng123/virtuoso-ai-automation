@@ -1,0 +1,92 @@
+{
+ "format": "vlight.schematic/1",
+ "lib": "demolib",
+ "cell": "divider",
+ "pins": [
+  {
+   "name": "in",
+   "direction": "input",
+   "net": "in"
+  },
+  {
+   "name": "out",
+   "direction": "output",
+   "net": "out"
+  },
+  {
+   "name": "gnd",
+   "direction": "inputOutput",
+   "net": "gnd"
+  }
+ ],
+ "instances": [
+  {
+   "name": "R1",
+   "lib": "vlightLib",
+   "cell": "res",
+   "view": "symbol",
+   "xy": [
+    0.0,
+    0.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {
+    "r": "1k"
+   }
+  },
+  {
+   "name": "R2",
+   "lib": "vlightLib",
+   "cell": "res",
+   "view": "symbol",
+   "xy": [
+    0.0,
+    -40.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {
+    "r": "2k"
+   }
+  }
+ ],
+ "nets": [
+  {
+   "name": "in",
+   "sigType": "signal",
+   "terms": [
+    [
+     "R1",
+     "PLUS"
+    ]
+   ]
+  },
+  {
+   "name": "out",
+   "sigType": "signal",
+   "terms": [
+    [
+     "R1",
+     "MINUS"
+    ],
+    [
+     "R2",
+     "PLUS"
+    ]
+   ]
+  },
+  {
+   "name": "gnd",
+   "sigType": "signal",
+   "terms": [
+    [
+     "R2",
+     "MINUS"
+    ]
+   ]
+  }
+ ],
+ "shapes": [],
+ "props": {}
+}

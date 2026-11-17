@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# 生成物 / 运行结果（可重建，避免仓库膨胀）
+out/
+sim/
+sim_it/
+runs/
+*.psf
+*.raw
+*.log
+!docs/**/*.log
+
+# 大型生成注册表（由挖掘流水线重建，见 registry/MANIFEST.md）
+audit/*/registry/api_registry.json
+audit/*/registry/api_registry_v2.json
+audit/2026-10-22/api_registry.json
+vlight/_data/
+vskill/_index.json
+vskill/api.pyi
+
+# 编辑器/系统
+.DS_Store
+.idea/
+.vscode/

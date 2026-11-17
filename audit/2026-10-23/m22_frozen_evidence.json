@@ -1,0 +1,40 @@
+{
+ "frozen_at": "2026-10-23",
+ "propMapping": "(nil m simM nf fingers w wf)",
+ "three_instance_test": {
+  "M_W_only_w": {
+   "written": "w=1u",
+   "netlist_w": "200n"
+  },
+  "M_WF_only_wf": {
+   "written": "wf=500n",
+   "netlist_w": "500n"
+  },
+  "M_BOTH": {
+   "written": "w=1u,wf=1u",
+   "netlist_w": "1u"
+  }
+ },
+ "cross_process_roundtrip": {
+  "A": "500n",
+  "B": "800n",
+  "A2": "500n",
+  "processes": 3
+ },
+ "evidence_paths": [
+  "/tmp/vlW5/simulation/tb/spectre/schematic/netlist/input.scs",
+  "/tmp/vlW6/simulation/tb/spectre/schematic/netlist/input.scs"
+ ],
+ "contract_file": "vskill/phase2/params.py",
+ "scope": {
+  "device": "tsmcN65/nch",
+  "simulator": "spectre",
+  "nf": 1,
+  "m": 1
+ },
+ "unsupported": [
+  "nf>1",
+  "m>1",
+  "other devices"
+ ]
+}

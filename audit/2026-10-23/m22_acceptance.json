@@ -1,0 +1,129 @@
+{
+ "checks": [
+  {
+   "check": "dut_present",
+   "ok": true,
+   "devices": 1,
+   "expected": 1,
+   "models": [
+    "nch"
+   ],
+   "expected_model": "nch"
+  },
+  {
+   "check": "params",
+   "ok": true,
+   "mismatch": {}
+  },
+  {
+   "check": "analyses",
+   "ok": true,
+   "have": [
+    "op1.dc",
+    "sw1.dc",
+    "tr1.tran.tran"
+   ],
+   "missing": []
+  },
+  {
+   "check": "result_source",
+   "ok": true,
+   "run_hash": "5b0e3862ac79144a",
+   "netlist_hash": "5b0e3862ac79144a"
+  },
+  {
+   "check": "completeness",
+   "ok": true,
+   "missing": [],
+   "unknown": [],
+   "not_run": [],
+   "empty": []
+  },
+  {
+   "check": "numeric",
+   "ok": true,
+   "violations": {}
+  }
+ ],
+ "eval_ok": true,
+ "status": "METRICS_MET",
+ "values": {
+  "net4": 1.2,
+  "net2": 0.6,
+  "net1": 0.0,
+  "net3": 0.0,
+  "VB:p": 4.977659807326897e-09,
+  "VD:p": -0.0001268354864205145,
+  "VG:p": -1.550642584194785e-10,
+  "VS:p": 0.0001268306638249656
+ },
+ "gate": "ACCEPTABLE",
+ "warning_classes": [
+  {
+   "class": "CONTEXT_HEADER",
+   "action": "belongs to following SFE warning"
+  },
+  {
+   "class": "BENIGN_OPTION_SCOPE",
+   "action": "accepted"
+  },
+  {
+   "class": "BENIGN_OPTION_SCOPE",
+   "action": "accepted"
+  },
+  {
+   "class": "BENIGN_OPTION_TEMP",
+   "action": "accepted"
+  },
+  {
+   "class": "CONTEXT_HEADER",
+   "action": "belongs to following SFE warning"
+  },
+  {
+   "class": "BENIGN_PULSE_PARAM",
+   "action": "accepted"
+  },
+  {
+   "class": "BENIGN_PULSE_PARAM",
+   "action": "accepted"
+  },
+  {
+   "class": "CONTEXT_HEADER",
+   "action": "belongs to following SFE warning"
+  },
+  {
+   "class": "UNKNOWN",
+   "action": "NOT_WAIVED",
+   "line": "WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest'"
+  },
+  {
+   "class": "BENIGN_SPECTRE_17101",
+   "action": "accepted: checklimitdest=psf 是默认可接受值",
+   "line": "SPECTRE-17101 checklimitdest"
+  }
+ ],
+ "unknown_warnings": [],
+ "schCheck": {
+  "counts": "(0 4)",
+  "messages": [
+   "Pin D floating",
+   "Pin B floating",
+   "Pin G floating",
+   "Pin S floating"
+  ],
+  "logfile": "/root/CDS.log",
+  "objects": [
+   "M0.D",
+   "M0.B",
+   "M0.G",
+   "M0.S"
+  ]
+ },
+ "fixed_write_chain": {
+  "order": [
+   "wf",
+   "w"
+  ],
+  "note": "不要调用 cdfUpdateInstParam（会回灌 CDF 默认 200n）"
+ }
+}

@@ -1,0 +1,4 @@
+simulator('spectre)
+design("vlM1" "tb" "schematic")
+createNetlist(?recreateAll t)
+exit

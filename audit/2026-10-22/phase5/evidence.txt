@@ -1,0 +1,22 @@
+# Golden Case 证据（eda-220，IC2310，隔离库 ./vlAudit，2026-10-22）
+S1_pdk=dd:0x2fd32fb0          PDK 库对象
+S2a_cell=dd:0x3e76e020        PDK 单元 tsmcN65/nch
+S2b_cdf=cdf:0x3ec56070        CDF 对象
+S2c_baseCDF=nil               库级 base CDF 为空（正常）
+S3_lib=dd:0x3ec653a0          沙箱库 vlAudit
+S4_cv=db:0x2aece81a           schematic cellview
+S5_inst=db:0x2aece69a         PDK 器件实例 M0
+S6_setw=db:0x2aecc59a         设置 w
+S7_setl=db:0x2aecc59b         设置 l
+S8_readw=db:0x2aecc59a        读回 w
+S9_readl=db:0x2aecc59b        读回 l
+S10_check=(0 4)               schCheck：0 error / 4 warning
+S11_save=t                    dbSave 成功
+S12_reopen_insts=1            重开：1 个实例
+S13_reopen_nets=4             重开：4 个网络
+S14_reopen_prop=db:0x2aecc41a 重开：w 属性仍在
+A1_badtype=nil                错误类型（bbox=123）被拒绝
+A2_unloaded="loaded"          leHiCreateRect 在加载 schematic.cxt 后可用
+A3_nilobj=nil                 nil 对象操作被拒绝
+A4_dupinst=(db:0x2aece81a)    重复打开（append 模式）成功，非错误
+DONE=t

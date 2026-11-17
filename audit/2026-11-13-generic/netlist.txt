@@ -1,0 +1,11 @@
+M0 (net4 net1 net7 net8) nch l=60n w=500n m=1 nf=1 sd=200n ad=
+VB (net8 net9) vsource dc=0 type=sine
+VS (net7 net9) vsource dc=0 type=sine
+VD (net5 net9) vsource dc=1.2 type=sine
+VG (net2 net9) vsource dc=0.6 type=sine
+Ld (net5 net4) inductor l=100
+Lg (net2 net1) inductor l=100
+Cd (net6 net4) capacitor c=1
+Cg (net3 net1) capacitor c=1
+P2 (net6 net9) port r=50 type=sine
+P1 (net3 net9) port r=50 type=sine

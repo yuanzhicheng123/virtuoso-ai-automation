@@ -1,0 +1,10 @@
+{
+ "format": "vlight.schematic/1",
+ "lib": "vlightLib",
+ "cell": "SPIRAL_IND",
+ "pins": [],
+ "instances": [],
+ "nets": [],
+ "shapes": [],
+ "props": {}
+}

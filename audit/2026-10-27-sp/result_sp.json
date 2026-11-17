@@ -1,0 +1,65 @@
+{
+ "trace": {
+  "operation_id": "simulate.run_unified",
+  "impl": "vskill/phase2/capabilities.py::simulate",
+  "request_id": 1,
+  "runner": "vskill.phase2.spectre_runner.SpectreRunner",
+  "run_id": "unified_sp_20261027",
+  "status": "OK"
+ },
+ "result": {
+  "execution_status": "OK",
+  "evaluation_valid": true,
+  "analysis_completed": [
+   "op1.dc",
+   "sp1.sp"
+  ],
+  "metrics": {
+   "sp_ports": {
+    "1": "G",
+    "2": "D"
+   },
+   "reference_impedance_ohm": 50.0,
+   "S11": {
+    "re": 0.999873,
+    "im": 0.0159145,
+    "mag": 0.9999996437195615,
+    "phase_deg": 0.9118725025767951
+   },
+   "S12": {
+    "re": 4.99275e-08,
+    "im": 7.94057e-10,
+    "mag": 4.9933814021855464e-08,
+    "phase_deg": 0.9111667796507399
+   },
+   "S21": {
+    "re": -0.0601762,
+    "im": -0.000956385,
+    "mag": 0.06018379947052383,
+    "phase_deg": -179.08947040390578
+   },
+   "S22": {
+    "re": 0.993737,
+    "im": 0.015817,
+    "mag": 0.9938628691414123,
+    "phase_deg": 0.9118819429587235
+   },
+   "sp_freq_hz": [
+    10.0,
+    1000000.0
+   ],
+   "sp_n_points": 51,
+   "D": 1.2,
+   "G": 0.6,
+   "S": 0.0,
+   "B": 0.0,
+   "g_bias": 0.6,
+   "g_ac": 0.0,
+   "d_bias": 1.2,
+   "d_ac": 0.0
+  },
+  "warnings": [],
+  "violations": [],
+  "evidence_id": "runs/unified_sp_20261027"
+ }
+}

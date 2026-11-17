@@ -1,0 +1,28 @@
+{
+ "design_revision": "vlV01_d500/tb@2026-10-27",
+ "analysis_type": "op+sp",
+ "model_binding": "tsmcN65 tt",
+ "testbench": "audit/2026-10-27-sp/tb_sp.scs",
+ "signals": [
+  "D",
+  "G",
+  "S",
+  "B"
+ ],
+ "measurement_spec": {
+  "S": "2-port 50ohm"
+ },
+ "accuracy_profile": "reltol=1e-4",
+ "run_id": "unified_sp_20261027",
+ "run_root": "audit/2026-10-27-sp/runs",
+ "sp": {
+  "ports": {
+   "1": "G",
+   "2": "D"
+  },
+  "z0": 50.0,
+  "start": 10,
+  "stop": 1000000.0,
+  "dec": 10
+ }
+}

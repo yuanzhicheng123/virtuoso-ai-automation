@@ -1,0 +1,22 @@
+{
+ "design_revision": "vlV01_d500/tb@2026-10-26",
+ "analysis_type": "op+dc+tran",
+ "model_binding": "tsmcN65 tt",
+ "testbench": "audit/2026-10-26-unified/tb.scs",
+ "signals": [
+  "G",
+  "D",
+  "S",
+  "B"
+ ],
+ "measurement_spec": {
+  "op": [
+   "net4",
+   "net2",
+   "VD:p"
+  ]
+ },
+ "accuracy_profile": "reltol=1e-4",
+ "run_id": "t1_bad_binding",
+ "run_root": "audit/2026-10-26-unified/runs"
+}

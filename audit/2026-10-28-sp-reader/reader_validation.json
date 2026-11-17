@@ -1,0 +1,19 @@
+{
+ "n_points": 51,
+ "freq_monotonic": true,
+ "freq_finite": true,
+ "all_finite": true,
+ "s11_first": [
+  1.0,
+  0.0
+ ],
+ "s21_first": [
+  0.0,
+  0.0
+ ],
+ "s22_first": [
+  1.0,
+  0.0
+ ],
+ "s12_max_abs": 0.0
+}

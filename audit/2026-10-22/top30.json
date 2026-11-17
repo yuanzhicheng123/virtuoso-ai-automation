@@ -1,0 +1,242 @@
+[
+ {
+  "category": "dd",
+  "name": "ddCreateLib",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "dd",
+  "name": "ddGetObj",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "db",
+  "name": "dbOpenCellViewByType",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "db",
+  "name": "dbGetOpenCellViews",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "db",
+  "name": "dbCreateInstByMasterName",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "db",
+  "name": "dbCreateNet",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "db",
+  "name": "dbCreateConnByName",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "db",
+  "name": "dbCreateRect",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "db",
+  "name": "dbCreatePath",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "db",
+  "name": "dbCreateLine",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "db",
+  "name": "dbCreateLabel",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "db",
+  "name": "dbGetPropByName",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": true
+ },
+ {
+  "category": "db",
+  "name": "dbReplaceProp",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "db",
+  "name": "dbDeletePropByName",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "db",
+  "name": "dbSave",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "db",
+  "name": "dbClose",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "db",
+  "name": "dbIsId",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": true
+ },
+ {
+  "category": "db",
+  "name": "dbCheck",
+  "documented": false,
+  "loaded_any": false,
+  "callable": false,
+  "live_verified": false
+ },
+ {
+  "category": "sch",
+  "name": "schCreateWire",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "sch",
+  "name": "schCreatePin",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "sch",
+  "name": "schCreateWireLabel",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "sch",
+  "name": "schCheck",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "cdf",
+  "name": "cdfGetInstCDF",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": true
+ },
+ {
+  "category": "tech",
+  "name": "techGetTechFile",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": true
+ },
+ {
+  "category": "tech",
+  "name": "techDumpLayerMapping",
+  "documented": false,
+  "loaded_any": false,
+  "callable": false,
+  "live_verified": false
+ },
+ {
+  "category": "le",
+  "name": "leHiCreateRect",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "rod",
+  "name": "rodCreateRect",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "mae",
+  "name": "maeSetAnalysis",
+  "documented": true,
+  "loaded_any": false,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "asi",
+  "name": "asiRunSimulation",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ },
+ {
+  "category": "ocn",
+  "name": "ocnPrint",
+  "documented": true,
+  "loaded_any": true,
+  "callable": true,
+  "live_verified": false
+ }
+]

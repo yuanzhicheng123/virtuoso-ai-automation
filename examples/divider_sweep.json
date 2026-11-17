@@ -1,0 +1,30 @@
+{
+  "top": "demolib/divider_var",
+  "flatten": true,
+  "host": "eda-220",
+  "spectre": "/eda/cds/SPECTRE201/tools/bin/spectre",
+  "elements": [
+    "V1 (in 0) vsource dc=3",
+    "VGND (gnd 0) vsource dc=0"
+  ],
+  "sweep": {
+    "r2": [
+      "1k",
+      "2k",
+      "3k"
+    ]
+  },
+  "analyses": [
+    {
+      "name": "op",
+      "kind": "dc"
+    }
+  ],
+  "outputs": {
+    "v_out": "value(V(out))"
+  },
+  "parallel": 3,
+  "variables": {
+    "r2": "2k"
+  }
+}

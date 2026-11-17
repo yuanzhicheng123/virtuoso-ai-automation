@@ -1,0 +1,52 @@
+{
+ "IC2310": {
+  "documented": 7586,
+  "loaded_headless": 48198,
+  "loaded_schematic": 56512,
+  "loaded_layout": 71647,
+  "executed": 377,
+  "readback_verified": 49,
+  "families": {
+   "other": 65453,
+   "abstract": 8,
+   "simulation": 2162,
+   "xl": 9,
+   "cdf": 43,
+   "database": 950,
+   "library": 380,
+   "design-editor": 172,
+   "data-management": 12,
+   "verification": 7,
+   "editor": 935,
+   "ui": 1009,
+   "netlist": 142,
+   "layout": 791,
+   "ade": 5,
+   "ocean": 48,
+   "pcell": 667,
+   "schematic": 1636,
+   "techfile": 356
+  },
+  "loaded_by_family": {
+   "other": 65453,
+   "abstract": 8,
+   "simulation": 2162,
+   "xl": 9,
+   "cdf": 43,
+   "database": 950,
+   "library": 380,
+   "design-editor": 172,
+   "data-management": 12,
+   "verification": 7,
+   "editor": 935,
+   "ui": 1009,
+   "netlist": 142,
+   "layout": 791,
+   "ade": 5,
+   "ocean": 48,
+   "pcell": 667,
+   "schematic": 1636,
+   "techfile": 356
+  }
+ }
+}

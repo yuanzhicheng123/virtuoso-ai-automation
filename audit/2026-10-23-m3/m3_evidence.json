@@ -1,0 +1,53 @@
+{
+ "gate1_skillbridge": {
+  "transport": "unix-socket",
+  "socket": "/tmp/skill-server-default.sock",
+  "wrapper": "/tmp/pywrap.sh",
+  "python": "/opt/miniconda/envs/cadence_skill/bin/python",
+  "serial_100": {
+   "n": 100,
+   "bad": 0,
+   "ms": 30.3
+  },
+  "readonly_calls": [
+   "car",
+   "length",
+   "getCurrentTime"
+  ],
+  "error_call": {
+   "fn": "zzNotAFunction",
+   "raised": "RuntimeError"
+  }
+ },
+ "gate3_session_manager": {
+  "serial": {
+   "n": 100,
+   "bad": 0
+  },
+  "concurrent": {
+   "n": 80,
+   "bad": 0
+  },
+  "fault_B_response_lost": {
+   "state": "FROZEN",
+   "retry": "rejected",
+   "net_count_after": 2,
+   "no_duplicate": true
+  },
+  "fault_C_disconnect": {
+   "auto_recovered": true,
+   "epoch": 3,
+   "relocated": "tb"
+  },
+  "fault_D_timeout": {
+   "state": "FROZEN",
+   "write_rejected": true
+  }
+ },
+ "not_executed": [
+  "schCheck 会话内消息落盘",
+  "Tran 定量参考",
+  "GUI 对照",
+  "XL 许可与 PCell 生成"
+ ]
+}

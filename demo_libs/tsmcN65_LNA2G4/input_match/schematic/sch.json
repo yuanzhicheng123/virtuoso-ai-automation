@@ -1,0 +1,229 @@
+{
+ "format": "vlight.schematic/1",
+ "lib": "tsmcN65_LNA2G4",
+ "cell": "input_match",
+ "pins": [
+  {
+   "name": "rf_in",
+   "direction": "input",
+   "net": "rf_in"
+  },
+  {
+   "name": "rf_mid",
+   "direction": "inputOutput",
+   "net": "rf_mid"
+  },
+  {
+   "name": "gnd",
+   "direction": "inputOutput",
+   "net": "gnd"
+  }
+ ],
+ "instances": [
+  {
+   "name": "L1",
+   "lib": "tsmcN65",
+   "cell": "spiral_std_mu_z",
+   "view": "symbol",
+   "xy": [
+    0.0,
+    0.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {
+    "model": "spiral_std_mu_z",
+    "macro": "iPar(\"model\")",
+    "w": "30u",
+    "rad": "64.0u",
+    "nr": "3",
+    "spacing": "2u",
+    "gdis": "50u",
+    "temper": "27",
+    "fq": "2.4G",
+    "finder": null,
+    "plot": null,
+    "ind": "2.49469n",
+    "Q_single": "1.131618e+01",
+    "area_W": "471.995u",
+    "area_L": "455.995u",
+    "lay": "9",
+    "m": "1",
+    "HardCons": true,
+    "macroArgumentStyle": "hspiceS"
+   }
+  },
+  {
+   "name": "Cb",
+   "lib": "tsmcN65",
+   "cell": "mimcap",
+   "view": "symbol",
+   "xy": [
+    60.0,
+    40.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {
+    "model": "mimcap_sin",
+    "macro": "iPar(\"model\")",
+    "capacitor": "MIM_1.5fF",
+    "lay_m": "8",
+    "mf": "iPar(\"total_m\")",
+    "mismatch": null,
+    "mismatchflag": "0",
+    "DeviceUnder": null,
+    "description": " Base band MIM capacitor",
+    "entryMode": "l_&_w",
+    "c": "155.407f",
+    "total_c": "155.407f",
+    "lt": "10u",
+    "wt": "10u",
+    "aryX": "1",
+    "aryY": "1",
+    "m": "68",
+    "total_m": "68",
+    "lay": "7",
+    "ExtMetal": true,
+    "mimflag": "2",
+    "c_A": "1.485T",
+    "c_P": "210K",
+    "c_O": "-49n",
+    "TFdme": true,
+    "HardCons": true,
+    "macroArgumentStyle": "hspiceS"
+   }
+  },
+  {
+   "name": "Rmatch",
+   "lib": "tsmcN65",
+   "cell": "rppolywo",
+   "view": "symbol",
+   "xy": [
+    60.0,
+    80.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {
+    "model": "rppolywo",
+    "macro": "iPar(\"model\")",
+    "mismatch": null,
+    "mismatchflag": "0",
+    "mf": "iPar(\"prl\")",
+    "description": " P+ poly resistor without salicide",
+    "res": "3.89519K",
+    "sumW": "2u",
+    "w": "10u",
+    "sumL": "10u",
+    "l": "3.21u",
+    "m": "1",
+    "rs": "756.206",
+    "connection": "Series",
+    "segments": "1",
+    "segSp": "250.0n",
+    "cCols": "1",
+    "srs": "1",
+    "prl": "1",
+    "HardCons": true,
+    "ResCalc": "l_&_w",
+    "macroArgumentStyle": "hspiceS"
+   }
+  },
+  {
+   "name": "PIN0",
+   "lib": "basic",
+   "cell": "ipin",
+   "view": "symbol",
+   "xy": [
+    -60.0,
+    0.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {}
+  },
+  {
+   "name": "PIN2",
+   "lib": "basic",
+   "cell": "iopin",
+   "view": "symbol",
+   "xy": [
+    -60.0,
+    -40.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {}
+  },
+  {
+   "name": "PIN1",
+   "lib": "basic",
+   "cell": "iopin",
+   "view": "symbol",
+   "xy": [
+    -60.0,
+    40.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {}
+  }
+ ],
+ "nets": [
+  {
+   "name": "rsh",
+   "sigType": "signal",
+   "terms": [
+    [
+     "Rmatch",
+     "PLUS"
+    ],
+    [
+     "Cb",
+     "MINUS"
+    ]
+   ]
+  },
+  {
+   "name": "rf_in",
+   "sigType": "signal",
+   "terms": [
+    [
+     "L1",
+     "MINUS"
+    ]
+   ]
+  },
+  {
+   "name": "rf_mid",
+   "sigType": "signal",
+   "terms": [
+    [
+     "Cb",
+     "PLUS"
+    ],
+    [
+     "L1",
+     "PLUS"
+    ]
+   ]
+  },
+  {
+   "name": "gnd",
+   "sigType": "signal",
+   "terms": [
+    [
+     "Rmatch",
+     "MINUS"
+    ],
+    [
+     "L1",
+     "BULK"
+    ]
+   ]
+  }
+ ],
+ "shapes": [],
+ "props": {}
+}

@@ -1,0 +1,18 @@
+{
+ "counts": {
+  "read": 2649,
+  "write": 2526,
+  "unknown": 69610
+ },
+ "write_examples": [
+  "abeClearLayer",
+  "abeRemoveLayer",
+  "add1",
+  "addCacheValue",
+  "addCheck",
+  "addCloseCellView",
+  "addConstructor",
+  "addCreateCell"
+ ],
+ "note": "先按 Cadence 模块前缀剥离再按动词分类；unknown 需人工/文档确认"
+}

@@ -1,0 +1,57 @@
+{
+ "counts": {
+  "symbols_total": 200690,
+  "functions": 74785,
+  "variables": 22367,
+  "unbound": 103531,
+  "unique_symbols": 200683,
+  "fnd_documented": 9563,
+  "arglists": 24267,
+  "runtime_union": 74785,
+  "oa_classes": 1039,
+  "oa_properties": 3730
+ },
+ "cross_checks": {
+  "functions_eq_runtime_union": true,
+  "fnd_in_functions": 7586,
+  "fnd_not_in_functions": 1977,
+  "arglist_in_functions": 24267,
+  "symbols_in_two_kinds": 0,
+  "special_symbols": 12137,
+  "oa_prop_in_unbound": 387
+ },
+ "special_samples": [
+  "",
+  "!",
+  "\"",
+  "#",
+  "#include",
+  "$",
+  "%",
+  "%schModuleExports",
+  "%schModuleName",
+  "&",
+  "&Apply",
+  "&Cancel",
+  "&Close",
+  "&Create",
+  "&Defaults",
+  "&Help",
+  "&Hide",
+  "&Last",
+  "&More",
+  "&No"
+ ],
+ "duplicate_samples": [],
+ "unconfirmed": {
+  "documented_but_not_callable": 1977,
+  "runtime_without_arglist": 50518
+ },
+ "sources": {
+  "symbols": "out/mine/symbols.txt",
+  "fnd": "audit/2026-10-22/fnd.json",
+  "arglists": "out/mine/arglists.json",
+  "runtime_union": "out/mine/runtime_functions_union.txt",
+  "oa": "out/mine/oa_properties.json"
+ }
+}

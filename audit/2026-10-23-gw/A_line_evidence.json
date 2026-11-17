@@ -1,0 +1,52 @@
+{
+ "gateway_path": {
+  "session": "SessionManager + skillbridge(Unix socket)",
+  "steps_ok": [
+   "ddCreateLib",
+   "dbOpenCellViewByType",
+   "dbCreateNet",
+   "dbCreateInstByMasterName",
+   "schCheck",
+   "getq(markers)",
+   "dbSave",
+   "length(nets)",
+   "length(instances)",
+   "dbClose",
+   "relocate"
+  ],
+  "denials": {
+   "not_whitelisted": "NOT_WHITELISTED:dbDeleteEverything",
+   "write_without_flag": "WRITE_DENIED:dbCreateNet",
+   "wrong_device": "NOT_EXERCISED"
+  },
+  "epoch": {
+   "before": 1,
+   "after": 2,
+   "reconnect_ok": true
+  }
+ },
+ "stale_handle": {
+  "guard": "SessionManager.guard(obj)",
+  "epoch1_use": "tb",
+  "after_epoch": {
+   "rejected": true,
+   "msg": "句柄来自 epoch 1，当前 epoch 2；请按库路径/Cell/View 重新定位"
+  },
+  "relocated": "tb"
+ },
+ "license": {
+  "CDS_LIC_FILE": "/eda/setups/license/Cadence.dat",
+  "file_size": 284601,
+  "increment_lines": 0,
+  "status": "SOURCE_LOCATED_FEATURE_UNKNOWN",
+  "note": "许可文件 0 条 INCREMENT，无法确认 XL feature；未做 checkout 诊断"
+ },
+ "not_executed": [
+  "多进程入口串行化",
+  "wrong_device 拒绝",
+  "schCheck markers 完整落盘",
+  "Tran 三类验证",
+  "GUI 参考",
+  "XL lxGenFromSource"
+ ]
+}

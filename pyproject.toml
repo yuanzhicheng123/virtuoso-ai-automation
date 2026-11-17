@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vlight"
+version = "0.1.0"
+description = "轻量 Virtuoso 核心复现：库/原理图/网表/仿真/版图/SKILL"
+requires-python = ">=3.10"
+dependencies = []                     # 核心零依赖；numpy 用于结果
+
+[project.optional-dependencies]
+sim = ["numpy>=1.24"]
+plot = ["numpy>=1.24", "matplotlib>=3.7"]
+klayout = ["klayout>=0.28"]
+
+[project.scripts]
+vlight = "vlight.cli:main"
+vskill = "vskill.cli:main"
+
+[project.optional-dependencies.bridge]
+virtuoso-bridge = ["virtuoso-bridge>=0.1"]
+
+[tool.setuptools]
+packages = ["vlight", "vskill", "vskill.bridges"]
+
+[tool.setuptools.package-data]
+vlight = ["_data/*.json"]
+vskill = ["_index.json", "api.pyi"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

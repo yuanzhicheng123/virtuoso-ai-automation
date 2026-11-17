@@ -1,0 +1,14 @@
+{
+ "documented": 9563,
+ "public": 9563,
+ "underscore": 0,
+ "pdk_tool_ext": 61,
+ "is_callable_true": 9303,
+ "is_callable_false": 260,
+ "in_nograph": 6250,
+ "in_gui_sch": 6941,
+ "in_gui_layout": 7316,
+ "in_union": 7586,
+ "never_loaded": 1977,
+ "with_arglist": 4428
+}

@@ -1,0 +1,354 @@
+{
+ "lib": "vlTBgen2",
+ "cell": "tb",
+ "view": "schematic",
+ "instances": [
+  {
+   "name": "M0",
+   "lib": "tsmcN65",
+   "cell": "nch",
+   "view": "symbol",
+   "x": 0,
+   "y": 0,
+   "params": {
+    "wf": "500n",
+    "w": "500n"
+   }
+  },
+  {
+   "name": "VG",
+   "lib": "analogLib",
+   "cell": "vsource",
+   "view": "symbol",
+   "x": -10,
+   "y": 6,
+   "params": {
+    "vdc": "0.6"
+   }
+  },
+  {
+   "name": "VD",
+   "lib": "analogLib",
+   "cell": "vsource",
+   "view": "symbol",
+   "x": 10,
+   "y": 6,
+   "params": {
+    "vdc": "1.2"
+   }
+  },
+  {
+   "name": "VS",
+   "lib": "analogLib",
+   "cell": "vsource",
+   "view": "symbol",
+   "x": 0,
+   "y": -8,
+   "params": {
+    "vdc": "0"
+   }
+  },
+  {
+   "name": "VB",
+   "lib": "analogLib",
+   "cell": "vsource",
+   "view": "symbol",
+   "x": -10,
+   "y": -8,
+   "params": {
+    "vdc": "0"
+   }
+  },
+  {
+   "name": "Lg",
+   "lib": "analogLib",
+   "cell": "ind",
+   "view": "symbol",
+   "x": -6,
+   "y": 3,
+   "params": {
+    "l": "100"
+   }
+  },
+  {
+   "name": "Ld",
+   "lib": "analogLib",
+   "cell": "ind",
+   "view": "symbol",
+   "x": 6,
+   "y": 3,
+   "params": {
+    "l": "100"
+   }
+  },
+  {
+   "name": "Cg",
+   "lib": "analogLib",
+   "cell": "cap",
+   "view": "symbol",
+   "x": -6,
+   "y": -1,
+   "params": {
+    "c": "1"
+   }
+  },
+  {
+   "name": "Cd",
+   "lib": "analogLib",
+   "cell": "cap",
+   "view": "symbol",
+   "x": 6,
+   "y": -1,
+   "params": {
+    "c": "1"
+   }
+  },
+  {
+   "name": "P1",
+   "lib": "analogLib",
+   "cell": "port",
+   "view": "symbol",
+   "x": -12,
+   "y": -1,
+   "params": {
+    "r": "50"
+   }
+  },
+  {
+   "name": "P2",
+   "lib": "analogLib",
+   "cell": "port",
+   "view": "symbol",
+   "x": 12,
+   "y": -1,
+   "params": {
+    "r": "50"
+   }
+  }
+ ],
+ "nets": [
+  "G",
+  "D",
+  "S",
+  "B",
+  "gnd",
+  "gac",
+  "dac"
+ ],
+ "conns": [
+  [
+   "G",
+   "M0",
+   "G"
+  ],
+  [
+   "D",
+   "M0",
+   "D"
+  ],
+  [
+   "S",
+   "M0",
+   "S"
+  ],
+  [
+   "B",
+   "M0",
+   "B"
+  ],
+  [
+   "G",
+   "Lg",
+   "MINUS"
+  ],
+  [
+   "gac",
+   "Lg",
+   "PLUS"
+  ],
+  [
+   "D",
+   "Ld",
+   "MINUS"
+  ],
+  [
+   "dac",
+   "Ld",
+   "PLUS"
+  ],
+  [
+   "G",
+   "Cg",
+   "MINUS"
+  ],
+  [
+   "gac",
+   "Cg",
+   "PLUS"
+  ],
+  [
+   "D",
+   "Cd",
+   "MINUS"
+  ],
+  [
+   "dac",
+   "Cd",
+   "PLUS"
+  ],
+  [
+   "gac",
+   "VG",
+   "PLUS"
+  ],
+  [
+   "gnd",
+   "VG",
+   "MINUS"
+  ],
+  [
+   "dac",
+   "VD",
+   "PLUS"
+  ],
+  [
+   "gnd",
+   "VD",
+   "MINUS"
+  ],
+  [
+   "S",
+   "VS",
+   "PLUS"
+  ],
+  [
+   "gnd",
+   "VS",
+   "MINUS"
+  ],
+  [
+   "B",
+   "VB",
+   "PLUS"
+  ],
+  [
+   "gnd",
+   "VB",
+   "MINUS"
+  ],
+  [
+   "gac",
+   "P1",
+   "PLUS"
+  ],
+  [
+   "gnd",
+   "P1",
+   "MINUS"
+  ],
+  [
+   "dac",
+   "P2",
+   "PLUS"
+  ],
+  [
+   "gnd",
+   "P2",
+   "MINUS"
+  ]
+ ],
+ "wires": [
+  [
+   "Lg",
+   "MINUS",
+   "M0",
+   "G"
+  ],
+  [
+   "Cg",
+   "MINUS",
+   "M0",
+   "G"
+  ],
+  [
+   "Lg",
+   "PLUS",
+   "VG",
+   "PLUS"
+  ],
+  [
+   "Cg",
+   "PLUS",
+   "P1",
+   "PLUS"
+  ],
+  [
+   "Ld",
+   "MINUS",
+   "M0",
+   "D"
+  ],
+  [
+   "Cd",
+   "MINUS",
+   "M0",
+   "D"
+  ],
+  [
+   "Ld",
+   "PLUS",
+   "VD",
+   "PLUS"
+  ],
+  [
+   "Cd",
+   "PLUS",
+   "P2",
+   "PLUS"
+  ],
+  [
+   "M0",
+   "S",
+   "VS",
+   "PLUS"
+  ],
+  [
+   "M0",
+   "B",
+   "VB",
+   "PLUS"
+  ],
+  [
+   "VG",
+   "MINUS",
+   "VS",
+   "MINUS"
+  ],
+  [
+   "VD",
+   "MINUS",
+   "VB",
+   "MINUS"
+  ],
+  [
+   "VS",
+   "MINUS",
+   "VB",
+   "MINUS"
+  ],
+  [
+   "P1",
+   "MINUS",
+   "VS",
+   "MINUS"
+  ],
+  [
+   "P2",
+   "MINUS",
+   "VB",
+   "MINUS"
+  ]
+ ],
+ "create_lib": true,
+ "lib_path": "/tmp/sbGEN/vlTBgen2"
+}

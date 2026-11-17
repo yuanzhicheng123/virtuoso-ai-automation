@@ -1,0 +1,172 @@
+{
+ "generated": "2026-10-26",
+ "domains": [
+  {
+   "requirement_id": "D01",
+   "name": "需求/拓扑/约束",
+   "backend": "领域知识+算法",
+   "native_interfaces": [
+    "(none)"
+   ],
+   "status": "MISSING_IMPLEMENTATION",
+   "verification": "本轮未执行(除 D03/D04/D06 已有证据)"
+  },
+  {
+   "requirement_id": "D02",
+   "name": "工程/库/设计身份",
+   "backend": "SKILL/OA",
+   "native_interfaces": [
+    "ddGetObj",
+    "dbOpenCellViewByType",
+    "dbSave",
+    "dbClose"
+   ],
+   "status": "PARTIAL_IMPLEMENTED",
+   "verification": "本轮未执行(除 D03/D04/D06 已有证据)"
+  },
+  {
+   "requirement_id": "D03",
+   "name": "PDK/器件契约",
+   "backend": "SKILL/OA + CDF",
+   "native_interfaces": [
+    "cdfGetCellCDF",
+    "cdfFindParamByName",
+    "~>terminals",
+    "~>simInfo"
+   ],
+   "status": "IMPLEMENTED_THIS_ROUND",
+   "verification": "本轮未执行(除 D03/D04/D06 已有证据)"
+  },
+  {
+   "requirement_id": "D04",
+   "name": "原理图构建",
+   "backend": "SKILL/OA",
+   "native_interfaces": [
+    "dbCreateInstByMasterName",
+    "schCreatePin",
+    "schCreateWire",
+    "schCheck"
+   ],
+   "status": "IMPLEMENTED_VERIFIED",
+   "verification": "本轮未执行(除 D03/D04/D06 已有证据)"
+  },
+  {
+   "requirement_id": "D05",
+   "name": "测试平台/模型绑定",
+   "backend": "OCEAN/Spectre",
+   "native_interfaces": [
+    "design",
+    "modelFile",
+    "temp"
+   ],
+   "status": "PARTIAL_IMPLEMENTED",
+   "verification": "本轮未执行(除 D03/D04/D06 已有证据)"
+  },
+  {
+   "requirement_id": "D06",
+   "name": "基础分析 OP/DC/Tran",
+   "backend": "Spectre",
+   "native_interfaces": [
+    "analysis dc/tran",
+    "SpectreRunner",
+    "PSF"
+   ],
+   "status": "IMPLEMENTED_VERIFIED",
+   "verification": "本轮未执行(除 D03/D04/D06 已有证据)"
+  },
+  {
+   "requirement_id": "D07",
+   "name": "RF 小信号/噪声",
+   "backend": "Spectre sp/noise",
+   "native_interfaces": [
+    "analysis sp",
+    "analysis noise"
+   ],
+   "status": "CANDIDATE_ONLY",
+   "verification": "本轮未执行(除 D03/D04/D06 已有证据)"
+  },
+  {
+   "requirement_id": "D08",
+   "name": "RF 非线性/周期",
+   "backend": "Spectre pss/hb/pac/pnoise",
+   "native_interfaces": [
+    "analysis pss",
+    "analysis hb"
+   ],
+   "status": "CANDIDATE_ONLY",
+   "verification": "本轮未执行(除 D03/D04/D06 已有证据)"
+  },
+  {
+   "requirement_id": "D09",
+   "name": "PLL/分频",
+   "backend": "Spectre + 测量定义",
+   "native_interfaces": [
+    "(none)"
+   ],
+   "status": "CANDIDATE_ONLY",
+   "verification": "本轮未执行(除 D03/D04/D06 已有证据)"
+  },
+  {
+   "requirement_id": "D10",
+   "name": "PVT/MonteCarlo",
+   "backend": "Spectre statistical",
+   "native_interfaces": [
+    "monte carlo",
+    "corners"
+   ],
+   "status": "CANDIDATE_ONLY",
+   "verification": "本轮未执行(除 D03/D04/D06 已有证据)"
+  },
+  {
+   "requirement_id": "D11",
+   "name": "参数评估/寻优接口",
+   "backend": "Python",
+   "native_interfaces": [
+    "evaluate() 统一 schema"
+   ],
+   "status": "IMPLEMENTED_THIS_ROUND(schema)",
+   "verification": "本轮未执行(除 D03/D04/D06 已有证据)"
+  },
+  {
+   "requirement_id": "D12",
+   "name": "版图技术/PCell",
+   "backend": "SKILL/OA",
+   "native_interfaces": [
+    "lxGenFromSource",
+    "dbCreateParamInst"
+   ],
+   "status": "BLOCKED_LICENSE_UNCONFIRMED",
+   "verification": "本轮未执行(除 D03/D04/D06 已有证据)"
+  },
+  {
+   "requirement_id": "D13",
+   "name": "DRC/LVS/PEX",
+   "backend": "外部 EDA",
+   "native_interfaces": [
+    "PVS/Pegasus/Calibre/Quantus"
+   ],
+   "status": "BLOCKED_NO_RULE_DECK",
+   "verification": "本轮未执行(除 D03/D04/D06 已有证据)"
+  },
+  {
+   "requirement_id": "D14",
+   "name": "EM/无源模型",
+   "backend": "外部 EM",
+   "native_interfaces": [
+    "Touchstone 读取"
+   ],
+   "status": "BLOCKED_NO_TOOL",
+   "verification": "本轮未执行(除 D03/D04/D06 已有证据)"
+  },
+  {
+   "requirement_id": "D15",
+   "name": "导出/报告/追溯",
+   "backend": "Python",
+   "native_interfaces": [
+    "EvidenceManifest"
+   ],
+   "status": "PARTIAL_IMPLEMENTED",
+   "verification": "本轮未执行(除 D03/D04/D06 已有证据)"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+  "verdict": "V0.1_NOT_READY",
+  "gates": {
+    "R4_contract_at_entry": {"status": "PARTIAL",
+      "pass": ["pch rejected before write", "nf=2 rejected before write", "no lib dirs created for illegal cases"],
+      "fail": ["legal 500n run blocked by client decode error (ValueError: not enough values to unpack) on object-returning calls"]},
+    "R4_auto_handle": {"status": "NOT_RUN"},
+    "R4_single_entry": {"status": "PARTIAL", "note": "flock BUSY 已组件级验证，未接正式入口"},
+    "R2_schematic_connection": {"status": "PASS", "evidence": "audit/2026-10-26-r2 (schCheck=[0,0])"},
+    "R2_adversarial": {"status": "NOT_RUN"},
+    "R3_new_design_netlist_sim": {"status": "PARTIAL", "note": "旧设计版本网表+仿真 METRICS_MET；带端口/导线的新版本未重跑"},
+    "R5_three_class": {"status": "NOT_RUN"},
+    "ops_registry_calibration": {"status": "NOT_RUN"}
+  },
+  "commands": {
+    "legal": "/tmp/pywrap.sh /tmp/v01.py --config /tmp/v01cfg/g500.json --workdir /tmp/v01g/g500  -> FAILED",
+    "illegal_pch": "... pch.json -> Reject: 器件不在契约内",
+    "illegal_nf2": "... nf2.json -> Reject: 受保护参数 nf=2 未验证"
+  }
+}

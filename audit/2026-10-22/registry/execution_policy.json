@@ -1,0 +1,24 @@
+{
+ "default": "deny",
+ "allow": "operation_registry 中 verified=true",
+ "risk_levels": {
+  "read": "允许自动执行",
+  "write": "需隔离库 + 前后快照",
+  "destructive": "禁止"
+ },
+ "blocked_patterns": [
+  "delete",
+  "destroy",
+  "exit",
+  "quit",
+  "unlink"
+ ],
+ "no_raw_skill": true,
+ "private_prefix_denied": [
+  "_"
+ ],
+ "requires_snapshot": [
+  "write",
+  "destructive"
+ ]
+}

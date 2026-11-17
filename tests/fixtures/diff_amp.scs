@@ -1,0 +1,44 @@
+// ===================================================================
+// 5-Transistor OTA (差分放大器) — SMIC55 真实 PDK 模型
+// ===================================================================
+
+simulator lang=spectre
+global 0
+
+// ---- PDK Models (tt corner, 27C) ----
+include "/eda/pdk/SPDK55LL_ULP_RF_09121825_OA_CDS_V1.16_2/smic55ll_ulp_rf_09121825_1P10M_8Ic_1TMc_1MTTc_ALPA1_oa_cds_v1.16_2/models/spectre/l0055ll_v1p16_spe.lib" section=tt
+include "/eda/pdk/SPDK55LL_ULP_RF_09121825_OA_CDS_V1.16_2/smic55ll_ulp_rf_09121825_1P10M_8Ic_1TMc_1MTTc_ALPA1_oa_cds_v1.16_2/models/spectre/l0055ll_v1p16_spe.lib" section=res_tt
+
+// ---- Supply ----
+VDD (vdd 0) vsource dc=1.2
+VSS (vss 0) vsource dc=0
+
+// ---- Parameters (可修改) ----
+parameters WP=20u
+parameters LP=0.18u
+parameters WN=8u
+parameters LN=0.18u
+parameters Ibias=100u
+
+// ---- Tail Current Source (PMOS) ----
+Mb (vtail vb vdd vdd) p12ll_mis_ckt w=WP l=LP m=2
+Ib (vdd vb) isource dc=Ibias
+
+// ---- Differential Pair (PMOS) ----
+M1 (voutn vinp vtail vdd) p12ll_mis_ckt w=WP l=LP m=4
+M2 (voutp vinn vtail vdd) p12ll_mis_ckt w=WP l=LP m=4
+
+// ---- Current Mirror Load (NMOS) ----
+M3 (voutn voutn vss vss) n12ll_mis_ckt w=WN l=LN m=2
+M4 (voutp voutn vss vss) n12ll_mis_ckt w=WN l=LN m=2
+
+// ---- Inputs ----
+Vinp (vinp 0) vsource dc=0.6 mag=0.5m type=sine sinedc=0.6
+Vinn (vinn 0) vsource dc=0.6
+
+// ---- Analyses ----
+dcOp dc write="diff_amp.dc" maxiters=150 maxsteps=10000 annotate=status
+ac ac start=1k stop=1G dec=20 annotate=status
+tran tran start=0 stop=2u step=10n annotate=status
+
+save voutp voutn vinp vinn

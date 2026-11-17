@@ -1,0 +1,54 @@
+{
+ "trace": {
+  "operation_id": "simulate.run_unified",
+  "impl": "vskill/phase2/capabilities.py::simulate",
+  "request_id": 1,
+  "runner": "vskill.phase2.spectre_runner.SpectreRunner",
+  "run_id": "unified_ac_20261027",
+  "status": "OK"
+ },
+ "result": {
+  "execution_status": "OK",
+  "evaluation_valid": true,
+  "analysis_completed": [
+   "ac1.ac",
+   "op1.dc"
+  ],
+  "metrics": {
+   "Vgs_ac": {
+    "re": 1.0,
+    "im": 0.0,
+    "mag": 1.0,
+    "phase_deg": 0.0
+   },
+   "Id_ac": {
+    "re": 0.000603725,
+    "im": -8.46911e-15,
+    "mag": 0.000603725,
+    "phase_deg": -8.037504811495972e-10
+   },
+   "gm_external_ac_S": {
+    "re": 0.000603725,
+    "im": -8.46911e-15,
+    "mag": 0.000603725,
+    "phase_deg": -8.037504811495972e-10
+   },
+   "freq_hz": [
+    10.0,
+    1000000.0
+   ],
+   "n_points": 51,
+   "D": 1.2,
+   "G": 0.6,
+   "S": 0.0,
+   "B": 0.0,
+   "VB:p": 4.977659807326897e-09,
+   "VD:p": -0.0001268354864205145,
+   "VG:p": -1.550642584194785e-10,
+   "VS:p": 0.0001268306638249656
+  },
+  "warnings": [],
+  "violations": [],
+  "evidence_id": "runs/unified_ac_20261027"
+ }
+}

@@ -1,0 +1,63 @@
+* ============================================================================
+* VCO Core v1 — Final Pre-Layout Verification (SMIC55, TT, 27C)
+* SMIC55 LL RF 1P10M ALPA1, Spectre 20.1
+* ============================================================================
+* Architecture: NMOS-only cross-coupled LC-VCO with tail current
+* Tank: ind_3Tdiff_alutm_psub R=60u w=10u n=2 (center-tapped)
+* NMOS: n12ll_ckt_rf_mis wr=2.0u nf=12 (W_total=24um)
+* Target: f0=4.5GHz, Itail=1.60mA, VDD=1.2V
+* ============================================================================
+
+simulator lang=spectre
+global 0
+
+* ── PDK Model Includes ──
+include "/home/lihong/PDK/SPDK55LL_ULP_RF_09121825_OA_CDS_V1.16_2/smic55ll_ulp_rf_09121825_oa_cds_v1.16_2/models/spectre/l0055ll_v1p16_spe.lib" section=tt
+include "/home/lihong/PDK/SPDK55LL_ULP_RF_09121825_OA_CDS_V1.16_2/smic55ll_ulp_rf_09121825_oa_cds_v1.16_2/models/spectre/ms0055ll_io25_rf_v1p16_7r_spe.lib" section=tt
+include "/home/lihong/PDK/SPDK55LL_ULP_RF_09121825_OA_CDS_V1.16_2/smic55ll_ulp_rf_09121825_oa_cds_v1.16_2/models/spectre/ms0055ll_io25_rf_v1p16_7r_spe.lib" section=3Tdiff_alutm_psub_tt
+
+parameters f_guess=4.5G
+
+* ── Supplies ──
+VDD_VCO (VDD 0) vsource dc=1.2
+I_TAIL (TAIL 0) isource dc=1.60m
+
+* ── Cross-Coupled NMOS Pair ──
+* n12ll_ckt_rf_mis: D G S B, wr=2u nf=12 lr=60n
+M1 (TANKP TANKN TAIL 0) n12ll_ckt_rf_mis wr=2.0u lr=60n nf=12
+M2 (TANKN TANKP TAIL 0) n12ll_ckt_rf_mis wr=2.0u lr=60n nf=12
+
+* ── Center-Tapped Differential Inductor ──
+* ind_3Tdiff_alutm_psub: PLUS MINUS CT PSUB, R=60u w=10u n=2
+L_TANK (TANKP TANKN VDD 0) ind_3Tdiff_alutm_psub R=60e-6 w=10e-6 n=2
+
+* ── Tank capacitance (ideal) ──
+C_TANKP (TANKP VDD) capacitor c=400f
+C_TANKN (TANKN VDD) capacitor c=400f
+
+* ── Tail Filter ──
+C_TAIL (TAIL 0) capacitor c=3p
+
+* ── VDD Decoupling ──
+C_VDD (VDD 0) capacitor c=20p
+
+* ── DC Operating Point ──
+dcOp dc write="vco.dc" annotate=status
+
+* ── Transient Startup (50ns, with device noise) ──
+* Verify oscillation builds up from noise
+tran_startup tran stop=50n maxstep=0.5p noisefmax=50G writefinal="tran_end.ic"
+
+* ── PSS (autonomous — no guide source) ──
+* Let PSS find natural oscillation frequency
+* tstab=10ns: let oscillator settle from transient
+pss_osc pss fund=f_guess harms=7 \
+  tstab=10n maxperiods=300 annotate=status oscil=yes
+
+* ── Phase Noise ──
+* maxsideband=15 for better accuracy (was 5, too small)
+pnoise_osc (TANKP TANKN) pnoise start=1k stop=30M dec=20 \
+  maxsideband=15 annotate=status
+
+* ── Save ──
+save VDD TAIL TANKP TANKN

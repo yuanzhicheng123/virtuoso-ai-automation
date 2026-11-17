@@ -1,0 +1,578 @@
+{
+ "format": "vlight.schematic/1",
+ "lib": "tsmcN65_LNA2G4",
+ "cell": "lna_2g4_top",
+ "pins": [
+  {
+   "name": "rf_in",
+   "direction": "input",
+   "net": "rf_in"
+  },
+  {
+   "name": "rf_out",
+   "direction": "output",
+   "net": "rf_out"
+  },
+  {
+   "name": "vdd",
+   "direction": "input",
+   "net": "vdd"
+  },
+  {
+   "name": "vb",
+   "direction": "input",
+   "net": "vb"
+  },
+  {
+   "name": "gnd",
+   "direction": "inputOutput",
+   "net": "gnd"
+  }
+ ],
+ "instances": [
+  {
+   "name": "Ls",
+   "lib": "tsmcN65",
+   "cell": "spiral_std_mu_z",
+   "view": "symbol",
+   "xy": [
+    -20.0,
+    -80.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {
+    "model": "spiral_std_mu_z",
+    "macro": "iPar(\"model\")",
+    "w": "30u",
+    "rad": "62.0u",
+    "nr": "2",
+    "spacing": "2u",
+    "gdis": "50u",
+    "temper": "27",
+    "fq": "2.4G",
+    "finder": null,
+    "plot": null,
+    "ind": "1.00379n",
+    "Q_single": "1.701645e+01",
+    "area_W": "404.00u",
+    "area_L": "388.00u",
+    "lay": "9",
+    "m": "1",
+    "HardCons": true,
+    "macroArgumentStyle": "hspiceS"
+   }
+  },
+  {
+   "name": "L1",
+   "lib": "tsmcN65",
+   "cell": "spiral_std_mu_z",
+   "view": "symbol",
+   "xy": [
+    -140.0,
+    0.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {
+    "model": "spiral_std_mu_z",
+    "macro": "iPar(\"model\")",
+    "w": "30u",
+    "rad": "64.0u",
+    "nr": "3",
+    "spacing": "2u",
+    "gdis": "50u",
+    "temper": "27",
+    "fq": "2.4G",
+    "finder": null,
+    "plot": null,
+    "ind": "2.49469n",
+    "Q_single": "1.131618e+01",
+    "area_W": "471.995u",
+    "area_L": "455.995u",
+    "lay": "9",
+    "m": "1",
+    "HardCons": true,
+    "macroArgumentStyle": "hspiceS"
+   }
+  },
+  {
+   "name": "Cb",
+   "lib": "tsmcN65",
+   "cell": "mimcap",
+   "view": "symbol",
+   "xy": [
+    -80.0,
+    -80.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {
+    "model": "mimcap_sin",
+    "macro": "iPar(\"model\")",
+    "capacitor": "MIM_1.5fF",
+    "lay_m": "8",
+    "mf": "iPar(\"total_m\")",
+    "mismatch": null,
+    "mismatchflag": "0",
+    "DeviceUnder": null,
+    "description": " Base band MIM capacitor",
+    "entryMode": "l_&_w",
+    "c": "155.407f",
+    "total_c": "155.407f",
+    "lt": "10u",
+    "wt": "10u",
+    "aryX": "1",
+    "aryY": "1",
+    "m": "68",
+    "total_m": "68",
+    "lay": "7",
+    "ExtMetal": true,
+    "mimflag": "2",
+    "c_A": "1.485T",
+    "c_P": "210K",
+    "c_O": "-49n",
+    "TFdme": true,
+    "HardCons": true,
+    "macroArgumentStyle": "hspiceS"
+   }
+  },
+  {
+   "name": "Rbias",
+   "lib": "tsmcN65",
+   "cell": "rppolywo",
+   "view": "symbol",
+   "xy": [
+    120.0,
+    -80.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {
+    "model": "rppolywo",
+    "macro": "iPar(\"model\")",
+    "mismatch": null,
+    "mismatchflag": "0",
+    "mf": "iPar(\"prl\")",
+    "description": " P+ poly resistor without salicide",
+    "res": "3.89519K",
+    "sumW": "2u",
+    "w": "10u",
+    "sumL": "10u",
+    "l": "6.675u",
+    "m": "1",
+    "rs": "756.206",
+    "connection": "Series",
+    "segments": "1",
+    "segSp": "250.0n",
+    "cCols": "1",
+    "srs": "1",
+    "prl": "1",
+    "HardCons": true,
+    "ResCalc": "l_&_w",
+    "macroArgumentStyle": "hspiceS"
+   }
+  },
+  {
+   "name": "Rload",
+   "lib": "tsmcN65",
+   "cell": "rppolywo",
+   "view": "symbol",
+   "xy": [
+    40.0,
+    -80.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {
+    "model": "rppolywo",
+    "macro": "iPar(\"model\")",
+    "mismatch": null,
+    "mismatchflag": "0",
+    "mf": "iPar(\"prl\")",
+    "description": " P+ poly resistor without salicide",
+    "res": "3.89519K",
+    "sumW": "2u",
+    "w": "10u",
+    "sumL": "10u",
+    "l": "2.195u",
+    "m": "1",
+    "rs": "756.206",
+    "connection": "Series",
+    "segments": "1",
+    "segSp": "250.0n",
+    "cCols": "1",
+    "srs": "1",
+    "prl": "1",
+    "HardCons": true,
+    "ResCalc": "l_&_w",
+    "macroArgumentStyle": "hspiceS"
+   }
+  },
+  {
+   "name": "Rmatch",
+   "lib": "tsmcN65",
+   "cell": "rppolywo",
+   "view": "symbol",
+   "xy": [
+    -80.0,
+    -140.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {
+    "model": "rppolywo",
+    "macro": "iPar(\"model\")",
+    "mismatch": null,
+    "mismatchflag": "0",
+    "mf": "iPar(\"prl\")",
+    "description": " P+ poly resistor without salicide",
+    "res": "3.89519K",
+    "sumW": "2u",
+    "w": "10u",
+    "sumL": "10u",
+    "l": "3.21u",
+    "m": "1",
+    "rs": "756.206",
+    "connection": "Series",
+    "segments": "1",
+    "segSp": "250.0n",
+    "cCols": "1",
+    "srs": "1",
+    "prl": "1",
+    "HardCons": true,
+    "ResCalc": "l_&_w",
+    "macroArgumentStyle": "hspiceS"
+   }
+  },
+  {
+   "name": "M3",
+   "lib": "tsmcN65",
+   "cell": "nmos_rf_25ud18",
+   "view": "symbol",
+   "xy": [
+    120.0,
+    0.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {
+    "model": "nmos_rf_18",
+    "macro": "iPar(\"model\")",
+    "totalW": "240.00000u",
+    "wr": "10u",
+    "lr": "350.0n",
+    "nr": "24",
+    "swDmyPoly": true,
+    "grRing": true,
+    "swDNWRing": true,
+    "m": "1",
+    "TFdme": true,
+    "HardCons": true,
+    "mismatch": null,
+    "sigma": "1",
+    "mismatchflag": "0",
+    "macroArgumentStyle": "hspiceS"
+   }
+  },
+  {
+   "name": "M2",
+   "lib": "tsmcN65",
+   "cell": "nmos_rf_25ud18",
+   "view": "symbol",
+   "xy": [
+    40.0,
+    0.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {
+    "model": "nmos_rf_18",
+    "macro": "iPar(\"model\")",
+    "totalW": "290.00000u",
+    "wr": "10u",
+    "lr": "350.0n",
+    "nr": "29",
+    "swDmyPoly": true,
+    "grRing": true,
+    "swDNWRing": true,
+    "m": "3",
+    "TFdme": true,
+    "HardCons": true,
+    "mismatch": null,
+    "sigma": "1",
+    "mismatchflag": "0",
+    "macroArgumentStyle": "hspiceS"
+   }
+  },
+  {
+   "name": "M1",
+   "lib": "tsmcN65",
+   "cell": "nmos_rf_25ud18",
+   "view": "symbol",
+   "xy": [
+    -20.0,
+    0.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {
+    "model": "nmos_rf_18",
+    "macro": "iPar(\"model\")",
+    "totalW": "290.00000u",
+    "wr": "10u",
+    "lr": "350.0n",
+    "nr": "29",
+    "swDmyPoly": true,
+    "grRing": true,
+    "swDNWRing": true,
+    "m": "3",
+    "TFdme": true,
+    "HardCons": true,
+    "mismatch": null,
+    "sigma": "1",
+    "mismatchflag": "0",
+    "macroArgumentStyle": "hspiceS"
+   }
+  },
+  {
+   "name": "PIN3",
+   "lib": "basic",
+   "cell": "ipin",
+   "view": "symbol",
+   "xy": [
+    -220.0,
+    -40.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {}
+  },
+  {
+   "name": "PIN2",
+   "lib": "basic",
+   "cell": "ipin",
+   "view": "symbol",
+   "xy": [
+    -220.0,
+    40.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {}
+  },
+  {
+   "name": "PIN0",
+   "lib": "basic",
+   "cell": "ipin",
+   "view": "symbol",
+   "xy": [
+    -220.0,
+    0.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {}
+  },
+  {
+   "name": "PIN1",
+   "lib": "basic",
+   "cell": "opin",
+   "view": "symbol",
+   "xy": [
+    -220.0,
+    80.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {}
+  },
+  {
+   "name": "PIN4",
+   "lib": "basic",
+   "cell": "iopin",
+   "view": "symbol",
+   "xy": [
+    -220.0,
+    -80.0
+   ],
+   "orient": "R0",
+   "n": 1,
+   "params": {}
+  }
+ ],
+ "nets": [
+  {
+   "name": "n_mid",
+   "sigType": "signal",
+   "terms": [
+    [
+     "Cb",
+     "PLUS"
+    ],
+    [
+     "L1",
+     "PLUS"
+    ]
+   ]
+  },
+  {
+   "name": "rsh",
+   "sigType": "signal",
+   "terms": [
+    [
+     "Rmatch",
+     "PLUS"
+    ],
+    [
+     "Cb",
+     "MINUS"
+    ]
+   ]
+  },
+  {
+   "name": "n_gate",
+   "sigType": "signal",
+   "terms": [
+    [
+     "M1",
+     "G"
+    ]
+   ]
+  },
+  {
+   "name": "d1",
+   "sigType": "signal",
+   "terms": [
+    [
+     "M2",
+     "S"
+    ],
+    [
+     "M1",
+     "D"
+    ]
+   ]
+  },
+  {
+   "name": "g_s",
+   "sigType": "signal",
+   "terms": [
+    [
+     "M1",
+     "S"
+    ],
+    [
+     "Ls",
+     "PLUS"
+    ]
+   ]
+  },
+  {
+   "name": "g_out",
+   "sigType": "signal",
+   "terms": [
+    [
+     "Rload",
+     "MINUS"
+    ],
+    [
+     "M3",
+     "G"
+    ],
+    [
+     "M2",
+     "D"
+    ]
+   ]
+  },
+  {
+   "name": "rf_in",
+   "sigType": "signal",
+   "terms": [
+    [
+     "L1",
+     "MINUS"
+    ]
+   ]
+  },
+  {
+   "name": "rf_out",
+   "sigType": "signal",
+   "terms": [
+    [
+     "Rbias",
+     "PLUS"
+    ],
+    [
+     "M3",
+     "S"
+    ]
+   ]
+  },
+  {
+   "name": "vdd",
+   "sigType": "signal",
+   "terms": [
+    [
+     "M3",
+     "D"
+    ],
+    [
+     "Rload",
+     "PLUS"
+    ]
+   ]
+  },
+  {
+   "name": "vb",
+   "sigType": "signal",
+   "terms": [
+    [
+     "M2",
+     "G"
+    ]
+   ]
+  },
+  {
+   "name": "gnd",
+   "sigType": "signal",
+   "terms": [
+    [
+     "L1",
+     "BULK"
+    ],
+    [
+     "Rmatch",
+     "MINUS"
+    ],
+    [
+     "Ls",
+     "MINUS"
+    ],
+    [
+     "Ls",
+     "BULK"
+    ],
+    [
+     "M2",
+     "B"
+    ],
+    [
+     "M3",
+     "B"
+    ],
+    [
+     "Rbias",
+     "MINUS"
+    ],
+    [
+     "M1",
+     "B"
+    ]
+   ]
+  }
+ ],
+ "shapes": [],
+ "props": {}
+}

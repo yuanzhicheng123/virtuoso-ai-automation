@@ -1,0 +1,101 @@
+{
+ "device_contract": {
+  "lib": "tsmcN65",
+  "cell": "nch",
+  "view": "symbol",
+  "status": "OK",
+  "unknown": [],
+  "terminals": [
+   "S",
+   "G",
+   "B",
+   "D"
+  ],
+  "terminal_count": 4,
+  "term_detail": {
+   "S": {
+    "direction": "inputOutput",
+    "pins": 1
+   },
+   "G": {
+    "direction": "inputOutput",
+    "pins": 1
+   },
+   "B": {
+    "direction": "inputOutput",
+    "pins": 1
+   },
+   "D": {
+    "direction": "inputOutput",
+    "pins": 1
+   }
+  },
+  "cdf_parameter_count": 99,
+  "cdf_enumeration_field": "parameters",
+  "simInfo_present": true,
+  "propMapping": "(nil m simM nf fingers w wf)  # 已验证观察值",
+  "termOrder": "(D G S B)  # 已验证观察值",
+  "verified_contract": {
+   "netlist_param": "wf",
+   "display_param": "w",
+   "nf": 1,
+   "m": 1,
+   "widths": [
+    "500n",
+    "800n",
+    "1u"
+   ],
+   "note": "仅 tsmcN65/nch + Spectre；不推广到其他器件"
+  }
+ },
+ "snapshot": {
+  "design": "vlV01_d500/tb/schematic",
+  "status": "OK",
+  "instances": [
+   {
+    "name": "M0",
+    "master": "tsmcN65/nch"
+   },
+   {
+    "name": "PIN3",
+    "master": "basic/ipin"
+   },
+   {
+    "name": "PIN2",
+    "master": "basic/ipin"
+   },
+   {
+    "name": "PIN1",
+    "master": "basic/ipin"
+   },
+   {
+    "name": "PIN0",
+    "master": "basic/ipin"
+   }
+  ],
+  "pins": [],
+  "connections": [
+   {
+    "instance": "M0",
+    "terminal": "B",
+    "net": "B"
+   },
+   {
+    "instance": "M0",
+    "terminal": "S",
+    "net": "S"
+   },
+   {
+    "instance": "M0",
+    "terminal": "G",
+    "net": "G"
+   },
+   {
+    "instance": "M0",
+    "terminal": "D",
+    "net": "D"
+   }
+  ],
+  "check": "[0, 0]"
+ }
+}

@@ -1,0 +1,13 @@
+// ocean
+simulator lang=spectre
+global 0
+parameters r2=3k
+
+
+// design under test
+  R1 (in out) resistor r=1k
+  R2 (out gnd) resistor r=r2
+// testbench
+V1 (in 0) vsource dc=3
+VGND (gnd 0) vsource dc=0
+dc1 dc oppoint=rawfile

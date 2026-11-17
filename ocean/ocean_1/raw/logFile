@@ -1,0 +1,47 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Tue Oct 20 17:53:39 2026"
+"psfversion" ""
+"simulator" "spectre"
+"version" "20.1.0.068"
+"date" "5:53:39 PM, Tue Oct 20, 2026"
+"design" "// ocean"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"dc1-dc" "analysisInst" (
+"dc"
+"dc1.dc"
+"PSF"
+""
+()
+"DC Analysis `dc1'"
+) PROP(
+"data_type" "scalar"
+)
+
+"dc1-info" "analysisInst" (
+"info"
+"dc1.info"
+"PSF"
+""
+()
+"Circuit Information"
+) PROP(
+"data_type" "struct"
+)
+
+END

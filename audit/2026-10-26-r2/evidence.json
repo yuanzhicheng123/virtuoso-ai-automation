@@ -1,0 +1,13 @@
+{
+  "cell": "vlR2g/tb/schematic",
+  "device": "M0 = tsmcN65/nch (symbol)",
+  "geometry": {"method": "term~>pins[0]~>fig~>bBox center -> dbTransformPoint(inst~>transform)"},
+  "pins_created": ["D", "G", "S", "B"],
+  "wires_created": ["D", "G", "S", "B"],
+  "schCheck_before": "[0, 4]  (single-pin nets)",
+  "schCheck_after_first_attempt": "[2, 0]  Short between D-B, S-B (端口坐标重叠)",
+  "schCheck_final": "[0, 0]",
+  "markers_final": [],
+  "root_cause": "顶层端口坐标未错开：B/D/S 的 pin 中心重合导致短路；错开 x/y 后消失",
+  "operation": ["schematic.resolve_terminal_geometry", "schematic.connect_terminal_to_port"]
+}

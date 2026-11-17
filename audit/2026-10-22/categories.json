@@ -1,0 +1,42 @@
+{
+ "other": {
+  "documented": 4849,
+  "loaded": 3910,
+  "callable": 4773
+ },
+ "netlist": {
+  "documented": 125,
+  "loaded": 47,
+  "callable": 58
+ },
+ "xl/abstract": {
+  "documented": 461,
+  "loaded": 107,
+  "callable": 383
+ },
+ "schematic/editor": {
+  "documented": 1434,
+  "loaded": 1411,
+  "callable": 1430
+ },
+ "layout/pcell": {
+  "documented": 1432,
+  "loaded": 1396,
+  "callable": 1411
+ },
+ "library/tech/cdf": {
+  "documented": 494,
+  "loaded": 469,
+  "callable": 494
+ },
+ "simulation": {
+  "documented": 751,
+  "loaded": 242,
+  "callable": 736
+ },
+ "verification": {
+  "documented": 17,
+  "loaded": 4,
+  "callable": 17
+ }
+}

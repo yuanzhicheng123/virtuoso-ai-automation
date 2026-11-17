@@ -1,0 +1,20 @@
+{
+  "top": "demolib/divider",
+  "flatten": true,
+  "host": "eda-220",
+  "spectre": "/eda/cds/SPECTRE201/tools/bin/spectre",
+  "elements": [
+    "V1 (in 0) vsource dc=3",
+    "VGND (gnd 0) vsource dc=0"
+  ],
+  "analyses": [
+    {
+      "name": "op",
+      "kind": "dc"
+    }
+  ],
+  "outputs": {
+    "v_out": "value(V(out))",
+    "ratio": "value(V(out))/3"
+  }
+}

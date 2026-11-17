@@ -1,0 +1,48 @@
+{
+  "experiments": {
+    "E1_property_write": {
+      "api": "dbReplaceProp(inst,\"w\",\"string\",\"1u\")",
+      "in_session": "inst~>w = \"1u\"",
+      "persisted_after_reopen": true,
+      "netlist_w": "200n",
+      "verdict": "写入了属性，但网表器不读"
+    },
+    "E2_cdf_param_write": {
+      "api": "cdfFindParamByName(cdfGetInstCDF(inst),\"w\")~>value=\"1u\" + cdfUpdateInstParam",
+      "reopen_cdf_value": "1u",
+      "reopen_prop_value": "1u",
+      "netlist_w": "200n",
+      "verdict": "CDF 参数持久化成功，网表器仍用默认值"
+    },
+    "E3_initial_state": {
+      "inst_w_before_write": "200n",
+      "dbGetPropByName_before_write": "none",
+      "cdf_param_type": "string",
+      "cdf_param_default": "200n"
+    }
+  },
+  "electrical_impact": {
+    "auto_netlist_w200n_id_uA": 54.586,
+    "manual_tb_w1u_id_uA": 274.948,
+    "ratio": 5.04,
+    "conclusion": "宽度写链缺陷造成 5 倍电流偏差（与 1u/200n 比例一致）"
+  },
+  "netlist": {
+    "auto": "/tmp/vlW4/simulation/tb/spectre/schematic/netlist/input.scs",
+    "device_line": "M0 (net4 net2 net1 net3) nch l=60n w=200n m=1 nf=1 sd=200n ad=3.5e-14",
+    "manual_tb": "audit/2026-10-22/m2/tb.scs"
+  },
+  "checks": {
+    "schCheck_tb": "(0 4)",
+    "schCheck_tb2": "(0 4)",
+    "schCheck_vlW4": "(0 4)",
+    "spectre_warnings_manual_tb": 2,
+    "spectre_warnings_auto": 3
+  },
+  "not_executed": [
+    "nch 单元级 CDF 参数表（cdfGetCellCDF）与 netlist 表达式审查",
+    "Tran 数值断言（时间轴/目标信号/有限值/行为）",
+    "skillbridge 并发与超时实测（无 daemon）",
+    "Layout XL"
+  ]
+}

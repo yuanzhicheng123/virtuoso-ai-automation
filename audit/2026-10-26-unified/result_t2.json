@@ -1,0 +1,57 @@
+{
+ "checks": [
+  {
+   "check": "dut_present",
+   "ok": true,
+   "devices": 1,
+   "expected": 1,
+   "models": [
+    "nch"
+   ],
+   "expected_model": "nch"
+  },
+  {
+   "check": "params",
+   "ok": true,
+   "mismatch": {}
+  },
+  {
+   "check": "analyses",
+   "ok": false,
+   "have": [
+    "op1.dc",
+    "sw1.dc"
+   ],
+   "missing": [
+    "tran"
+   ]
+  },
+  {
+   "check": "result_source",
+   "ok": true,
+   "run_hash": "8fe79f3be9b2928d",
+   "netlist_hash": "8fe79f3be9b2928d"
+  },
+  {
+   "check": "completeness",
+   "ok": true,
+   "missing": [],
+   "unknown": [],
+   "not_run": [],
+   "empty": []
+  }
+ ],
+ "eval_ok": false,
+ "status": "EVALUATION_INVALID",
+ "values": {
+  "D": 1.2,
+  "G": 0.6,
+  "S": 0.0,
+  "B": 0.0,
+  "VB:p": 4.977659807326897e-09,
+  "VD:p": -0.0001268354864205145,
+  "VG:p": -1.550642584194785e-10,
+  "VS:p": 0.0001268306638249656
+ },
+ "gate": "ACCEPTABLE"
+}

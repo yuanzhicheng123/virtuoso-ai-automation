@@ -1,0 +1,917 @@
+2026/10/20 17:25:34 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/20 17:25:34 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+COPYRIGHT (C) 1992-2023  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+          (C) 1992-2023  UNIX SYSTEMS Laboratories INC.,
+                         Reproduced with permission.
+
+This Cadence Design Systems program and online documentation are
+proprietary/confidential information and may be disclosed/used only
+as authorized in a license agreement controlling such use and disclosure.
+
+          RESTRICTED RIGHTS NOTICE (SHORT FORM)
+Use/reproduction/disclosure is subject to restriction
+set forth at FAR 1252.227-19 or its equivalent.
+Loading geView.cxt 
+Loading menuBuilder.cxt 
+Loading schView.cxt 
+Loading selectSv.cxt 
+Loading wireEdit.cxt 
+Loading pte2.cxt 
+Loading xlUI.cxt 
+Loading auCore.cxt 
+Loading vhdl.cxt 
+Loading seismic.cxt 
+Loading ci.cxt 
+Loading layers.cxt 
+Loading drv.cxt 
+Loading ams.cxt 
+Loading adexlDM.cxt 
+Loading cpf.cxt 
+Loading cli.cxt 
+Loading lp.cxt 
+Loading sipLayout.cxt 
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.04s.
+END OF SITE CUSTOMIZATION
+Loading ./.cdsinit init file from the site init file.
+SKILLVER="@(#)$CDS: virtuoso version IC23.1-64b 06/21/2023 09:33 (cpgbld16) $"
+LIB tsmcN65_LNA2G4 ncells=4
+  CELL lna_2g4_top views=("schematic")
+  CELL output_buffer views=("schematic")
+  CELL gain_stage views=("schematic")
+  CELL input_match views=("schematic")
+Initializing from libInit.il for library tsmcN65...
+*WARNING* (loadContext): context /grid/cic/ciccm_t1nb_018/IC23.1/RTM/lnx86/64/builds/230621-043/tools/dfII/etc/context/64bit/pCellGen.cxt already loaded
+   --  /eda/1P9M/TSMC065_1P9M/tsmcN65/../skill/pcode1.cxt
+   --  /eda/1P9M/TSMC065_1P9M/tsmcN65/../skill/pcode2.cxt
+   --  tsmcPdkParamTable.il
+   --  tsmcN65_updateCDFs.il
+   --  tsmc_esti.ile
+   --  /eda/1P9M/TSMC065_1P9M/tsmcN65/../skill/tsmcN65gp_v1d0c.cxt
+   --  /eda/1P9M/TSMC065_1P9M/tsmcN65/../skill/tsmcN65_newAMS.cxt
+   --  /eda/1P9M/TSMC065_1P9M/tsmcN65/../skill/tsmcN65_newRTMOM.cxt
+   --  /eda/1P9M/TSMC065_1P9M/tsmcN65/../skill/tsmcN65GP_v1d0.cxt
+   --  tsmcN65.cxt
+   --  tsmcN65Tool.cxt
+   --  tif_tcf_crn65gp_v1.0a.cxt
+   --  /eda/1P9M/TSMC065_1P9M/tsmcN65/../skill/tsmcN65GP_v1d0.cxt
+*WARNING* (loadContext): context //eda/1P9M/TSMC065_1P9M/tsmcN65/../skill/64bit/tsmcN65GP_v1d0.cxt already loaded
+   --  /eda/1P9M/TSMC065_1P9M/tsmcN65/../skill/tsmcN65_newRTMOM.cxt
+*WARNING* (loadContext): context //eda/1P9M/TSMC065_1P9M/tsmcN65/../skill/64bit/tsmcN65_newRTMOM.cxt already loaded
+   --  /eda/1P9M/TSMC065_1P9M/tsmcN65/../skill/tsmcN65_newAMS.cxt
+*WARNING* (loadContext): context //eda/1P9M/TSMC065_1P9M/tsmcN65/../skill/64bit/tsmcN65_newAMS.cxt already loaded
+Loading PDK Display File '/eda/1P9M/TSMC065_1P9M/tsmcN65/../display.drf'
+Loading oasis.cxt 
+Loading analog.cxt 
+Loading asimenv.cxt 
+Loading spectrei.cxt 
+Loading dal.cxt 
+Loading awv.cxt 
+Loading socket.cxt 
+Loading par.cxt 
+Loading alvs.cxt 
+Loading caa.cxt 
+Loading amps.cxt 
+Loading adexlCore.cxt 
+Loading adexl.cxt 
+Loading vdsil.cxt 
+Loading lx.cxt 
+Loading pe.cxt 
+Loading lce.cxt 
+Loading le.cxt 
+Loading drdEdit.cxt 
+Loading rte.cxt 
+Loading te.cxt 
+Loading schHDL.cxt 
+Loading devCheck.cxt 
+Loading relXpert.cxt 
+Loading hspiceD.cxt 
+Loading spectreinl.cxt 
+Loading msgHandler.cxt 
+Loading UltraSim.cxt 
+Loading AMSOSS.cxt 
+Loading AMS.cxt 
+SCH tsmcN65_LNA2G4/lna_2g4_top insts=14 nets=11 terms=5 shapes=57
+  I Ls tsmcN65/spiral_std_mu_z/symbol xy=(-20.0 -80.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "spiral_std_mu_z"
+    P macro instData = "iPar(\"model\")"
+    P w instData = "30u"
+    P rad instData = "62.0u"
+    P nr instData = "2"
+    P spacing instData = "2u"
+    P gdis instData = "50u"
+    P temper instData = "27"
+    P fq instData = "2.4G"
+    P finder instData = nil
+    P plot instData = nil
+    P ind instData = "1.00379n"
+    P Q_single instData = "1.701645e+01"
+    P area_W instData = "404.00u"
+    P area_L instData = "388.00u"
+    P lay instData = "9"
+    P m instData = "1"
+    P HardCons instData = t
+    P macroArgumentStyle instData = "hspiceS"
+    R ind = "1.00379n"
+    R area_L = "388.00u"
+    R area_W = "404.00u"
+    R Q_single = "1.701645e+01"
+    R nr = "2"
+    R rad = "62.0u"
+  I L1 tsmcN65/spiral_std_mu_z/symbol xy=(-140.0 0.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "spiral_std_mu_z"
+    P macro instData = "iPar(\"model\")"
+    P w instData = "30u"
+    P rad instData = "64.0u"
+    P nr instData = "3"
+    P spacing instData = "2u"
+    P gdis instData = "50u"
+    P temper instData = "27"
+    P fq instData = "2.4G"
+    P finder instData = nil
+    P plot instData = nil
+    P ind instData = "2.49469n"
+    P Q_single instData = "1.131618e+01"
+    P area_W instData = "471.995u"
+    P area_L instData = "455.995u"
+    P lay instData = "9"
+    P m instData = "1"
+    P HardCons instData = t
+    P macroArgumentStyle instData = "hspiceS"
+    R ind = "2.49469n"
+    R area_L = "455.995u"
+    R area_W = "471.995u"
+    R Q_single = "1.131618e+01"
+    R rad = "64.0u"
+  I Cb tsmcN65/mimcap/symbol xy=(-80.0 -80.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "mimcap_sin"
+    P macro instData = "iPar(\"model\")"
+    P capacitor instData = "MIM_1.5fF"
+    P lay_m instData = "8"
+    P mf instData = "iPar(\"total_m\")"
+    P mismatch instData = nil
+    P mismatchflag instData = "0"
+    P DeviceUnder instData = nil
+    P description instData = " Base band MIM capacitor"
+    P entryMode instData = "l_&_w"
+    P c instData = "155.407f"
+    P total_c instData = "155.407f"
+    P lt instData = "10u"
+    P wt instData = "10u"
+    P aryX instData = "1"
+    P aryY instData = "1"
+    P m instData = "68"
+    P total_m instData = "68"
+    P lay instData = "7"
+    P ExtMetal instData = t
+    P mimflag instData = "2"
+    P c_A instData = "1.485T"
+    P c_P instData = "210K"
+    P c_O instData = "-49n"
+    P TFdme instData = t
+    P HardCons instData = t
+    P macroArgumentStyle instData = "hspiceS"
+    R m = "68"
+    R total_m = "68"
+  I Rbias tsmcN65/rppolywo/symbol xy=(120.0 -80.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "rppolywo"
+    P macro instData = "iPar(\"model\")"
+    P mismatch instData = nil
+    P mismatchflag instData = "0"
+    P mf instData = "iPar(\"prl\")"
+    P description instData = " P+ poly resistor without salicide"
+    P res instData = "3.89519K"
+    P sumW instData = "2u"
+    P w instData = "10u"
+    P sumL instData = "10u"
+    P l instData = "6.675u"
+    P m instData = "1"
+    P rs instData = "756.206"
+    P connection instData = "Series"
+    P segments instData = "1"
+    P segSp instData = "250.0n"
+    P cCols instData = "1"
+    P srs instData = "1"
+    P prl instData = "1"
+    P HardCons instData = t
+    P ResCalc instData = "l_&_w"
+    P macroArgumentStyle instData = "hspiceS"
+    R w = "10u"
+    R segSp = "250.0n"
+    R l = "6.675u"
+  I Rload tsmcN65/rppolywo/symbol xy=(40.0 -80.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "rppolywo"
+    P macro instData = "iPar(\"model\")"
+    P mismatch instData = nil
+    P mismatchflag instData = "0"
+    P mf instData = "iPar(\"prl\")"
+    P description instData = " P+ poly resistor without salicide"
+    P res instData = "3.89519K"
+    P sumW instData = "2u"
+    P w instData = "10u"
+    P sumL instData = "10u"
+    P l instData = "2.195u"
+    P m instData = "1"
+    P rs instData = "756.206"
+    P connection instData = "Series"
+    P segments instData = "1"
+    P segSp instData = "250.0n"
+    P cCols instData = "1"
+    P srs instData = "1"
+    P prl instData = "1"
+    P HardCons instData = t
+    P ResCalc instData = "l_&_w"
+    P macroArgumentStyle instData = "hspiceS"
+    R w = "10u"
+    R segSp = "250.0n"
+    R l = "2.195u"
+  I Rmatch tsmcN65/rppolywo/symbol xy=(-80.0 -140.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "rppolywo"
+    P macro instData = "iPar(\"model\")"
+    P mismatch instData = nil
+    P mismatchflag instData = "0"
+    P mf instData = "iPar(\"prl\")"
+    P description instData = " P+ poly resistor without salicide"
+    P res instData = "3.89519K"
+    P sumW instData = "2u"
+    P w instData = "10u"
+    P sumL instData = "10u"
+    P l instData = "3.21u"
+    P m instData = "1"
+    P rs instData = "756.206"
+    P connection instData = "Series"
+    P segments instData = "1"
+    P segSp instData = "250.0n"
+    P cCols instData = "1"
+    P srs instData = "1"
+    P prl instData = "1"
+    P HardCons instData = t
+    P ResCalc instData = "l_&_w"
+    P macroArgumentStyle instData = "hspiceS"
+    R w = "10u"
+    R segSp = "250.0n"
+    R l = "3.21u"
+  I M3 tsmcN65/nmos_rf_25ud18/symbol xy=(120.0 0.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "nmos_rf_18"
+    P macro instData = "iPar(\"model\")"
+    P totalW instData = "240.00000u"
+    P wr instData = "10u"
+    P lr instData = "350.0n"
+    P nr instData = "24"
+    P swDmyPoly instData = t
+    P grRing instData = t
+    P swDNWRing instData = t
+    P m instData = "1"
+    P TFdme instData = t
+    P HardCons instData = t
+    P mismatch instData = nil
+    P sigma instData = "1"
+    P mismatchflag instData = "0"
+    P macroArgumentStyle instData = "hspiceS"
+    R totalW = "240.00000u"
+    R nr = "24"
+    R lr = "350.0n"
+    R wr = "10u"
+  I M2 tsmcN65/nmos_rf_25ud18/symbol xy=(40.0 0.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "nmos_rf_18"
+    P macro instData = "iPar(\"model\")"
+    P totalW instData = "290.00000u"
+    P wr instData = "10u"
+    P lr instData = "350.0n"
+    P nr instData = "29"
+    P swDmyPoly instData = t
+    P grRing instData = t
+    P swDNWRing instData = t
+    P m instData = "3"
+    P TFdme instData = t
+    P HardCons instData = t
+    P mismatch instData = nil
+    P sigma instData = "1"
+    P mismatchflag instData = "0"
+    P macroArgumentStyle instData = "hspiceS"
+    R totalW = "290.00000u"
+    R m = "3"
+    R nr = "29"
+    R lr = "350.0n"
+    R wr = "10u"
+  I M1 tsmcN65/nmos_rf_25ud18/symbol xy=(-20.0 0.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "nmos_rf_18"
+    P macro instData = "iPar(\"model\")"
+    P totalW instData = "290.00000u"
+    P wr instData = "10u"
+    P lr instData = "350.0n"
+    P nr instData = "29"
+    P swDmyPoly instData = t
+    P grRing instData = t
+    P swDNWRing instData = t
+    P m instData = "3"
+    P TFdme instData = t
+    P HardCons instData = t
+    P mismatch instData = nil
+    P sigma instData = "1"
+    P mismatchflag instData = "0"
+    P macroArgumentStyle instData = "hspiceS"
+    R totalW = "290.00000u"
+    R m = "3"
+    R nr = "29"
+    R lr = "350.0n"
+    R wr = "10u"
+  I PIN3 basic/ipin/symbol xy=(-220.0 -40.0) orient="R0" n=1
+  I PIN2 basic/ipin/symbol xy=(-220.0 40.0) orient="R0" n=1
+  I PIN0 basic/ipin/symbol xy=(-220.0 0.0) orient="R0" n=1
+  I PIN1 basic/opin/symbol xy=(-220.0 80.0) orient="R0" n=1
+  I PIN4 basic/iopin/symbol xy=(-220.0 -80.0) orient="R0" n=1
+  N n_mid sig="signal" termOrder=nil
+    T Cb.PLUS
+    T L1.PLUS
+  N rsh sig="signal" termOrder=nil
+    T Rmatch.PLUS
+    T Cb.MINUS
+  N n_gate sig="signal" termOrder=nil
+    T M1.G
+  N d1 sig="signal" termOrder=nil
+    T M2.S
+    T M1.D
+  N g_s sig="signal" termOrder=nil
+    T M1.S
+    T Ls.PLUS
+  N g_out sig="signal" termOrder=nil
+    T Rload.MINUS
+    T M3.G
+    T M2.D
+  N rf_in sig="signal" termOrder=nil
+    T L1.MINUS
+  N rf_out sig="signal" termOrder=nil
+    T Rbias.PLUS
+    T M3.S
+  N vdd sig="signal" termOrder=nil
+    T M3.D
+    T Rload.PLUS
+  N vb sig="signal" termOrder=nil
+    T M2.G
+  N gnd sig="signal" termOrder=nil
+    T L1.BULK
+    T Rmatch.MINUS
+    T Ls.MINUS
+    T Ls.BULK
+    T M2.B
+    T M3.B
+    T Rbias.MINUS
+    T M1.B
+  PIN rf_in dir="input" net="rf_in"
+  PIN rf_out dir="output" net="rf_out"
+  PIN vdd dir="input" net="vdd"
+  PIN vb dir="input" net="vb"
+  PIN gnd dir="inputOutput" net="gnd"
+SCH tsmcN65_LNA2G4/output_buffer insts=6 nets=4 terms=4 shapes=16
+  I M3 tsmcN65/nmos_rf_25ud18/symbol xy=(0.0 0.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "nmos_rf_18"
+    P macro instData = "iPar(\"model\")"
+    P totalW instData = "240.00000u"
+    P wr instData = "10u"
+    P lr instData = "350.0n"
+    P nr instData = "24"
+    P swDmyPoly instData = t
+    P grRing instData = t
+    P swDNWRing instData = t
+    P m instData = "1"
+    P TFdme instData = t
+    P HardCons instData = t
+    P mismatch instData = nil
+    P sigma instData = "1"
+    P mismatchflag instData = "0"
+    P macroArgumentStyle instData = "hspiceS"
+    R totalW = "240.00000u"
+    R nr = "24"
+    R lr = "350.0n"
+    R wr = "10u"
+  I Rbias tsmcN65/rppolywo/symbol xy=(70.0 60.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "rppolywo"
+    P macro instData = "iPar(\"model\")"
+    P mismatch instData = nil
+    P mismatchflag instData = "0"
+    P mf instData = "iPar(\"prl\")"
+    P description instData = " P+ poly resistor without salicide"
+    P res instData = "3.89519K"
+    P sumW instData = "2u"
+    P w instData = "10u"
+    P sumL instData = "10u"
+    P l instData = "6.675u"
+    P m instData = "1"
+    P rs instData = "756.206"
+    P connection instData = "Series"
+    P segments instData = "1"
+    P segSp instData = "250.0n"
+    P cCols instData = "1"
+    P srs instData = "1"
+    P prl instData = "1"
+    P HardCons instData = t
+    P ResCalc instData = "l_&_w"
+    P macroArgumentStyle instData = "hspiceS"
+    R w = "10u"
+    R segSp = "250.0n"
+    R l = "6.675u"
+  I PIN2 basic/ipin/symbol xy=(-60.0 80.0) orient="R0" n=1
+  I PIN0 basic/ipin/symbol xy=(-60.0 0.0) orient="R0" n=1
+  I PIN1 basic/opin/symbol xy=(-60.0 40.0) orient="R0" n=1
+  I PIN3 basic/iopin/symbol xy=(-60.0 -40.0) orient="R0" n=1
+  N in sig="signal" termOrder=nil
+    T M3.G
+  N out sig="signal" termOrder=nil
+    T Rbias.PLUS
+    T M3.S
+  N vdd sig="signal" termOrder=nil
+    T M3.D
+  N gnd sig="signal" termOrder=nil
+    T Rbias.MINUS
+    T M3.B
+  PIN in dir="input" net="in"
+  PIN out dir="output" net="out"
+  PIN vdd dir="input" net="vdd"
+  PIN gnd dir="inputOutput" net="gnd"
+SCH tsmcN65_LNA2G4/gain_stage insts=10 nets=7 terms=5 shapes=32
+  I M2 tsmcN65/nmos_rf_25ud18/symbol xy=(0.0 80.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "nmos_rf_18"
+    P macro instData = "iPar(\"model\")"
+    P totalW instData = "290.00000u"
+    P wr instData = "10u"
+    P lr instData = "350.0n"
+    P nr instData = "29"
+    P swDmyPoly instData = t
+    P grRing instData = t
+    P swDNWRing instData = t
+    P m instData = "3"
+    P TFdme instData = t
+    P HardCons instData = t
+    P mismatch instData = nil
+    P sigma instData = "1"
+    P mismatchflag instData = "0"
+    P macroArgumentStyle instData = "hspiceS"
+    R totalW = "290.00000u"
+    R m = "3"
+    R nr = "29"
+    R lr = "350.0n"
+    R wr = "10u"
+  I M1 tsmcN65/nmos_rf_25ud18/symbol xy=(0.0 0.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "nmos_rf_18"
+    P macro instData = "iPar(\"model\")"
+    P totalW instData = "290.00000u"
+    P wr instData = "10u"
+    P lr instData = "350.0n"
+    P nr instData = "29"
+    P swDmyPoly instData = t
+    P grRing instData = t
+    P swDNWRing instData = t
+    P m instData = "3"
+    P TFdme instData = t
+    P HardCons instData = t
+    P mismatch instData = nil
+    P sigma instData = "1"
+    P mismatchflag instData = "0"
+    P macroArgumentStyle instData = "hspiceS"
+    R totalW = "290.00000u"
+    R m = "3"
+    R nr = "29"
+    R lr = "350.0n"
+    R wr = "10u"
+  I Ls tsmcN65/spiral_std_mu_z/symbol xy=(70.0 -40.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "spiral_std_mu_z"
+    P macro instData = "iPar(\"model\")"
+    P w instData = "30u"
+    P rad instData = "62.0u"
+    P nr instData = "2"
+    P spacing instData = "2u"
+    P gdis instData = "50u"
+    P temper instData = "27"
+    P fq instData = "2.4G"
+    P finder instData = nil
+    P plot instData = nil
+    P ind instData = "1.00379n"
+    P Q_single instData = "1.701645e+01"
+    P area_W instData = "404.00u"
+    P area_L instData = "388.00u"
+    P lay instData = "9"
+    P m instData = "1"
+    P HardCons instData = t
+    P macroArgumentStyle instData = "hspiceS"
+    R ind = "1.00379n"
+    R rad = "62.0u"
+    R area_L = "388.00u"
+    R area_W = "404.00u"
+    R Q_single = "1.701645e+01"
+    R nr = "2"
+  I Rload tsmcN65/rppolywo/symbol xy=(70.0 120.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "rppolywo"
+    P macro instData = "iPar(\"model\")"
+    P mismatch instData = nil
+    P mismatchflag instData = "0"
+    P mf instData = "iPar(\"prl\")"
+    P description instData = " P+ poly resistor without salicide"
+    P res instData = "3.89519K"
+    P sumW instData = "2u"
+    P w instData = "10u"
+    P sumL instData = "10u"
+    P l instData = "2.195u"
+    P m instData = "1"
+    P rs instData = "756.206"
+    P connection instData = "Series"
+    P segments instData = "1"
+    P segSp instData = "250.0n"
+    P cCols instData = "1"
+    P srs instData = "1"
+    P prl instData = "1"
+    P HardCons instData = t
+    P ResCalc instData = "l_&_w"
+    P macroArgumentStyle instData = "hspiceS"
+    R w = "10u"
+    R segSp = "250.0n"
+    R l = "2.195u"
+  I PIN4 basic/ipin/symbol xy=(-60.0 120.0) orient="R0" n=1
+  I PIN3 basic/ipin/symbol xy=(-60.0 40.0) orient="R0" n=1
+  I PIN1 basic/ipin/symbol xy=(-60.0 0.0) orient="R0" n=1
+  I PIN0 basic/ipin/symbol xy=(0.0 0.0) orient="R0" n=1
+  I PIN2 basic/opin/symbol xy=(-60.0 80.0) orient="R0" n=1
+  I PIN5 basic/iopin/symbol xy=(-60.0 -40.0) orient="R0" n=1
+  N g_s sig="signal" termOrder=nil
+    T Ls.PLUS
+    T M1.S
+  N out sig="signal" termOrder=nil
+    T M2.D
+    T Rload.MINUS
+  N d1 sig="signal" termOrder=nil
+    T M2.S
+    T M1.D
+  N in sig="signal" termOrder=nil
+    T M1.G
+  N vb sig="signal" termOrder=nil
+    T M2.G
+  N vdd sig="signal" termOrder=nil
+    T Rload.PLUS
+  N gnd sig="signal" termOrder=nil
+    T Ls.BULK
+    T Ls.MINUS
+    T M1.B
+    T M2.B
+  PIN in dir="input" net="in"
+  PIN out dir="output" net="out"
+  PIN vb dir="input" net="vb"
+  PIN vdd dir="input" net="vdd"
+  PIN gnd dir="inputOutput" net="gnd"
+SCH tsmcN65_LNA2G4/input_match insts=6 nets=4 terms=3 shapes=17
+  I L1 tsmcN65/spiral_std_mu_z/symbol xy=(0.0 0.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "spiral_std_mu_z"
+    P macro instData = "iPar(\"model\")"
+    P w instData = "30u"
+    P rad instData = "64.0u"
+    P nr instData = "3"
+    P spacing instData = "2u"
+    P gdis instData = "50u"
+    P temper instData = "27"
+    P fq instData = "2.4G"
+    P finder instData = nil
+    P plot instData = nil
+    P ind instData = "2.49469n"
+    P Q_single instData = "1.131618e+01"
+    P area_W instData = "471.995u"
+    P area_L instData = "455.995u"
+    P lay instData = "9"
+    P m instData = "1"
+    P HardCons instData = t
+    P macroArgumentStyle instData = "hspiceS"
+    R ind = "2.49469n"
+    R area_L = "455.995u"
+    R area_W = "471.995u"
+    R Q_single = "1.131618e+01"
+    R rad = "64.0u"
+  I Cb tsmcN65/mimcap/symbol xy=(60.0 40.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "mimcap_sin"
+    P macro instData = "iPar(\"model\")"
+    P capacitor instData = "MIM_1.5fF"
+    P lay_m instData = "8"
+    P mf instData = "iPar(\"total_m\")"
+    P mismatch instData = nil
+    P mismatchflag instData = "0"
+    P DeviceUnder instData = nil
+    P description instData = " Base band MIM capacitor"
+    P entryMode instData = "l_&_w"
+    P c instData = "155.407f"
+    P total_c instData = "155.407f"
+    P lt instData = "10u"
+    P wt instData = "10u"
+    P aryX instData = "1"
+    P aryY instData = "1"
+    P m instData = "68"
+    P total_m instData = "68"
+    P lay instData = "7"
+    P ExtMetal instData = t
+    P mimflag instData = "2"
+    P c_A instData = "1.485T"
+    P c_P instData = "210K"
+    P c_O instData = "-49n"
+    P TFdme instData = t
+    P HardCons instData = t
+    P macroArgumentStyle instData = "hspiceS"
+    R m = "68"
+    R total_m = "68"
+  I Rmatch tsmcN65/rppolywo/symbol xy=(60.0 80.0) orient="R0" n=1
+    P lxComponentType instData = "(((\"cells\" (\"tsmcN65 nch\" \"tsmcN65 nch_25\" \"tsmcN65 nch_25_dnw\" \"tsmcN65 nch_25_dnw_mac\" \"tsmcN65 nch_25_dnw_macx\" \"tsmcN65 nch_25_dnwod33\" \"tsmcN65 nch_25_dnwod33_mac\" \"tsmcN65 nch_25_dnwod33_macx\" \"tsmcN65 nch_25_dnwod33x\" \"tsmcN65 nch_25_dnwud18\" \"tsmcN65 nch_25_dnwud18_mac\" \"tsmcN65 nch_25_dnwud18_macx\" \"tsmcN65 nch_25_dnwud18x\" \"tsmcN65 nch_25_dnwx\" \"tsmcN65 nch_25_mac\" \"tsmcN65 nch_25_macx\" \"tsmcN65 nch_25od33\" \"tsmcN65 nch_25od33_mac\" \"tsmcN65 nch_25od33_macx\" \"tsmcN65 nch_25od33x\" \"tsmcN65 nch_25ud18\" \"tsmcN65 nch_25ud18_mac\" \"tsmcN65 nch_25ud18_macx\" \"tsmcN65 nch_25ud18x\" \"tsmcN65 nch_25x\" \"tsmcN65 nch_dnw\" \"tsmcN65 nch_dnw_mac\" \"tsmcN65 nch_dnw_macx\" \"tsmcN65 nch_dnwx\" \"tsmcN65 nch_hvt\" \"tsmcN65 nch_hvt_dnw\" \"tsmcN65 nch_hvt_dnw_mac\" \"tsmcN65 nch_hvt_dnw_macx\" \"tsmcN65 nch_hvt_dnwx\" \"tsmcN65 nch_hvt_mac\" \"tsmcN65 nch_hvt_macx\" \"tsmcN65 nch_hvtx\" \"tsmcN65 nch_lvt\" \"tsmcN65 nch_lvt_dnw\" \"tsmcN65 nch_lvt_dnw_mac\" \"tsmcN65 nch_lvt_dnw_macx\" \"tsmcN65 nch_lvt_dnwx\" \"tsmcN65 nch_lvt_mac\" \"tsmcN65 nch_lvt_macx\" \"tsmcN65 nch_lvtx\" \"tsmcN65 nch_mac\" \"tsmcN65 nch_macx\" \"tsmcN65 nch_na\" \"tsmcN65 nch_na25\" \"tsmcN65 nch_na25_mac\" \"tsmcN65 nch_na25_macx\" \"tsmcN65 nch_na25od33\" \"tsmcN65 nch_na25od33_mac\" \"tsmcN65 nch_na25od33_macx\" \"tsmcN65 nch_na25od33x\" \"tsmcN65 nch_na25x\" \"tsmcN65 nch_na_mac\" \"tsmcN65 nch_na_macx\" \"tsmcN65 nch_nax\" \"tsmcN65 nchx\" ) ) (\"type\" \"nmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"NMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05))  ((\"cells\" (\"tsmcN65 pch\" \"tsmcN65 pch_25\" \"tsmcN65 pch_25_mac\" \"tsmcN65 pch_25_macx\" \"tsmcN65 pch_25od33\" \"tsmcN65 pch_25od33_mac\" \"tsmcN65 pch_25od33_macx\" \"tsmcN65 pch_25od33x\" \"tsmcN65 pch_25ud18\" \"tsmcN65 pch_25ud18_mac\" \"tsmcN65 pch_25ud18_macx\" \"tsmcN65 pch_25ud18x\" \"tsmcN65 pch_25x\" \"tsmcN65 pch_hvt\" \"tsmcN65 pch_hvt_mac\" \"tsmcN65 pch_hvt_macx\" \"tsmcN65 pch_hvtx\" \"tsmcN65 pch_lvt\" \"tsmcN65 pch_lvt_mac\" \"tsmcN65 pch_lvt_macx\" \"tsmcN65 pch_lvtx\" \"tsmcN65 pch_mac\" \"tsmcN65 pch_macx\" \"tsmcN65 pchx\" ) ) (\"type\" \"pmos\") (\"lxActiveLayer\" \"OD drawing\")  (\"lxMOSDeviceType\" \"PMOS\") (\"lxDeviceWidth\" \"w\") (\"lxMaxWidth\" 1e-05)))"
+    P model instData = "rppolywo"
+    P macro instData = "iPar(\"model\")"
+    P mismatch instData = nil
+    P mismatchflag instData = "0"
+    P mf instData = "iPar(\"prl\")"
+    P description instData = " P+ poly resistor without salicide"
+    P res instData = "3.89519K"
+    P sumW instData = "2u"
+    P w instData = "10u"
+    P sumL instData = "10u"
+    P l instData = "3.21u"
+    P m instData = "1"
+    P rs instData = "756.206"
+    P connection instData = "Series"
+    P segments instData = "1"
+    P segSp instData = "250.0n"
+    P cCols instData = "1"
+    P srs instData = "1"
+    P prl instData = "1"
+    P HardCons instData = t
+    P ResCalc instData = "l_&_w"
+    P macroArgumentStyle instData = "hspiceS"
+    R w = "10u"
+    R segSp = "250.0n"
+    R l = "3.21u"
+  I PIN0 basic/ipin/symbol xy=(-60.0 0.0) orient="R0" n=1
+  I PIN2 basic/iopin/symbol xy=(-60.0 -40.0) orient="R0" n=1
+  I PIN1 basic/iopin/symbol xy=(-60.0 40.0) orient="R0" n=1
+  N rsh sig="signal" termOrder=nil
+    T Rmatch.PLUS
+    T Cb.MINUS
+  N rf_in sig="signal" termOrder=nil
+    T L1.MINUS
+  N rf_mid sig="signal" termOrder=nil
+    T Cb.PLUS
+    T L1.PLUS
+  N gnd sig="signal" termOrder=nil
+    T Rmatch.MINUS
+    T L1.BULK
+  PIN rf_in dir="input" net="rf_in"
+  PIN rf_mid dir="inputOutput" net="rf_mid"
+  PIN gnd dir="inputOutput" net="gnd"
+DEVLIB tsmcN65 nmaster=789 first="inv_25_dnwud18"
+DEVLIB analogLib nmaster=180 first="ppulse"
+DEVLIB basic nmaster=87 first="isin"
+TECH layers=216 purposes=135
+  L ref num=nil abbr=nil
+  L DNW num=nil abbr=nil
+  L PW num=nil abbr=nil
+  L NW num=nil abbr=nil
+  L PM num=nil abbr=nil
+  L OD num=nil abbr=nil
+  L PDIFF num=nil abbr=nil
+  L NDIFF num=nil abbr=nil
+  L CLDD num=nil abbr=nil
+  L P3 num=nil abbr=nil
+  L NT_N num=nil abbr=nil
+  L VTL_N num=nil abbr=nil
+  L VTL_P num=nil abbr=nil
+  L OD_33 num=nil abbr=nil
+  L OD_18 num=nil abbr=nil
+  L PO num=nil abbr=nil
+  L OD_25 num=nil abbr=nil
+  L N10V num=nil abbr=nil
+  L P10V num=nil abbr=nil
+  L VTDN num=nil abbr=nil
+  L PV_P num=nil abbr=nil
+  L PV_N num=nil abbr=nil
+  L PP num=nil abbr=nil
+  L NP num=nil abbr=nil
+  L OD1T num=nil abbr=nil
+  L SOI_MKR num=nil abbr=nil
+  L RPO num=nil abbr=nil
+  L CO num=nil abbr=nil
+  L M1 num=nil abbr=nil
+  L M2 num=nil abbr=nil
+  L M3 num=nil abbr=nil
+  L M4 num=nil abbr=nil
+  L M5 num=nil abbr=nil
+  L M6 num=nil abbr=nil
+  L M7 num=nil abbr=nil
+  L M8 num=nil abbr=nil
+  L M9 num=nil abbr=nil
+  L M10 num=nil abbr=nil
+  L M11 num=nil abbr=nil
+  L M12 num=nil abbr=nil
+  L M13 num=nil abbr=nil
+  L M14 num=nil abbr=nil
+  L DSDDMY num=nil abbr=nil
+  L POFUSE num=nil abbr=nil
+  L REDUNDMY num=nil abbr=nil
+  L HVTSRM num=nil abbr=nil
+  L RODMY num=nil abbr=nil
+  L SRM num=nil abbr=nil
+  L VIA1 num=nil abbr=nil
+  L VIA2 num=nil abbr=nil
+  L VIA3 num=nil abbr=nil
+  L VIA4 num=nil abbr=nil
+  L VIA5 num=nil abbr=nil
+  L VIA6 num=nil abbr=nil
+  L VIA7 num=nil abbr=nil
+  L VIA8 num=nil abbr=nil
+  L VIA9 num=nil abbr=nil
+  L VIA10 num=nil abbr=nil
+  L VIA11 num=nil abbr=nil
+  L VIA12 num=nil abbr=nil
+  L VIA13 num=nil abbr=nil
+  L ESD2DMY num=nil abbr=nil
+  L ESD3 num=nil abbr=nil
+  L VTH_N num=nil abbr=nil
+  L VTH_P num=nil abbr=nil
+  L COW num=nil abbr=nil
+  L HRI num=nil abbr=nil
+  L HVII num=nil abbr=nil
+  L HVNW num=nil abbr=nil
+  L AP num=nil abbr=nil
+  L PDK num=nil abbr=nil
+  L CB num=nil abbr=nil
+  L CTM num=nil abbr=nil
+  L CAP1TDMY num=nil abbr=nil
+  L SRM_LOP num=nil abbr=nil
+  L RFDMY num=nil abbr=nil
+  L SAN num=nil abbr=nil
+  L MW num=nil abbr=nil
+  L FLGT num=nil abbr=nil
+  L MPOL num=nil abbr=nil
+  L RV num=nil abbr=nil
+  L CB2 num=nil abbr=nil
+  L CTMDMY num=nil abbr=nil
+  L CBM num=nil abbr=nil
+  L SOISUB num=nil abbr=nil
+  L DCO num=nil abbr=nil
+  L DMEXCL num=nil abbr=nil
+  L VAR num=nil abbr=nil
+  L INDDMY num=nil abbr=nil
+  L ESD1DMY num=nil abbr=nil
+  L FW num=nil abbr=nil
+  L HVPW num=nil abbr=nil
+  L TOPMCON num=nil abbr=nil
+  L CSRDMY num=nil abbr=nil
+  L ODBLK num=nil abbr=nil
+  L POBLK num=nil abbr=nil
+  L SNCT num=nil abbr=nil
+  L CROWN num=nil abbr=nil
+  L IP num=nil abbr=nil
+  L MOMDMY num=nil abbr=nil
+  L CBD num=nil abbr=nil
+  L PMDMY num=nil abbr=nil
+  L OVERLAP num=nil abbr=nil
+  L RAM1TDMY num=nil abbr=nil
+  L LMARK num=nil abbr=nil
+  L BJTDMY num=nil abbr=nil
+  L PSUB2 num=nil abbr=nil
+  L HOTWL num=nil abbr=nil
+  L SEALRING num=nil abbr=nil
+  L NWDMY num=nil abbr=nil
+  L RPDMY num=nil abbr=nil
+  L RMDMY num=nil abbr=nil
+  L RH num=nil abbr=nil
+  L OD_DECAP num=nil abbr=nil
+  L DIODMY num=nil abbr=nil
+  L RHRI num=nil abbr=nil
+  L SRAMDMY num=nil abbr=nil
+  L SDI num=nil abbr=nil
+  L DPDMY num=nil abbr=nil
+  L LOGO num=nil abbr=nil
+  L WBDMY num=nil abbr=nil
+  L boundary num=nil abbr=nil
+  L IO_buffer num=nil abbr=nil
+  L RFPADDMY num=nil abbr=nil
+  L LUPWDMY num=nil abbr=nil
+  L TSV num=nil abbr=nil
+  L FFCDMY num=nil abbr=nil
+  L CU_PPI num=nil abbr=nil
+  L HIA_DUMMY num=nil abbr=nil
+  L EDRAM_DECAP num=nil abbr=nil
+  L LVBJTDMY num=nil abbr=nil
+  L EMIDMY num=nil abbr=nil
+  L VTUL_N num=nil abbr=nil
+  L VTUL_P num=nil abbr=nil
+  L VIAEXCL num=nil abbr=nil
+  L FLASH num=nil abbr=nil
+  L COEXCL num=nil abbr=nil
+  L CDUDMY num=nil abbr=nil
+  L MR num=nil abbr=nil
+  L VDDDMY num=nil abbr=nil
+  L VSSDMY num=nil abbr=nil
+  L UBM num=nil abbr=nil
+  L LVSDMY num=nil abbr=nil
+  L ESDIMP num=nil abbr=nil
+  L UHVT_N num=nil abbr=nil
+  L UHVT_P num=nil abbr=nil
+  L ex_R_rule num=nil abbr=nil
+  L EDRAM num=nil abbr=nil
+  L SNA num=nil abbr=nil
+  L SBDDMY num=nil abbr=nil
+  L R_rule num=nil abbr=nil
+  L FET num=nil abbr=nil
+  L VTNCEL num=nil abbr=nil
+  L VTPCEL num=nil abbr=nil
+  L HVD num=nil abbr=nil
+  L SOI num=nil abbr=nil
+  L LDDBLK num=nil abbr=nil
+  L HV num=nil abbr=nil
+  L REMOVAL num=nil abbr=nil
+  L DFMEXCL num=nil abbr=nil
+  L POS num=nil abbr=nil
+  L CO2 num=nil abbr=nil
+  L Unrouted num=nil abbr=nil
+  L Canplace num=nil abbr=nil
+  L Cannotoccupy num=nil abbr=nil
+  L Group num=nil abbr=nil
+  L Row num=nil abbr=nil
+  L marker num=nil abbr=nil
+  L changedLayer num=nil abbr=nil
+  L designFlow num=nil abbr=nil
+  L unset num=nil abbr=nil
+  L unknown num=nil abbr=nil
+  L supply num=nil abbr=nil
+  L spike num=nil abbr=nil
+  L resist num=nil abbr=nil
+  L hiz num=nil abbr=nil
+  L drive num=nil abbr=nil
+  L select num=nil abbr=nil
+  L hilite num=nil abbr=nil
+  L y9 num=nil abbr=nil
+  L y8 num=nil abbr=nil
+  L y7 num=nil abbr=nil
+  L y6 num=nil abbr=nil
+  L y5 num=nil abbr=nil
+  L y4 num=nil abbr=nil
+  L y3 num=nil abbr=nil
+  L y2 num=nil abbr=nil
+  L y1 num=nil abbr=nil
+  L y0 num=nil abbr=nil
+  L stretch num=nil abbr=nil
+  L snap num=nil abbr=nil
+  L edgeLayer num=nil abbr=nil
+  L axis num=nil abbr=nil
+  L pin num=nil abbr=nil
+  L wire num=nil abbr=nil
+  L device num=nil abbr=nil
+  L border num=nil abbr=nil
+  L text num=nil abbr=nil
+  L softFence num=nil abbr=nil
+  L hardFence num=nil abbr=nil
+  L align num=nil abbr=nil
+  L prBoundary num=nil abbr=nil
+  L instance num=nil abbr=nil
+  L annotate num=nil abbr=nil
+  L grid num=nil abbr=nil
+  L background num=nil abbr=nil
+  L substrate num=nil abbr=nil
+  L solderMaskBottom num=nil abbr=nil
+  L beginGenericLayer num=nil abbr=nil
+  L internalGenericLayer num=nil abbr=nil
+  L endGenericLayer num=nil abbr=nil
+  L solderMaskTop num=nil abbr=nil
+  L drill num=nil abbr=nil
+  L wirebond num=nil abbr=nil
+  L wirebondFingerGuide num=nil abbr=nil
+  L assemblyBoundary num=nil abbr=nil
+*Error* get/getq: first arg must be either symbol, list, defstruct or user type - "drawing"
+*Error* load: error while loading file - "/tmp/vl/dump.il" at line 71
+//
+//  Calibre Skill Interface * (v2022.2_38.20) *
+//
+//                         Copyright Siemens 1996-2020     
+//                             All Rights Reserved.
+//         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//
+> Loading tilp.cxt 
+Loading validator.cxt 
+Loading vrf.cxt 
+Loading multiTechPlugin.cxt 
+Loading exportDie.cxt 
+Loading diagCenter.cxt 
+2026/10/20 17:25:40 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/20 17:25:40 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+2026/10/20 17:25:40 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2026/10/20 17:25:40 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>

@@ -1,0 +1,10 @@
+{
+ "check": "analyses",
+ "ok": false,
+ "have": [
+  "op1.dc"
+ ],
+ "missing": [
+  "ac"
+ ]
+}

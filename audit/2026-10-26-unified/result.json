@@ -1,0 +1,32 @@
+{
+ "trace": {
+  "operation_id": "simulate.run_unified",
+  "impl": "vskill/phase2/capabilities.py::simulate",
+  "request_id": 1,
+  "runner": "vskill.phase2.spectre_runner.SpectreRunner",
+  "run_id": "unified_500n_20261026",
+  "status": "OK"
+ },
+ "result": {
+  "execution_status": "OK",
+  "evaluation_valid": true,
+  "analysis_completed": [
+   "op1.dc",
+   "sw1.dc",
+   "tr1.tran.tran"
+  ],
+  "metrics": {
+   "D": 1.2,
+   "G": 0.6,
+   "S": 0.0,
+   "B": 0.0,
+   "VB:p": 4.977659807326897e-09,
+   "VD:p": -0.0001268354864205145,
+   "VG:p": -1.550642584194785e-10,
+   "VS:p": 0.0001268306638249656
+  },
+  "warnings": [],
+  "violations": [],
+  "evidence_id": "runs/unified_500n_20261026"
+ }
+}
