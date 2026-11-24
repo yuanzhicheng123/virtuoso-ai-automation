@@ -12,11 +12,11 @@
 | ADE/Maestro/Corners/MonteCarlo/jobs | client.maestro | upstream工程域 + Fusion corner修复 | RC sweep×corner共4次实际仿真、RDB核对、MC配置持久化；ADE MC执行未验收 |
 | SOS与GUI/请求恢复 | client.sos、client.dialogs、client.requests | upstream工程域 | 保留原接口/metadata；本次未做全流程真机签核 |
 | Spectre与结果读取 | SpectreSimulator、SpectrePool；upstream.spectre.psf | upstream引擎 | N65 OP/DC/Tran、AC/noise/SP/PSS/PNoise/PAC/HB、27组PVT、3次process-only MC及同seed复现；非设计指标或yield签核 |
-| DRC/LVS/PEX | PhysicalVerification；physical CLI | phase3接口融合 + 已验证Calibre流程 | 0.2.0正式库API；DRC29结果正确返回失败，单MOS LVS正确，PEX三阶段6C；没有后仿闭环 |
+| DRC/LVS/PEX | PhysicalVerification；physical CLI | phase3接口融合 + 已验证Calibre流程 | 0.2.0正式库API；连接fixture DRC52结果正确返回失败、四端口LVS正确、PEX三阶段27R/32C及前后仿；非DRC/ERC-clean芯片 |
 | OA复制/映射导出/扩展 | client.oa、register_flow/register_parser | phase3融合 | 顶层复制、XStream/oa2strm命名映射真机通过；自定义runner/parser已接线 |
 | 远程SSH/多profile/实例发现 | FusionClient.from_env、upstream CLI | upstream配置与传输 | 代码和相关离线验证；本次真机采用本机认证TCP |
 | CLI | virtuoso-fusion、virtuoso-bridge | 融合独立命令+upstream完整CLI | 仓库外安装及真实CLI子进程 |
-| MCP和agent skills | virtuoso-fusion-mcp | 上游26工具+新增3工具，5项技能 | 真实stdio discovery/list/resource/离线registry，保留错误metadata |
+| MCP和agent skills | virtuoso-fusion-mcp | 上游26工具+新增5工具，5项技能 | 真实stdio discovery/list/resource/离线registry，保留错误metadata |
 | 执行证据 | FusionClient(evidence_dir=...) | 新融合执行入口 | JSONL中工程调用与generic具有相同client_id |
 
 注册表中的DISCOVERED/DOCUMENTED/CALLABLE等历史标签不自动提升为新库的ENGINEERING_VALIDATED。`availability` 返回候选上下文，不把仅存在于注册表当作可运行保证。
@@ -28,3 +28,5 @@
 新库和上游结果的正式验收记录以docs/codex/STATE.md为准，不以此静态接入清单替代运行证据。
 
 本轮原生 `oblist` 审计得到已加载函数 116,738 个，注册表匹配 74,776（64.0545%）；41,962 个当前函数不在快照。generic 没有 OA 对象句柄封装，并存在语法/策略边界。未收录不代表 raw SKILL 无法执行，已绑定也不代表参数、上下文和副作用均已验证。数字综合/P&R/STA、完整物理签核、后仿、EMIR/ESD/DFM、流片交付仍不构成完整能力闭环。
+
+本表以 [STATE.md](codex/STATE.md) 为当前验收权威；逐工具证据见 [逐项审查](codex/API_COVERAGE_20261124.md)。0.3.1波形接口拒绝无效PSF和无时间轴的at；不声称所有31工具已做完整端到端验证。

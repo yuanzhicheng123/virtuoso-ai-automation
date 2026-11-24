@@ -1,6 +1,6 @@
-# Virtuoso Fusion 0.3.0
+# Virtuoso Fusion 0.3.1
 
-本目录为已验证的 Fusion 0.3.0 工程。AI Agent/模型兼容层目前为[设计草案](docs/codex/AGENT_COMPATIBILITY_DESIGN.md)，尚未实现。
+本目录为已验证的 Fusion 0.3 系列工程。AI Agent/模型兼容层目前为[设计草案](docs/codex/AGENT_COMPATIBILITY_DESIGN.md)，尚未实现。
 
 在仓库根目录可用独立虚拟环境安装：`python -m pip install ./virtuoso-fusion`。依赖固定上游Git提交，需要网络；已有环境升级注意下文同版本依赖问题。
 
@@ -18,7 +18,7 @@ Python 3.10+。使用新的虚拟环境，保留已有 0.8.1 环境：
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-(umask 022; python -m pip install /path/to/virtuoso_fusion-0.3.0-py3-none-any.whl)
+(umask 022; python -m pip install /path/to/virtuoso_fusion-0.3.1-py3-none-any.whl)
 python -m pip check
 virtuoso-fusion coverage
 ```
@@ -29,7 +29,7 @@ virtuoso-fusion coverage
 
 ```bash
 python -m pip install --force-reinstall --no-deps /path/to/virtuoso_bridge-1.0.0-py3-none-any.whl
-python -m pip install --no-deps /path/to/virtuoso_fusion-0.3.0-py3-none-any.whl
+python -m pip install --no-deps /path/to/virtuoso_fusion-0.3.1-py3-none-any.whl
 python -m pip check
 python -c 'import virtuoso_fusion; print(virtuoso_fusion.__version__)'
 ```
@@ -124,3 +124,5 @@ python tools/prepare_resources.py --check
 0.2.0 新增正式 [OA/GDS 与物理验证 API](docs/PHYSICAL_API.md)：`client.oa`、`PhysicalVerification`、`discover_tools` 和 `virtuoso-fusion physical`。DRC/LVS报告判定、PEX三阶段提取、流程/解析器/层映射扩展均实际接线；工具退出码与设计验收结果分开返回。
 
 0.2.1 修复 oa2strm 时间戳 WARNING/ERROR 的结构化捕获，并让真机验收脚本读取 JUnit：全部跳过不能记为通过。全库验证见 [当前状态](docs/codex/STATE.md) 和 [上游与公开接口审计](docs/codex/FULL_SURFACE_AUDIT.md)。固定上游仍有 bsd-csh 输出污染及 group-writable legacy 部署迁移限制。新安装与新部署使用进程级 `umask 022` 已验证；这不会修复已有0664部署，也不应直接放松其权限检查。220显式认证入口验证通过，跨平台/配置组合不承诺全覆盖。
+
+0.3.1 修复 MCP `read_waveform` 的无效PSF误报成功及无时间轴时的伪采样。`at` 仅表示秒，不表示频率；AC复数幅相统计仍未由这个MCP入口完整提供。逐项验证记录见 [GitHub库验证报告](docs/codex/GITHUB_VALIDATION_20261124.md)。

@@ -1,0 +1,2206 @@
+{
+  "date": "2026-11-24",
+  "baseline_commit": "2a9c97720011969f9375a561fe5d2539c11ee183",
+  "fixed_version": "0.3.1",
+  "unit": [
+    {
+      "class": "tests.live.test_connected_signoff",
+      "name": "test_connected_fixture",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_fusion_release",
+      "name": "test_installed_namespaces_and_identity",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_fusion_release",
+      "name": "test_variadic_keywords_symbols_and_repeated_calls",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_fusion_release",
+      "name": "test_same_client_concurrent_calls",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_fusion_release",
+      "name": "test_error_propagation_and_next_request",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_fusion_release",
+      "name": "test_upstream_library_schematic_and_generic_share_session",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_fusion_release",
+      "name": "test_real_spectre_op_dc_transient",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_layout_signoff",
+      "name": "test_geometry_group_transform_saved_reopened",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_layout_signoff",
+      "name": "test_n65_pcell_saved_reopened",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_layout_signoff",
+      "name": "test_export_real_gds[geometry]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_layout_signoff",
+      "name": "test_export_real_gds[nch_probe]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_maestro_signoff",
+      "name": "test_native_oa_netlist_spectre",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_maestro_signoff",
+      "name": "test_maestro_config_sweep_results",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_cli_delegates_require_separate_isolated_configuration[status]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_cli_delegates_require_separate_isolated_configuration[capture_session]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_library_reads[list_libraries]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_library_reads[list_cells]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_targeted_skill_finder[lookup_skill]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_targeted_skill_finder[describe_skill]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_evaluate_error_and_recovery",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_individual_schematic_handlers",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_batched_schematic_handler",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_screenshot_uses_owned_gui",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_read_waveform_real_rc_transient",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_physical_api",
+      "name": "test_copy_and_reopen_top_level_geometry",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_physical_api",
+      "name": "test_named_layer_map_reaches_export[xstream]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_physical_api",
+      "name": "test_named_layer_map_reaches_export[oa2strm]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_physical_api",
+      "name": "test_real_calibre_api_reports_design_status_and_pex",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_rpc_performance",
+      "name": "test_rpc_serial_batch_and_logging",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_runtime_inventory",
+      "name": "test_runtime_binding_inventory",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_workbench_signoff",
+      "name": "test_symbol_ports_labels_and_order",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_workbench_signoff",
+      "name": "test_library_technology_categories_and_scratch_rename",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_workbench_signoff",
+      "name": "test_file_transfer_and_mcp_real_call",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_workbench_signoff",
+      "name": "test_dialog_inspection_and_recoverable_receipt",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_workbench_signoff",
+      "name": "test_spectre_pool_two_actual_jobs",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.test_cli_mcp.CliTests",
+      "name": "test_call_rejects_non_array_args_before_connection",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.CliTests",
+      "name": "test_offline_coverage_command",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.CliTests",
+      "name": "test_upstream_help_passthrough",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.McpTests",
+      "name": "test_failed_bridge_result_retains_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.McpTests",
+      "name": "test_stdio_preserves_original_tools_skills_and_adds_registry",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp",
+      "name": "test_call_registered_preserves_failure_and_limits_write_opt_in",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_public_client_is_a_real_upstream_client",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_domain_and_generic_calls_share_execution_and_keep_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_reserved_argument_aliases_pass_through_both_call_layers",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_same_client_execute_is_serialized",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_close_is_idempotent_and_does_not_reopen",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_evidence_failure_preserves_the_executed_result",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[0]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[-1]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[inf]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[nan]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_coverage_audit.CoverageAuditTests",
+      "name": "test_every_packaged_name_has_exactly_one_compiler_outcome",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_coverage_audit.CoverageAuditTests",
+      "name": "test_real_policy_and_signature_boundaries_are_retained",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_coverage_audit.CoverageAuditTests",
+      "name": "test_runtime_summary_keeps_binding_and_compilation_separate",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_distribution.DistributionTests",
+      "name": "test_snapshot_provenance_matches_packaged_bytes",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_distribution.DistributionTests",
+      "name": "test_snapshot_verification_needs_no_original_sources",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_ambiguous_unknown_missing_duplicate_keywords_are_rejected",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_dynamic_call",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_ensure_signature_preserves_result_and_skips_cached_probe",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_exception_from_probe_propagates_without_main_call",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_failed_result_is_preserved",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_function_name_rejected_before_probe",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_keyword_order_and_optional_gap",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_live_signature_is_cached_only_in_memory",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_positional_arguments_are_never_truncated",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_signature_probe_failure_stops_execution_and_retains_evidence",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_successful_nil_probe_allows_positional_call",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_symbol_is_explicit_even_with_registry_type",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_timeout_applies_to_probe_and_request_without_retry",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_write_requires_explicit_allow_and_known_allowlist",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.ValueTests",
+      "name": "test_supported_values",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.ValueTests",
+      "name": "test_symbol_rejects_code",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.ValueTests",
+      "name": "test_unsupported_values",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_ambiguous_signature_rejects_binding_before_execution",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_missing_trailing_required_argument_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_optional_names_with_whitespace",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_reserved_names_use_existing_prefix_aliases",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_variadic_positional_calls_preserve_all_values",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_variadic_tail_allows_binding_fixed_prefix",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_live_runner",
+      "name": "test_real_pytest_report_verdict[import pytest\\n@pytest.mark.skip(reason=\"opt-in flag absent\")\\ndef test_live(): pass\\n-INCOMPLETE-expected_counts0]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_live_runner",
+      "name": "test_real_pytest_report_verdict[import pytest\\ndef test_pass(): pass\\n@pytest.mark.skip(reason=\"optional\")\\ndef test_optional(): pass\\n-PASS-expected_counts1]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_live_runner",
+      "name": "test_real_pytest_report_verdict[def test_fail(): assert False\\n-FAIL-expected_counts2]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_live_runner",
+      "name": "test_real_pytest_report_verdict[raise RuntimeError(\"collection failed\")\\n-FAIL-expected_counts3]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_live_runner",
+      "name": "test_real_pytest_report_verdict[# Empty selection\\n-INCOMPLETE-expected_counts4]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_live_runner",
+      "name": "test_missing_report_cannot_establish_acceptance",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[local-missing]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[local-dangling]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[local-regular]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[remote-shell-missing]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[remote-shell-dangling]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[remote-shell-regular]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_other_dangling_inputs_fail[local]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_other_dangling_inputs_fail[remote-shell]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_existing_destination_is_not_modified[local]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_existing_destination_is_not_modified[remote-shell]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_real_sweep_corner_export_preserves_four_scalar_values_and_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_raw_csv_opt_in_preserved",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_no_point_format_and_same_output_in_two_tests_are_lossless",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_malformed_export_is_not_silently_accepted[unexpected report\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_malformed_export_is_not_silently_accepted[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\n1,AC,gain,1,,,extra,unheaded\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_malformed_export_is_not_silently_accepted[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\n1,AC,gain\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_explicit_point_ids_and_quoted_cells_survive_without_parameter_rows",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Test,Output,Spec,Weight,Pass/Fail,Min,Max,slow,slow\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Test,Output,Spec,Weight,Pass/Fail,Min,Max,slow\\nAC,gain,,,,1,2\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail,slow,slow\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail,\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\ninvalid,AC,gain,1,,,\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\n1,AC,\"unterminated,1,,,\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ic23_corner_column_export_preserves_upstream_points_and_parameters",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ic23_same_output_in_two_tests_preserves_both_detail_rows",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_copy_uses_existing_client_and_preserves_failure",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_copy_rejects_same_cellview_before_execution",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_named_map_reaches_existing_xstream_and_keeps_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_map_registry_is_per_instance",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_xstream_requires_map_and_rejects_unused_environment",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra0-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra1-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra2-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra3-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_refuses_stale_existing_output",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_keeps_timestamped_diagnostic_lines[2026/11/23 23:02:52 WARNING This OS does not appear to be a Cadence supported Linux configuration.-warnings-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_keeps_timestamped_diagnostic_lines[2026/11/23 23:02:52 ERROR Export failed.-errors-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_drc_zero_exit_with_violations_is_not_clean",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_drc_clean_and_missing_report_in_fresh_runs",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[CELL foo CORRECT\\nOVERALL COMPARISON RESULTS\\n # INCORRECT #\\nCELL SUMMARY\\nCORRECT child-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[OVERALL COMPARISON RESULTS\\n # CORRECT #\\nCELL SUMMARY\\nINCORRECT text-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[OVERALL COMPARISON RESULTS\\n no verdict\\nCELL SUMMARY\\nCORRECT child-None]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[CORRECT child-None]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[OVERALL COMPARISON RESULTS\\n NOT COMPARED\\n-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_report_execution",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_three_phases_and_recursive_netlist",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_missing_products_not_success[pass\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_missing_products_not_success[output(\"PEX NETLIST\").write_text(\"M1 d g s b nch\\\\n\")\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_missing_products_not_success[output(\"PEX NETLIST\").write_text(\".include missing.pxi\\\\nC1 d s 1f\\\\n\")\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_stops_after_failed_phase[sys.exit(9)\\n-2-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_stops_after_failed_phase[time.sleep(2)\\n-0.05-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_missing_executable_returns_evidence",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_extensions_are_invoked_and_instance_scoped",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unsupported_deck_syntax_fails_before_execution[LAYOUT PATH \"one\" \"two\"]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unsupported_deck_syntax_fails_before_execution[LAYOUT PATH old\\\\]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unsupported_deck_syntax_fails_before_execution[INCLUDE rules extra]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_missing_required_io_statement_rejected",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_drc_missing_count_is_unknown",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_rejects_external_old_include",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_registered_report_parser_preserves_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_absolute_database_output_is_rebased_without_touching_old_file",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[PEX NETLIST SIMPLE \"/old/net.simple\" HSPICE]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[MASK SVDB DIRECTORY \"/old/svdb\" XRC]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[PEX REPORT DISTRIBUTED \"../old/report.dist\" ASCII]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[PEX REPORT LUMPED \"$OUTPUT/report.lump\" ASCII]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[LVS REPORT \"/old/lvs.rep\"]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_public_client_oa_facade",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_discovery_reports_presence_not_license_checkout",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_physical_cli_violations_are_not_success",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_physical_cli_requires_source_for_lvs",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_tools_schema_and_readonly_discovery",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[drc-TOTAL DRC RuleChecks Executed: 1737\\nTOTAL DRC Results Generated: 29\\n--False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[drc-TOTAL DRC RuleChecks Executed: 3\\nTOTAL DRC Results Generated: 0\\n--True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[lvs-OVERALL COMPARISON RESULTS\\n CORRECT\\nCELL SUMMARY\\n--True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[pex--C1 d s 1f\\nR1 d e 2\\n-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[rcx--M1 d g s b nch\\n-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_validation_rejects_unknown_and_missing_before_run",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_availability_preserves_context_and_marks_unverified",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_coverage_counts_signatures_without_claiming_verification",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_empty_registry_coverage_is_defined",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_malformed_registry_fails_at_load",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_parse_rejects_nested_and_keyword_signatures",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_search_returns_named_records_with_limit",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_lazy",
+      "name": "test_client_creation_does_not_read_packaged_registry",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_lazy",
+      "name": "test_first_concurrent_read_loads_once_and_keeps_instance_isolation",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_lazy",
+      "name": "test_custom_registry_still_validates_at_constructor",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_pinned_upstream_has_required_result_capabilities",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_old_same_version_upstream_has_actionable_error[check_points]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_old_same_version_upstream_has_actionable_error[check_netlist_options]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_old_same_version_upstream_has_actionable_error[copy_point_netlist]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_invalid_psf_retains_parser_failure[]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_invalid_psf_retains_parser_failure[this is not PSF]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_empty_directory_is_not_success",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_at_requires_time_axis",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_transient_nearest_samples_and_stats",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_frequency_data_without_time_sampling_still_readable",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_transient_directory_and_missing_signal",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[false]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[true]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[1]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[value3]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[None]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_explicit_true_grants_only_allowlisted_writes",
+      "status": "PASS"
+    }
+  ],
+  "installed": [
+    {
+      "class": "tests.test_cli_mcp.CliTests",
+      "name": "test_call_rejects_non_array_args_before_connection",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.CliTests",
+      "name": "test_offline_coverage_command",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.CliTests",
+      "name": "test_upstream_help_passthrough",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.McpTests",
+      "name": "test_failed_bridge_result_retains_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.McpTests",
+      "name": "test_stdio_preserves_original_tools_skills_and_adds_registry",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp",
+      "name": "test_call_registered_preserves_failure_and_limits_write_opt_in",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_public_client_is_a_real_upstream_client",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_domain_and_generic_calls_share_execution_and_keep_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_reserved_argument_aliases_pass_through_both_call_layers",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_same_client_execute_is_serialized",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_close_is_idempotent_and_does_not_reopen",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_evidence_failure_preserves_the_executed_result",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[0]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[-1]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[inf]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[nan]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_ambiguous_unknown_missing_duplicate_keywords_are_rejected",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_dynamic_call",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_ensure_signature_preserves_result_and_skips_cached_probe",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_exception_from_probe_propagates_without_main_call",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_failed_result_is_preserved",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_function_name_rejected_before_probe",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_keyword_order_and_optional_gap",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_live_signature_is_cached_only_in_memory",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_positional_arguments_are_never_truncated",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_signature_probe_failure_stops_execution_and_retains_evidence",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_successful_nil_probe_allows_positional_call",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_symbol_is_explicit_even_with_registry_type",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_timeout_applies_to_probe_and_request_without_retry",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_write_requires_explicit_allow_and_known_allowlist",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.ValueTests",
+      "name": "test_supported_values",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.ValueTests",
+      "name": "test_symbol_rejects_code",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.ValueTests",
+      "name": "test_unsupported_values",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_ambiguous_signature_rejects_binding_before_execution",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_missing_trailing_required_argument_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_optional_names_with_whitespace",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_reserved_names_use_existing_prefix_aliases",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_variadic_positional_calls_preserve_all_values",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_variadic_tail_allows_binding_fixed_prefix",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[local-missing]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[local-dangling]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[local-regular]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[remote-shell-missing]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[remote-shell-dangling]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[remote-shell-regular]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_other_dangling_inputs_fail[local]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_other_dangling_inputs_fail[remote-shell]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_existing_destination_is_not_modified[local]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_existing_destination_is_not_modified[remote-shell]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_real_sweep_corner_export_preserves_four_scalar_values_and_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_raw_csv_opt_in_preserved",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_no_point_format_and_same_output_in_two_tests_are_lossless",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_malformed_export_is_not_silently_accepted[unexpected report\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_malformed_export_is_not_silently_accepted[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\n1,AC,gain,1,,,extra,unheaded\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_malformed_export_is_not_silently_accepted[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\n1,AC,gain\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_explicit_point_ids_and_quoted_cells_survive_without_parameter_rows",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Test,Output,Spec,Weight,Pass/Fail,Min,Max,slow,slow\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Test,Output,Spec,Weight,Pass/Fail,Min,Max,slow\\nAC,gain,,,,1,2\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail,slow,slow\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail,\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\ninvalid,AC,gain,1,,,\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\n1,AC,\"unterminated,1,,,\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ic23_corner_column_export_preserves_upstream_points_and_parameters",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ic23_same_output_in_two_tests_preserves_both_detail_rows",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_copy_uses_existing_client_and_preserves_failure",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_copy_rejects_same_cellview_before_execution",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_named_map_reaches_existing_xstream_and_keeps_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_map_registry_is_per_instance",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_xstream_requires_map_and_rejects_unused_environment",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra0-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra1-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra2-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra3-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_refuses_stale_existing_output",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_keeps_timestamped_diagnostic_lines[2026/11/23 23:02:52 WARNING This OS does not appear to be a Cadence supported Linux configuration.-warnings-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_keeps_timestamped_diagnostic_lines[2026/11/23 23:02:52 ERROR Export failed.-errors-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_drc_zero_exit_with_violations_is_not_clean",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_drc_clean_and_missing_report_in_fresh_runs",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[CELL foo CORRECT\\nOVERALL COMPARISON RESULTS\\n # INCORRECT #\\nCELL SUMMARY\\nCORRECT child-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[OVERALL COMPARISON RESULTS\\n # CORRECT #\\nCELL SUMMARY\\nINCORRECT text-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[OVERALL COMPARISON RESULTS\\n no verdict\\nCELL SUMMARY\\nCORRECT child-None]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[CORRECT child-None]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[OVERALL COMPARISON RESULTS\\n NOT COMPARED\\n-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_report_execution",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_three_phases_and_recursive_netlist",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_missing_products_not_success[pass\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_missing_products_not_success[output(\"PEX NETLIST\").write_text(\"M1 d g s b nch\\\\n\")\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_missing_products_not_success[output(\"PEX NETLIST\").write_text(\".include missing.pxi\\\\nC1 d s 1f\\\\n\")\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_stops_after_failed_phase[sys.exit(9)\\n-2-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_stops_after_failed_phase[time.sleep(2)\\n-0.05-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_missing_executable_returns_evidence",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_extensions_are_invoked_and_instance_scoped",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unsupported_deck_syntax_fails_before_execution[LAYOUT PATH \"one\" \"two\"]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unsupported_deck_syntax_fails_before_execution[LAYOUT PATH old\\\\]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unsupported_deck_syntax_fails_before_execution[INCLUDE rules extra]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_missing_required_io_statement_rejected",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_drc_missing_count_is_unknown",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_rejects_external_old_include",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_registered_report_parser_preserves_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_absolute_database_output_is_rebased_without_touching_old_file",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[PEX NETLIST SIMPLE \"/old/net.simple\" HSPICE]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[MASK SVDB DIRECTORY \"/old/svdb\" XRC]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[PEX REPORT DISTRIBUTED \"../old/report.dist\" ASCII]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[PEX REPORT LUMPED \"$OUTPUT/report.lump\" ASCII]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[LVS REPORT \"/old/lvs.rep\"]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_public_client_oa_facade",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_discovery_reports_presence_not_license_checkout",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_physical_cli_violations_are_not_success",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_physical_cli_requires_source_for_lvs",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_tools_schema_and_readonly_discovery",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[drc-TOTAL DRC RuleChecks Executed: 1737\\nTOTAL DRC Results Generated: 29\\n--False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[drc-TOTAL DRC RuleChecks Executed: 3\\nTOTAL DRC Results Generated: 0\\n--True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[lvs-OVERALL COMPARISON RESULTS\\n CORRECT\\nCELL SUMMARY\\n--True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[pex--C1 d s 1f\\nR1 d e 2\\n-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[rcx--M1 d g s b nch\\n-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_validation_rejects_unknown_and_missing_before_run",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_availability_preserves_context_and_marks_unverified",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_coverage_counts_signatures_without_claiming_verification",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_empty_registry_coverage_is_defined",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_malformed_registry_fails_at_load",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_parse_rejects_nested_and_keyword_signatures",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_search_returns_named_records_with_limit",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_lazy",
+      "name": "test_client_creation_does_not_read_packaged_registry",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_lazy",
+      "name": "test_first_concurrent_read_loads_once_and_keeps_instance_isolation",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_lazy",
+      "name": "test_custom_registry_still_validates_at_constructor",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_pinned_upstream_has_required_result_capabilities",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_old_same_version_upstream_has_actionable_error[check_points]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_old_same_version_upstream_has_actionable_error[check_netlist_options]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_old_same_version_upstream_has_actionable_error[copy_point_netlist]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_invalid_psf_retains_parser_failure[]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_invalid_psf_retains_parser_failure[this is not PSF]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_empty_directory_is_not_success",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_at_requires_time_axis",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_transient_nearest_samples_and_stats",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_frequency_data_without_time_sampling_still_readable",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_transient_directory_and_missing_signal",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[false]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[true]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[1]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[value3]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[None]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_explicit_true_grants_only_allowlisted_writes",
+      "status": "PASS"
+    }
+  ],
+  "live_core": [
+    {
+      "class": "test_connected_signoff",
+      "name": "test_connected_fixture",
+      "status": "PASS"
+    },
+    {
+      "class": "test_fusion_release",
+      "name": "test_installed_namespaces_and_identity",
+      "status": "PASS"
+    },
+    {
+      "class": "test_fusion_release",
+      "name": "test_variadic_keywords_symbols_and_repeated_calls",
+      "status": "PASS"
+    },
+    {
+      "class": "test_fusion_release",
+      "name": "test_same_client_concurrent_calls",
+      "status": "PASS"
+    },
+    {
+      "class": "test_fusion_release",
+      "name": "test_error_propagation_and_next_request",
+      "status": "PASS"
+    },
+    {
+      "class": "test_fusion_release",
+      "name": "test_upstream_library_schematic_and_generic_share_session",
+      "status": "PASS"
+    },
+    {
+      "class": "test_fusion_release",
+      "name": "test_real_spectre_op_dc_transient",
+      "status": "PASS"
+    },
+    {
+      "class": "test_layout_signoff",
+      "name": "test_geometry_group_transform_saved_reopened",
+      "status": "PASS"
+    },
+    {
+      "class": "test_layout_signoff",
+      "name": "test_n65_pcell_saved_reopened",
+      "status": "PASS"
+    },
+    {
+      "class": "test_layout_signoff",
+      "name": "test_export_real_gds[geometry]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_layout_signoff",
+      "name": "test_export_real_gds[nch_probe]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_maestro_signoff",
+      "name": "test_native_oa_netlist_spectre",
+      "status": "PASS"
+    },
+    {
+      "class": "test_maestro_signoff",
+      "name": "test_maestro_config_sweep_results",
+      "status": "PASS"
+    },
+    {
+      "class": "test_physical_api",
+      "name": "test_copy_and_reopen_top_level_geometry",
+      "status": "PASS"
+    },
+    {
+      "class": "test_physical_api",
+      "name": "test_named_layer_map_reaches_export[xstream]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_physical_api",
+      "name": "test_named_layer_map_reaches_export[oa2strm]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_physical_api",
+      "name": "test_real_calibre_api_reports_design_status_and_pex",
+      "status": "PASS"
+    },
+    {
+      "class": "test_rpc_performance",
+      "name": "test_rpc_serial_batch_and_logging",
+      "status": "PASS"
+    },
+    {
+      "class": "test_runtime_inventory",
+      "name": "test_runtime_binding_inventory",
+      "status": "PASS"
+    },
+    {
+      "class": "test_workbench_signoff",
+      "name": "test_symbol_ports_labels_and_order",
+      "status": "PASS"
+    },
+    {
+      "class": "test_workbench_signoff",
+      "name": "test_library_technology_categories_and_scratch_rename",
+      "status": "PASS"
+    },
+    {
+      "class": "test_workbench_signoff",
+      "name": "test_file_transfer_and_mcp_real_call",
+      "status": "PASS"
+    },
+    {
+      "class": "test_workbench_signoff",
+      "name": "test_dialog_inspection_and_recoverable_receipt",
+      "status": "PASS"
+    },
+    {
+      "class": "test_workbench_signoff",
+      "name": "test_spectre_pool_two_actual_jobs",
+      "status": "PASS"
+    }
+  ],
+  "live_mcp_final": [
+    {
+      "class": "test_mcp_surface",
+      "name": "test_cli_delegates_require_separate_isolated_configuration[status]",
+      "status": "SKIP"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_cli_delegates_require_separate_isolated_configuration[capture_session]",
+      "status": "SKIP"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_library_reads[list_libraries]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_library_reads[list_cells]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_targeted_skill_finder[lookup_skill]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_targeted_skill_finder[describe_skill]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_evaluate_error_and_recovery",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_individual_schematic_handlers",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_batched_schematic_handler",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_screenshot_uses_owned_gui",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_read_waveform_real_rc_transient",
+      "status": "PASS"
+    }
+  ],
+  "combined_first_run": {
+    "passed": 32,
+    "failed": 1,
+    "skipped": 2,
+    "reason": "incorrect receipt assertion for immediate known SKILL error; retained FAIL"
+  },
+  "mcp_surface": {
+    "add_part": {
+      "status": "PASS",
+      "reason": "response and tool-specific assertions passed",
+      "calls": 2
+    },
+    "add_pin": {
+      "status": "PASS",
+      "reason": "response and tool-specific assertions passed",
+      "calls": 3
+    },
+    "add_wire": {
+      "status": "PASS",
+      "reason": "response and tool-specific assertions passed",
+      "calls": 1
+    },
+    "build_schematic": {
+      "status": "PASS",
+      "reason": "response and tool-specific assertions passed",
+      "calls": 1
+    },
+    "call_registered": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    },
+    "capture_session": {
+      "status": "SKIP",
+      "reason": "handler starts an independent CLI and ignores the bound client; VF_LIVE_* does not isolate CLI profile/state, so default sessions are not accessed",
+      "calls": 0
+    },
+    "check_netlist": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    },
+    "check_schematic": {
+      "status": "PASS",
+      "reason": "response and tool-specific assertions passed",
+      "calls": 1
+    },
+    "describe_pdk": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    },
+    "describe_skill": {
+      "status": "PASS",
+      "reason": "response and tool-specific assertions passed",
+      "calls": 1
+    },
+    "discover_tools": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    },
+    "evaluate": {
+      "status": "PASS",
+      "reason": "response and tool-specific assertions passed",
+      "calls": 2
+    },
+    "list_cells": {
+      "status": "PASS",
+      "reason": "response and tool-specific assertions passed",
+      "calls": 1
+    },
+    "list_libraries": {
+      "status": "PASS",
+      "reason": "response and tool-specific assertions passed",
+      "calls": 1
+    },
+    "list_pdk": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    },
+    "load_file": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    },
+    "lookup_skill": {
+      "status": "PASS",
+      "reason": "response and tool-specific assertions passed",
+      "calls": 1
+    },
+    "new_schematic": {
+      "status": "PASS",
+      "reason": "response and tool-specific assertions passed",
+      "calls": 1
+    },
+    "read_waveform": {
+      "status": "PASS",
+      "reason": "response and tool-specific assertions passed",
+      "calls": 1
+    },
+    "registry_coverage": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    },
+    "registry_search": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    },
+    "run_physical": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    },
+    "run_test": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    },
+    "screenshot": {
+      "status": "PASS",
+      "reason": "response and tool-specific assertions passed",
+      "calls": 1
+    },
+    "search_docs": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    },
+    "search_pdk": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    },
+    "simulate": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    },
+    "simulate_many": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    },
+    "startup": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    },
+    "status": {
+      "status": "SKIP",
+      "reason": "handler starts an independent CLI and ignores the bound client; VF_LIVE_* does not isolate CLI profile/state, so default sessions are not accessed",
+      "calls": 0
+    },
+    "test_results": {
+      "status": "SKIP",
+      "reason": "outside this live test file scope",
+      "calls": 0
+    }
+  },
+  "rf": {
+    "cases": {
+      "linear": "PASS",
+      "periodic": "PASS",
+      "hb": "PASS",
+      "noise_refinement": "PASS"
+    },
+    "cross_checks": {
+      "status": "PASS",
+      "pss_hb_relative_error": 1.2933224203862673e-06,
+      "pnoise_7_vs_14_relative_error": 0.0
+    }
+  },
+  "pvt": {
+    "passed": 27,
+    "total": 27
+  },
+  "process_mc": {
+    "repeats": 2,
+    "samples_per_repeat": 3,
+    "independent_nominal": true,
+    "same_seed_equal": true
+  },
+  "legacy": {
+    "commit": "2a9c97720011969f9375a561fe5d2539c11ee183",
+    "scope": "Legacy root only; clean git archive excludes nested virtuoso-fusion; no EDA; original checkout unchanged",
+    "readme_editable_install": "FAILED: project.optional-dependencies.bridge must be array",
+    "project_name": "vlight",
+    "declared_packages": [
+      "vlight",
+      "vskill",
+      "vskill.bridges"
+    ],
+    "missing_package_selection": [
+      "virtuoso_bridge",
+      "vlight.alchemy",
+      "vlight.alchemy.extracted",
+      "vskill.phase2"
+    ],
+    "collection_run": {
+      "errors": 7,
+      "skipped": 1,
+      "executed_tests": 0
+    },
+    "continue_run": {
+      "passed": 309,
+      "failed": 3,
+      "errors": 7,
+      "skipped": 8,
+      "xfailed": 1,
+      "duration_seconds": 28.32
+    },
+    "issues": [
+      {
+        "node": "::tests.test_ac_capabilities",
+        "kind": "error",
+        "message": "collection failure"
+      },
+      {
+        "node": "::tests.test_acceptance",
+        "kind": "error",
+        "message": "collection failure"
+      },
+      {
+        "node": "::tests.test_coverage",
+        "kind": "error",
+        "message": "collection failure"
+      },
+      {
+        "node": "::tests.test_klayout_compat",
+        "kind": "skipped",
+        "message": "collection skipped"
+      },
+      {
+        "node": "::tests.test_phase2",
+        "kind": "error",
+        "message": "collection failure"
+      },
+      {
+        "node": "::tests.test_tools",
+        "kind": "error",
+        "message": "collection failure"
+      },
+      {
+        "node": "::tests.test_vskill",
+        "kind": "error",
+        "message": "collection failure"
+      },
+      {
+        "node": "::tests.test_vskill_virtuoso",
+        "kind": "error",
+        "message": "collection failure"
+      },
+      {
+        "node": "tests.test_alchemy_extracted::test_extracted_runs[Manual]",
+        "kind": "skipped",
+        "message": "Wait::run 是永恒自环，提取件按设计不会自己结束"
+      },
+      {
+        "node": "tests.test_alchemy_extracted::test_extracted_runs[PSA2]",
+        "kind": "skipped",
+        "message": "PSA2 的 Hammersley 预热档案需要真库那套 50 点档案 + 每 fork 的 population；通用小栅格跑不满档案，模块按设计 raise。它的对拍走 native：`pydrive.py PSA2 --dim 2 --levels 21 --budget 300` → 51/51 逐点一致。"
+      },
+      {
+        "node": "tests.test_alchemy_extracted::test_optimizer_does_not_get_worse[PSA2]",
+        "kind": "skipped",
+        "message": "PSA2 的 Hammersley 预热档案需要真库那套 50 点档案 + 每 fork 的 population；通用小栅格跑不满档案，模块按设计 raise。它的对拍走 native：`pydrive.py PSA2 --dim 2 --levels 21 --budget 300` → 51/51 逐点一致。"
+      },
+      {
+        "node": "tests.test_bridge_policy::test_gateway_session_denies_write",
+        "kind": "failure",
+        "message": "OSError: 找不到 API registry: None"
+      },
+      {
+        "node": "tests.test_bridge_policy::test_availability_states",
+        "kind": "failure",
+        "message": "OSError: 找不到 API registry: None"
+      },
+      {
+        "node": "tests.test_bridge_policy::test_needs_window_marking",
+        "kind": "failure",
+        "message": "OSError: 找不到 API registry: None"
+      },
+      {
+        "node": "tests.test_cost_vectors::test_doc_inconsistent_inf_row",
+        "kind": "skipped",
+        "message": "spec_cost.md §4.6 的 type1/inf 一行与 §10 实现（已过 2000 组位级差分）矛盾"
+      },
+      {
+        "node": "tests.test_sim_integration::test_divider_dc_exact",
+        "kind": "skipped",
+        "message": "需要 VLIGHT_HOST（能跑 spectre 的机器）"
+      },
+      {
+        "node": "tests.test_sim_integration::test_rc_ac_matches_analytic",
+        "kind": "skipped",
+        "message": "需要 VLIGHT_HOST（能跑 spectre 的机器）"
+      },
+      {
+        "node": "tests.test_sim_integration::test_real_lna_netlist_simulates",
+        "kind": "skipped",
+        "message": "需要 VLIGHT_HOST（能跑 spectre 的机器）"
+      },
+      {
+        "node": "tests.test_sim_integration::test_own_engine_matches_spectre",
+        "kind": "skipped",
+        "message": "需要 VLIGHT_HOST（能跑 spectre 的机器）"
+      }
+    ],
+    "missing_runtime_assets": [
+      "vskill/_index.json",
+      "vlight/_data/skill_index.json",
+      "audit/2026-10-22/registry/api_registry_v2.json",
+      "audit/2026-10-22/registry/api_registry.json"
+    ],
+    "readme_query": "FAILED: ApiRegistry default path None",
+    "nested_bridge_build": "FAILED: package directory virtuoso_bridge does not exist",
+    "core_zero_dependency_claim": "vlight/__init__.py imports calc/psf, both import numpy unconditionally; numpy declared only sim/plot extra; python -S reproduces missing numpy at calc.py:19",
+    "unexecuted": [
+      "Cadence/Spectre live tests",
+      "KLayout optional tests",
+      "collection-blocked vskill/phase2/coverage tests"
+    ],
+    "unchanged": [
+      "production source",
+      "existing environments",
+      "EDA processes"
+    ]
+  },
+  "source_sha256": {
+    "src/virtuoso_fusion/__init__.py": "b86d69e11e16c0f9a000fc32be6c6d02ede20176f7a73962fe7222405c9fabbf",
+    "src/virtuoso_fusion/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/virtuoso_fusion/availability.py": "c936cf5d4e0050c15f1ff633c790edfeb316794e4e3d19f5e61d617310b4562f",
+    "src/virtuoso_fusion/cli.py": "2ba1382a95ffd4ca6f7a17ad9fe6093777a37f7917226fc6e175748100ac7407",
+    "src/virtuoso_fusion/client.py": "f6e19089b1c82a61bcaf90f21dc6cb5ceb93593794a2b78b8aa54e61cf852a82",
+    "src/virtuoso_fusion/environment.py": "a3444a51ec033938f089e3db82fffc3f5c2fd403cc83577e1c158c1e8e6cdb95",
+    "src/virtuoso_fusion/generic.py": "980395bc737a7183219a8ddc03376bac936ed7e654526ead52f1f33cf343bfeb",
+    "src/virtuoso_fusion/maestro.py": "437f067c9bbc5826d51aedbc9caa4779dc096b208b6fd79859d54813bf227a4d",
+    "src/virtuoso_fusion/mcp.py": "37e2c17c24e4b7b2e0f525c4b2e0fbaf0d659d6cb0e45bedbe19a82a92f36c64",
+    "src/virtuoso_fusion/oa.py": "f74446c67c06260625fde2ba105ff52442248b0dfd9b69d15d7bca226f526b0f",
+    "src/virtuoso_fusion/physical.py": "bcfe9fd1db59beecdf225cce759a886d5c8f59ec479f4d8c1469ff53982adc12",
+    "src/virtuoso_fusion/policy.py": "9c80addb40535a00e104f0b9d83cf1f636e653349889cc3cd6e41778d34a0cda",
+    "src/virtuoso_fusion/registry.py": "57c4b16315d716cac16f001a12f47731070243f84721a3a74cebad3e114b7254",
+    "src/virtuoso_fusion/values.py": "bb1d080bd908a68b29cdbbfac375eb743758318f2ce6c290036a14f2e342090d",
+    "src/virtuoso_fusion/waveform.py": "422b3d6598d71ae52f130e501d4fc9830d04ea0c867ca721fbb8946506c44afb"
+  },
+  "evidence_sha256": {
+    "final-unit.xml": "837ab48ee6153198854c4c8897af37060277bfd0fff9c2edcda347219cbba6bd",
+    "fixed-installed-tests.xml": "aaee812764a094715037ffa0308d723c00858c92aa43b338e58b9bc118a01146",
+    "final-live/combined-first.xml": "b26445a3294ad4f658c4ddf9217ac65163a9671ce141e861ed77eea858b7067b",
+    "final-live/mcp-final.xml": "03782cce3a7a39e7f1c8a4969b76e2e3d2a16d5c589719a3db4e20a6262a5703",
+    "final-live/rf-report.json": "a93c97a492f350bd6ad89f14ab9d08207d008bfa094cf10dea6f4beded6a2147",
+    "final-live/pvt-mc-report.json": "8f78e93ec712bb4587a39e558db5686b301d04a2210516313bad50b56a4fc1bb",
+    "final-live/mcp-surface-report.json": "1d8f20da60a60468efa5f23baca4006dbe4f3954fe04c8b3a9dc5581127a4c8a"
+  }
+}

@@ -6,10 +6,11 @@ from .environment import discover_tools
 from .generic import GenericSkill
 from .physical import PhysicalVerification
 from .registry import ApiRegistry
+from .waveform import read_waveform
 from ._upstream import mcp_server as server
 
 server._AdapterClient = FusionClient
-server.SERVER_INFO = {'name': 'virtuoso-fusion', 'version': '0.3.0',
+server.SERVER_INFO = {'name': 'virtuoso-fusion', 'version': '0.3.1',
                       'title': 'Virtuoso Fusion — engineering APIs and registered SKILL'}
 _original_tool_defs = server._tool_defs
 _registry = None
@@ -97,7 +98,7 @@ def _tool_defs():
 
 server._tool_defs = _tool_defs
 server.TOOL_NAMES = [tool['name'] for tool in _tool_defs()]
-server.IMPL.update(registry_search=_registry_search, registry_coverage=_registry_coverage,
+server.IMPL.update(read_waveform=read_waveform, registry_search=_registry_search, registry_coverage=_registry_coverage,
                    call_registered=_call_registered, discover_tools=_discover_tools,
                    run_physical=_run_physical)
 

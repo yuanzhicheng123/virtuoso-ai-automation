@@ -3,5 +3,5 @@ recursive-include src/virtuoso_fusion/_data *
 recursive-include src/virtuoso_fusion/_upstream *
 recursive-include tools *.py
 recursive-include tests *.py *.scs *.csv *.json
-recursive-include docs *.md
+recursive-include docs *.md *.json
 global-exclude __pycache__ *.py[cod]

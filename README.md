@@ -1,6 +1,6 @@
 # RFIC-GPT · Virtuoso AI 自动化能力库
 
-## 新版 Virtuoso Fusion 0.3.0
+## 新版 Virtuoso Fusion 0.3.1
 
 新版工程位于 **[virtuoso-fusion/](virtuoso-fusion/README.md)**，提供统一 Python API、31个MCP工具、Maestro兼容、按需加载注册表，以及已验证的OA/LVS/PEX/前后仿链路。根目录原有RFIC-GPT工程和历史记录继续保留。
 
@@ -8,9 +8,11 @@
 - [性能与模拟/RF自动化架构分析](virtuoso-fusion/docs/codex/ARCHITECTURE_PERFORMANCE_REVIEW.md)
 - [AI Agent和模型兼容层设计（待实现）](virtuoso-fusion/docs/codex/AGENT_COMPATIBILITY_DESIGN.md)
 
-新版离线147项通过、仓库外安装包136项通过、220真机24项通过；测试版图仍有52个DRC结果和未闭合ERC，不能视作完整芯片签核。测试数据留在原验证环境，此处上传源码、测试和文档。
+新版离线154项通过、仓库外安装包143项通过；220核心真机24项通过，MCP补充9项通过/2项明确跳过；测试版图仍有52个DRC结果和未闭合ERC，不能视作完整芯片签核。测试数据留在原验证环境，此处上传源码、测试和文档。
 
-以下为原工程说明。
+**旧根工程当前未通过独立安装验收**：extra配置错误，且缺少运行所需索引/注册表。以下旧版安装命令不代表已验证可用；使用新版请进入 `virtuoso-fusion/`。详见[本轮逐项验证](virtuoso-fusion/docs/codex/GITHUB_VALIDATION_20261124.md)。
+
+以下为原工程历史说明。
 
 
 把 Cadence Virtuoso / SKILL / OpenAccess / Spectre 自动化，整理成**可被 AI 发现、安全调用、可度量**的能力库。
