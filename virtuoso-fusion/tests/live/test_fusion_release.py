@@ -36,7 +36,7 @@ def test_installed_namespaces_and_identity(client, work):
         assert "site-packages" in Path(module.__file__).parts
     coverage = ApiRegistry().coverage()
     assert coverage["total"] == 74785
-    assert coverage["with_signature"] == 61979
+    assert coverage["with_signature"] == 61941
     result = client.call("getWorkingDir")
     assert result.ok and json.loads(result.output) == str(work / "runtime")
     (work / "installed.json").write_text(json.dumps({

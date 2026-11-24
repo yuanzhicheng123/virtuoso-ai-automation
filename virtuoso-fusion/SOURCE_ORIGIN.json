@@ -16,9 +16,13 @@
     "credentials"
   ],
   "imported_fusion_version": "0.3.0",
-  "current_fusion_version": "0.3.1",
+  "current_fusion_version": "0.3.2",
   "post_import_changes": [
     "MCP waveform parser-error propagation and time-axis validation",
-    "itemized GitHub-source verification"
+    "itemized GitHub-source verification",
+    "MCP schema validation and session signature cache",
+    "MCP shared read-only registry base with isolated session records",
+    "unknown signature sentinel correction; 61941 valid signatures",
+    "streamed PEX inspection and actual SSH endurance verification"
   ]
 }

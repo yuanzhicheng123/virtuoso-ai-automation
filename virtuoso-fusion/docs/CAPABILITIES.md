@@ -4,7 +4,7 @@
 
 | 能力 | 新库入口 | 来源 | 当前验证层级 |
 |---|---|---|---|
-| 注册表/签名/检索 | ApiRegistry、client.registry | 本地0.8.1快照与修复 | 完整快照74785条，61979有签名；哈希和离线测试 |
+| 注册表/签名/检索 | ApiRegistry、client.registry | 本地0.8.1快照与修复 | 完整快照74785条，61941有有效签名（排除38个unknown标记）；哈希和离线测试 |
 | 通用函数调用 | client.call、client.generic | 本地参数编排迁移至上游执行 | 真机变长参数、kwargs、Symbol、重复/线程调用、失败传播 |
 | 库和原理图 | client.library、client.schematic | upstream工程域 | 真机新库、新原理图、读取；与generic共用session和证据 |
 | 原理图检查/CDF/网表/manifest | client.schematic.* | upstream工程域 | analogLib RC 的 OA→原生导出→DC/AC 数值闭环；复杂层级/config 尚未签核 |

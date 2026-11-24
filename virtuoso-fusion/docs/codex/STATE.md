@@ -1,3 +1,21 @@
+# Virtuoso Fusion 0.3.2 当前验收状态
+
+2026-11-24。当前工作库为GitHub仓库的 `virtuoso-fusion/`；本文件为项目验收唯一权威。
+
+**裁决：放行已验证的0.3.2工作流。** 最终build4完成真实SSH默认容量1800.000133秒/3600请求/0错误，源码哈希及owned进程清理通过；不宣称全平台/全工具模式或芯片签核。远程窗口p99最高约212ms、max约261ms，未建立低于100ms的SSH延迟SLO。
+
+- 统一MCP输入Schema入口校验；会话级签名探测缓存；共享私有只读registry基础与独立会话记录；PEX逐行扫描。
+- 交付环境：220 `venv-032`，原环境保留；最终源码和包hash以版本化RELEASE.json为准。
+- 真机arglist裸unknown边界已修，有效签名61941，原74785记录和38资源哈希不变。
+- 源码223通过/39 live跳过；仓库外安装包198通过；最终组合真机36通过/3明确跳过，使用隔离daemon nonce容量16384。
+- 实际alias正签名只探测一次；未知函数失败→加载procedure→kwargs恢复通过。nil负缓存只有受控离线证明，不冒充真机nil结果。
+- 压力组合在默认4096 nonce容量下失败记录保留；保留期与认证逻辑未降低。最终SSH间隔负载使用默认容量另验。
+- 长任务接口与AI模型兼容层均未实现。旧根工程安装/同名包遮蔽、DRC52结果和ERC未闭合仍在。
+
+详见 [0.3.2报告](OPTIMIZATION_032_REPORT.md)、[逐用例机器结果](optimization-032.json)、[长任务独立设计](LONG_TASK_DESIGN.md)。原始证据在本地evidence/optimization-032及220同名signoff目录。
+
+## 0.3.1历史验收记录（保留）
+
 # Virtuoso Fusion 0.3.1 当前验收状态
 
 2026-11-24。当前工作库为GitHub仓库的 `virtuoso-fusion/`；项目验收唯一权威。

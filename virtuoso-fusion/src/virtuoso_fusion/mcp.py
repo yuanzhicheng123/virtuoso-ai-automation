@@ -7,10 +7,11 @@ from .generic import GenericSkill
 from .physical import PhysicalVerification
 from .registry import ApiRegistry
 from .waveform import read_waveform
+from .mcp_validation import make_dispatch
 from ._upstream import mcp_server as server
 
 server._AdapterClient = FusionClient
-server.SERVER_INFO = {'name': 'virtuoso-fusion', 'version': '0.3.1',
+server.SERVER_INFO = {'name': 'virtuoso-fusion', 'version': '0.3.2',
                       'title': 'Virtuoso Fusion — engineering APIs and registered SKILL'}
 _original_tool_defs = server._tool_defs
 _registry = None
@@ -34,16 +35,28 @@ def _registry_coverage(args):
 
 
 def _call_registered(args):
-    positional = args.get('args', [])
-    keywords = args.get('kwargs', {})
-    allow_write = args.get('allow_write', False)
-    if not isinstance(positional, list) or not isinstance(keywords, dict):
-        raise ValueError('args must be an array and kwargs must be an object')
-    if not isinstance(allow_write, bool):
-        raise ValueError('allow_write must be boolean')
     client = server._client()
-    caller = GenericSkill(executor=client.execute_skill, registry=client.registry, allow_write=allow_write)
-    return server._bridge_result(caller.call(args['name'], *positional, timeout=args.get('timeout', 60), **keywords))
+    caller = _session_callers(client)[args.get('allow_write', False)]
+    return server._bridge_result(caller.call(
+        args['name'], *args.get('args', []), timeout=args.get('timeout', 60),
+        **args.get('kwargs', {})))
+
+
+def _session_callers(client):
+    cached = getattr(client, '_fusion_mcp_callers', None)
+    if cached is not None and cached[0] is client.registry:
+        return cached[1]
+    registry = client.registry
+    # Preserve already loaded/custom state; only adopt an unused packaged registry.
+    if registry.is_packaged and registry._raw is None and registry._base is None:
+        client.registry = registry = _registry_data()._session_view()
+        client.generic.reg = registry
+    callers = {permission: GenericSkill(client.execute_skill, registry=registry,
+                                        allow_write=permission)
+               for permission in (False, True)}
+    callers[True]._probed = callers[False]._probed
+    client._fusion_mcp_callers = (registry, callers)
+    return callers
 
 
 def _discover_tools(args):
@@ -101,6 +114,9 @@ server.TOOL_NAMES = [tool['name'] for tool in _tool_defs()]
 server.IMPL.update(read_waveform=read_waveform, registry_search=_registry_search, registry_coverage=_registry_coverage,
                    call_registered=_call_registered, discover_tools=_discover_tools,
                    run_physical=_run_physical)
+
+server.dispatch_tool = make_dispatch(
+    server.dispatch_tool, server._tool_defs(), server.ALIASES, server._tool_error)
 
 
 def main():

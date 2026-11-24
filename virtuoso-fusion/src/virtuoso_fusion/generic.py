@@ -33,9 +33,17 @@ class GenericSkill:
             probe = self._ensure_signature(fn, options)
             if probe is not None and not probe.ok:
                 return probe
-        ordered = self.order_args(fn, args, kwargs)
-        code = fn + '(' + ' '.join(to_skill(value) for value in ordered) + ')'
-        return self.executor(code, **options)
+        try:
+            ordered = self.order_args(fn, args, kwargs)
+            code = fn + '(' + ' '.join(to_skill(value) for value in ordered) + ')'
+            result = self.executor(code, **options)
+        except Exception:
+            self._probed.discard(fn)
+            raise
+        if self.auto_signature and not result.ok:
+            # A failed call must not freeze a missing signature before its context loads.
+            self._probed.discard(fn)
+        return result
 
     def ensure_signature(self, fn, *, timeout=None):
         """Cache successful live arglist output in memory and retain probe evidence."""
@@ -90,10 +98,8 @@ class GenericSkill:
             return result
         self._probed.add(fn)
         raw = result.output.strip()
-        if raw and raw != 'nil':
-            record = self.reg.raw.setdefault(fn, {'name': fn})
-            record['arglist_raw'] = raw
-            record['params_source'] = 'arglist-live'
+        if raw and raw not in ('nil', 'unknown'):
+            self.reg._remember_signature(fn, raw)
         return result
 
     def __getattr__(self, name):

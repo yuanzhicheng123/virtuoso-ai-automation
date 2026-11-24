@@ -1,0 +1,2879 @@
+{
+  "version": "0.3.2",
+  "baseline_commit": "433e2f08ffb90c89be3cac52e1ffd6a2ae82b240",
+  "unit_tests": [
+    {
+      "class": "tests.live.test_call_smoothness",
+      "name": "test_sustained_python_and_mcp_calls",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_connected_signoff",
+      "name": "test_connected_fixture",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_fusion_release",
+      "name": "test_installed_namespaces_and_identity",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_fusion_release",
+      "name": "test_variadic_keywords_symbols_and_repeated_calls",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_fusion_release",
+      "name": "test_same_client_concurrent_calls",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_fusion_release",
+      "name": "test_error_propagation_and_next_request",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_fusion_release",
+      "name": "test_upstream_library_schematic_and_generic_share_session",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_fusion_release",
+      "name": "test_real_spectre_op_dc_transient",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_layout_signoff",
+      "name": "test_geometry_group_transform_saved_reopened",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_layout_signoff",
+      "name": "test_n65_pcell_saved_reopened",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_layout_signoff",
+      "name": "test_export_real_gds[geometry]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_layout_signoff",
+      "name": "test_export_real_gds[nch_probe]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_maestro_signoff",
+      "name": "test_native_oa_netlist_spectre",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_maestro_signoff",
+      "name": "test_maestro_config_sweep_results",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_cache",
+      "name": "test_repeated_alias_probes_once",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_cache",
+      "name": "test_unknown_function_recovers_after_context_load",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_cli_delegates_require_separate_isolated_configuration[status]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_cli_delegates_require_separate_isolated_configuration[capture_session]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_library_reads[list_libraries]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_library_reads[list_cells]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_targeted_skill_finder[lookup_skill]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_targeted_skill_finder[describe_skill]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_evaluate_error_and_recovery",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_individual_schematic_handlers",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_batched_schematic_handler",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_screenshot_uses_owned_gui",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_mcp_surface",
+      "name": "test_read_waveform_real_rc_transient",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_physical_api",
+      "name": "test_copy_and_reopen_top_level_geometry",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_physical_api",
+      "name": "test_named_layer_map_reaches_export[xstream]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_physical_api",
+      "name": "test_named_layer_map_reaches_export[oa2strm]",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_physical_api",
+      "name": "test_real_calibre_api_reports_design_status_and_pex",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_remote_endurance_hold",
+      "name": "test_hold_owned_session",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_rpc_performance",
+      "name": "test_rpc_serial_batch_and_logging",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_runtime_inventory",
+      "name": "test_runtime_binding_inventory",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_workbench_signoff",
+      "name": "test_symbol_ports_labels_and_order",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_workbench_signoff",
+      "name": "test_library_technology_categories_and_scratch_rename",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_workbench_signoff",
+      "name": "test_file_transfer_and_mcp_real_call",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_workbench_signoff",
+      "name": "test_dialog_inspection_and_recoverable_receipt",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.live.test_workbench_signoff",
+      "name": "test_spectre_pool_two_actual_jobs",
+      "status": "SKIP"
+    },
+    {
+      "class": "tests.test_cli_mcp.CliTests",
+      "name": "test_call_rejects_non_array_args_before_connection",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.CliTests",
+      "name": "test_offline_coverage_command",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.CliTests",
+      "name": "test_upstream_help_passthrough",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.McpTests",
+      "name": "test_failed_bridge_result_retains_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.McpTests",
+      "name": "test_stdio_preserves_original_tools_skills_and_adds_registry",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp",
+      "name": "test_call_registered_preserves_failure_and_limits_write_opt_in",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_public_client_is_a_real_upstream_client",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_domain_and_generic_calls_share_execution_and_keep_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_reserved_argument_aliases_pass_through_both_call_layers",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_same_client_execute_is_serialized",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_close_is_idempotent_and_does_not_reopen",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_evidence_failure_preserves_the_executed_result",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[0]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[-1]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[inf]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[nan]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_coverage_audit.CoverageAuditTests",
+      "name": "test_every_packaged_name_has_exactly_one_compiler_outcome",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_coverage_audit.CoverageAuditTests",
+      "name": "test_real_policy_and_signature_boundaries_are_retained",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_coverage_audit.CoverageAuditTests",
+      "name": "test_runtime_summary_keeps_binding_and_compilation_separate",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_distribution.DistributionTests",
+      "name": "test_snapshot_provenance_matches_packaged_bytes",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_distribution.DistributionTests",
+      "name": "test_snapshot_verification_needs_no_original_sources",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_ambiguous_unknown_missing_duplicate_keywords_are_rejected",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_dynamic_call",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_ensure_signature_preserves_result_and_skips_cached_probe",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_exception_from_probe_propagates_without_main_call",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_failed_result_is_preserved",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_function_name_rejected_before_probe",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_keyword_order_and_optional_gap",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_live_signature_is_cached_only_in_memory",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_positional_arguments_are_never_truncated",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_signature_probe_failure_stops_execution_and_retains_evidence",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_successful_nil_probe_allows_positional_call",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_symbol_is_explicit_even_with_registry_type",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_timeout_applies_to_probe_and_request_without_retry",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_write_requires_explicit_allow_and_known_allowlist",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.ValueTests",
+      "name": "test_supported_values",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.ValueTests",
+      "name": "test_symbol_rejects_code",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.ValueTests",
+      "name": "test_unsupported_values",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_ambiguous_signature_rejects_binding_before_execution",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_missing_trailing_required_argument_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_optional_names_with_whitespace",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_reserved_names_use_existing_prefix_aliases",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_variadic_positional_calls_preserve_all_values",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_variadic_tail_allows_binding_fixed_prefix",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_live_runner",
+      "name": "test_real_pytest_report_verdict[import pytest\\n@pytest.mark.skip(reason=\"opt-in flag absent\")\\ndef test_live(): pass\\n-INCOMPLETE-expected_counts0]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_live_runner",
+      "name": "test_real_pytest_report_verdict[import pytest\\ndef test_pass(): pass\\n@pytest.mark.skip(reason=\"optional\")\\ndef test_optional(): pass\\n-PASS-expected_counts1]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_live_runner",
+      "name": "test_real_pytest_report_verdict[def test_fail(): assert False\\n-FAIL-expected_counts2]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_live_runner",
+      "name": "test_real_pytest_report_verdict[raise RuntimeError(\"collection failed\")\\n-FAIL-expected_counts3]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_live_runner",
+      "name": "test_real_pytest_report_verdict[# Empty selection\\n-INCOMPLETE-expected_counts4]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_live_runner",
+      "name": "test_missing_report_cannot_establish_acceptance",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[local-missing]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[local-dangling]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[local-regular]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[remote-shell-missing]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[remote-shell-dangling]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[remote-shell-regular]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_other_dangling_inputs_fail[local]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_other_dangling_inputs_fail[remote-shell]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_existing_destination_is_not_modified[local]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_existing_destination_is_not_modified[remote-shell]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_real_sweep_corner_export_preserves_four_scalar_values_and_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_raw_csv_opt_in_preserved",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_no_point_format_and_same_output_in_two_tests_are_lossless",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_malformed_export_is_not_silently_accepted[unexpected report\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_malformed_export_is_not_silently_accepted[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\n1,AC,gain,1,,,extra,unheaded\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_malformed_export_is_not_silently_accepted[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\n1,AC,gain\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_explicit_point_ids_and_quoted_cells_survive_without_parameter_rows",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Test,Output,Spec,Weight,Pass/Fail,Min,Max,slow,slow\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Test,Output,Spec,Weight,Pass/Fail,Min,Max,slow\\nAC,gain,,,,1,2\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail,slow,slow\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail,\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\ninvalid,AC,gain,1,,,\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\n1,AC,\"unterminated,1,,,\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ic23_corner_column_export_preserves_upstream_points_and_parameters",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ic23_same_output_in_two_tests_preserves_both_detail_rows",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_input_stdio",
+      "name": "test_invalid_arguments_fail_at_stdio_entry[read_waveform-args0-$.at[0]-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_input_stdio",
+      "name": "test_invalid_arguments_fail_at_stdio_entry[read_waveform-args1-$.at-maxItems]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_input_stdio",
+      "name": "test_invalid_arguments_fail_at_stdio_entry[registry_search-args2-$.limit-maximum]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_input_stdio",
+      "name": "test_invalid_arguments_fail_at_stdio_entry[evaluate-args3-$-additionalProperties]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_input_stdio",
+      "name": "test_invalid_arguments_fail_at_stdio_entry[read_waveform-args4-$.path-required]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_nil_probe_cached_across_calls_and_permissions",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_write_permission_is_per_request",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_failed_probe_is_retried_without_replaying_execution",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_registry_replacement_resets_mcp_probe_cache",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_mcp_search_and_calls_load_one_base_without_mutation[True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_mcp_search_and_calls_load_one_base_without_mutation[False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_preloaded_registry_keeps_user_modifications",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_nil_probe_followed_by_failed_call_can_learn_later_signature",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_argument_failure_does_not_preserve_nil_probe",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[read_waveform-arguments0-$.at[0]-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[read_waveform-arguments1-$.at-maxItems]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[registry_search-arguments2-$.limit-maximum]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[registry_search-arguments3-$.limit-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[registry_search-arguments4-$-additionalProperties]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[evaluate-arguments5-$.expr-required]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[evaluate-arguments6-$.timeout-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[status-arguments7-$-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[status-private-input-$-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[status-False-$-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[call_registered-arguments10-$.kwargs-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_nonfinite_numbers_rejected_even_in_open_nested_values[read_waveform-arguments0-$.at[0]-nan]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_nonfinite_numbers_rejected_even_in_open_nested_values[read_waveform-arguments0-$.at[0]-inf]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_nonfinite_numbers_rejected_even_in_open_nested_values[read_waveform-arguments0-$.at[0]--inf]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_nonfinite_numbers_rejected_even_in_open_nested_values[call_registered-arguments1-$.kwargs.payload[0]-nan]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_nonfinite_numbers_rejected_even_in_open_nested_values[call_registered-arguments1-$.kwargs.payload[0]-inf]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_nonfinite_numbers_rejected_even_in_open_nested_values[call_registered-arguments1-$.kwargs.payload[0]--inf]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_alias_is_validated_using_canonical_schema",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_none_is_empty_object_without_default_injection",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_valid_open_arguments_preserved",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_schema_validators_built_once",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_unknown_tool_preserves_dispatch_behavior",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_all_advertised_fusion_schemas_are_valid",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_copy_uses_existing_client_and_preserves_failure",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_copy_rejects_same_cellview_before_execution",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_named_map_reaches_existing_xstream_and_keeps_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_map_registry_is_per_instance",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_xstream_requires_map_and_rejects_unused_environment",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra0-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra1-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra2-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra3-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_refuses_stale_existing_output",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_keeps_timestamped_diagnostic_lines[2026/11/23 23:02:52 WARNING This OS does not appear to be a Cadence supported Linux configuration.-warnings-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_keeps_timestamped_diagnostic_lines[2026/11/23 23:02:52 ERROR Export failed.-errors-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_drc_zero_exit_with_violations_is_not_clean",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_drc_clean_and_missing_report_in_fresh_runs",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[CELL foo CORRECT\\nOVERALL COMPARISON RESULTS\\n # INCORRECT #\\nCELL SUMMARY\\nCORRECT child-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[OVERALL COMPARISON RESULTS\\n # CORRECT #\\nCELL SUMMARY\\nINCORRECT text-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[OVERALL COMPARISON RESULTS\\n no verdict\\nCELL SUMMARY\\nCORRECT child-None]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[CORRECT child-None]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[OVERALL COMPARISON RESULTS\\n NOT COMPARED\\n-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_report_execution",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_three_phases_and_recursive_netlist",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_missing_products_not_success[pass\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_missing_products_not_success[output(\"PEX NETLIST\").write_text(\"M1 d g s b nch\\\\n\")\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_missing_products_not_success[output(\"PEX NETLIST\").write_text(\".include missing.pxi\\\\nC1 d s 1f\\\\n\")\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_stops_after_failed_phase[sys.exit(9)\\n-2-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_stops_after_failed_phase[time.sleep(2)\\n-0.05-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_missing_executable_returns_evidence",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_extensions_are_invoked_and_instance_scoped",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unsupported_deck_syntax_fails_before_execution[LAYOUT PATH \"one\" \"two\"]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unsupported_deck_syntax_fails_before_execution[LAYOUT PATH old\\\\]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unsupported_deck_syntax_fails_before_execution[INCLUDE rules extra]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_missing_required_io_statement_rejected",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_drc_missing_count_is_unknown",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_rejects_external_old_include",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_registered_report_parser_preserves_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_absolute_database_output_is_rebased_without_touching_old_file",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[PEX NETLIST SIMPLE \"/old/net.simple\" HSPICE]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[MASK SVDB DIRECTORY \"/old/svdb\" XRC]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[PEX REPORT DISTRIBUTED \"../old/report.dist\" ASCII]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[PEX REPORT LUMPED \"$OUTPUT/report.lump\" ASCII]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[LVS REPORT \"/old/lvs.rep\"]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_public_client_oa_facade",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_discovery_reports_presence_not_license_checkout",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_physical_cli_violations_are_not_success",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_physical_cli_requires_source_for_lvs",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_tools_schema_and_readonly_discovery",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[drc-TOTAL DRC RuleChecks Executed: 1737\\nTOTAL DRC Results Generated: 29\\n--False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[drc-TOTAL DRC RuleChecks Executed: 3\\nTOTAL DRC Results Generated: 0\\n--True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[lvs-OVERALL COMPARISON RESULTS\\n CORRECT\\nCELL SUMMARY\\n--True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[pex--C1 d s 1f\\nR1 d e 2\\n-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[rcx--M1 d g s b nch\\n-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_validation_rejects_unknown_and_missing_before_run",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_streaming",
+      "name": "test_inspection_streams_files_and_counts_each_include_once",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_streaming",
+      "name": "test_inspection_tracks_missing_empty_and_external_includes",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_streaming",
+      "name": "test_inspection_requires_nonempty_parasitic_network[]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_streaming",
+      "name": "test_inspection_requires_nonempty_parasitic_network[* no parasitics\\nM1 d g s b nch\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_availability_preserves_context_and_marks_unverified",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_coverage_counts_signatures_without_claiming_verification",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_empty_registry_coverage_is_defined",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_malformed_registry_fails_at_load",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_parse_rejects_nested_and_keyword_signatures",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_search_returns_named_records_with_limit",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_lazy",
+      "name": "test_client_creation_does_not_read_packaged_registry",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_lazy",
+      "name": "test_first_concurrent_read_loads_once_and_keeps_instance_isolation",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_lazy",
+      "name": "test_custom_registry_still_validates_at_constructor",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_sessions",
+      "name": "test_views_are_lazy_and_load_packaged_input_once",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_sessions",
+      "name": "test_get_isolates_nested_records_and_keeps_changes",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_sessions",
+      "name": "test_search_copies_only_results_and_coverage_does_not_materialize",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_sessions",
+      "name": "test_raw_materializes_independent_full_mutable_dictionary",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_sessions",
+      "name": "test_raw_setter_replaces_view_and_retains_validation",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_sessions",
+      "name": "test_live_signatures_stay_in_session_overlay",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_remote_endurance",
+      "name": "test_latency_nearest_rank_keeps_tail_outlier",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_remote_endurance",
+      "name": "test_window_boundaries_and_failures_are_not_dropped",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_remote_endurance",
+      "name": "test_complete_gate_accepts_real_duration_and_cleanup",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_remote_endurance",
+      "name": "test_incomplete_or_dirty_run_cannot_pass[elapsed_s-1799.9]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_remote_endurance",
+      "name": "test_incomplete_or_dirty_run_cannot_pass[errors-1]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_remote_endurance",
+      "name": "test_incomplete_or_dirty_run_cannot_pass[requests-0]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_remote_endurance",
+      "name": "test_incomplete_or_dirty_run_cannot_pass[identity_verified_over_ssh-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_remote_endurance",
+      "name": "test_incomplete_or_dirty_run_cannot_pass[tunnel_stopped-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_remote_endurance",
+      "name": "test_incomplete_or_dirty_run_cannot_pass[cleanup_error-remote unreachable]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_remote_endurance",
+      "name": "test_incomplete_or_dirty_run_cannot_pass[error-failed]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_remote_endurance",
+      "name": "test_remote_runner_is_required_for_acceptance[status-INCOMPLETE]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_remote_endurance",
+      "name": "test_remote_runner_is_required_for_acceptance[process_stopped-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_remote_endurance",
+      "name": "test_remote_runner_is_required_for_acceptance[daemon_stopped-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_remote_endurance",
+      "name": "test_remote_runner_is_required_for_acceptance[xvfb_stopped-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_unknown_and_nil_are_not_signatures[unknown]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_unknown_and_nil_are_not_signatures[nil]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_unknown_and_nil_are_not_signatures[ unknown ]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_unknown_and_nil_are_not_signatures[\\nnil\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_parenthesized_unknown_remains_a_parameter_name",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_failed_unknown_call_reprobes_only_on_next_explicit_call[unknown]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_failed_unknown_call_reprobes_only_on_next_explicit_call[nil]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_packaged_unknown_record_can_receive_live_signature_in_session",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_pinned_upstream_has_required_result_capabilities",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_old_same_version_upstream_has_actionable_error[check_points]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_old_same_version_upstream_has_actionable_error[check_netlist_options]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_old_same_version_upstream_has_actionable_error[copy_point_netlist]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_invalid_psf_retains_parser_failure[]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_invalid_psf_retains_parser_failure[this is not PSF]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_empty_directory_is_not_success",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_at_requires_time_axis",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_transient_nearest_samples_and_stats",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_frequency_data_without_time_sampling_still_readable",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_transient_directory_and_missing_signal",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[false]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[true]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[1]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[value3]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[None]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_explicit_true_grants_only_allowlisted_writes",
+      "status": "PASS"
+    }
+  ],
+  "installed_tests": [
+    {
+      "class": "tests.test_cli_mcp.CliTests",
+      "name": "test_call_rejects_non_array_args_before_connection",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.CliTests",
+      "name": "test_offline_coverage_command",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.CliTests",
+      "name": "test_upstream_help_passthrough",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.McpTests",
+      "name": "test_failed_bridge_result_retains_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp.McpTests",
+      "name": "test_stdio_preserves_original_tools_skills_and_adds_registry",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_cli_mcp",
+      "name": "test_call_registered_preserves_failure_and_limits_write_opt_in",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_public_client_is_a_real_upstream_client",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_domain_and_generic_calls_share_execution_and_keep_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_reserved_argument_aliases_pass_through_both_call_layers",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_same_client_execute_is_serialized",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_close_is_idempotent_and_does_not_reopen",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_evidence_failure_preserves_the_executed_result",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[0]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[-1]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[inf]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[nan]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_client",
+      "name": "test_invalid_budget_never_reaches_upstream[True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_ambiguous_unknown_missing_duplicate_keywords_are_rejected",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_dynamic_call",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_ensure_signature_preserves_result_and_skips_cached_probe",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_exception_from_probe_propagates_without_main_call",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_failed_result_is_preserved",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_function_name_rejected_before_probe",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_keyword_order_and_optional_gap",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_live_signature_is_cached_only_in_memory",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_positional_arguments_are_never_truncated",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_signature_probe_failure_stops_execution_and_retains_evidence",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_successful_nil_probe_allows_positional_call",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_symbol_is_explicit_even_with_registry_type",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_timeout_applies_to_probe_and_request_without_retry",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.GenericTests",
+      "name": "test_write_requires_explicit_allow_and_known_allowlist",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.ValueTests",
+      "name": "test_supported_values",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.ValueTests",
+      "name": "test_symbol_rejects_code",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.ValueTests",
+      "name": "test_unsupported_values",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_ambiguous_signature_rejects_binding_before_execution",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_missing_trailing_required_argument_is_rejected",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_optional_names_with_whitespace",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_reserved_names_use_existing_prefix_aliases",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_variadic_positional_calls_preserve_all_values",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_generic.PackagedRegistryCompatibilityTests",
+      "name": "test_variadic_tail_allows_binding_fixed_prefix",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[local-missing]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[local-dangling]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[local-regular]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[remote-shell-missing]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[remote-shell-dangling]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_copy_materializes_input_links_and_excludes_only_known_diagnostic[remote-shell-regular]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_other_dangling_inputs_fail[local]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_other_dangling_inputs_fail[remote-shell]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_existing_destination_is_not_modified[local]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_copy",
+      "name": "test_existing_destination_is_not_modified[remote-shell]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_real_sweep_corner_export_preserves_four_scalar_values_and_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_raw_csv_opt_in_preserved",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_no_point_format_and_same_output_in_two_tests_are_lossless",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_malformed_export_is_not_silently_accepted[unexpected report\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_malformed_export_is_not_silently_accepted[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\n1,AC,gain,1,,,extra,unheaded\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_malformed_export_is_not_silently_accepted[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\n1,AC,gain\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_explicit_point_ids_and_quoted_cells_survive_without_parameter_rows",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Test,Output,Spec,Weight,Pass/Fail,Min,Max,slow,slow\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Test,Output,Spec,Weight,Pass/Fail,Min,Max,slow\\nAC,gain,,,,1,2\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail,slow,slow\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail,\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\ninvalid,AC,gain,1,,,\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ambiguous_schema_and_invalid_csv_raise[Point,Test,Output,Nominal,Spec,Weight,Pass/Fail\\n1,AC,\"unterminated,1,,,\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ic23_corner_column_export_preserves_upstream_points_and_parameters",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_maestro_corners",
+      "name": "test_ic23_same_output_in_two_tests_preserves_both_detail_rows",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_input_stdio",
+      "name": "test_invalid_arguments_fail_at_stdio_entry[read_waveform-args0-$.at[0]-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_input_stdio",
+      "name": "test_invalid_arguments_fail_at_stdio_entry[read_waveform-args1-$.at-maxItems]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_input_stdio",
+      "name": "test_invalid_arguments_fail_at_stdio_entry[registry_search-args2-$.limit-maximum]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_input_stdio",
+      "name": "test_invalid_arguments_fail_at_stdio_entry[evaluate-args3-$-additionalProperties]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_input_stdio",
+      "name": "test_invalid_arguments_fail_at_stdio_entry[read_waveform-args4-$.path-required]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_nil_probe_cached_across_calls_and_permissions",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_write_permission_is_per_request",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_failed_probe_is_retried_without_replaying_execution",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_registry_replacement_resets_mcp_probe_cache",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_mcp_search_and_calls_load_one_base_without_mutation[True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_mcp_search_and_calls_load_one_base_without_mutation[False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_preloaded_registry_keeps_user_modifications",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_nil_probe_followed_by_failed_call_can_learn_later_signature",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_sessions",
+      "name": "test_argument_failure_does_not_preserve_nil_probe",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[read_waveform-arguments0-$.at[0]-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[read_waveform-arguments1-$.at-maxItems]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[registry_search-arguments2-$.limit-maximum]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[registry_search-arguments3-$.limit-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[registry_search-arguments4-$-additionalProperties]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[evaluate-arguments5-$.expr-required]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[evaluate-arguments6-$.timeout-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[status-arguments7-$-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[status-private-input-$-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[status-False-$-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_invalid_input_never_enters_handler[call_registered-arguments10-$.kwargs-type]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_nonfinite_numbers_rejected_even_in_open_nested_values[read_waveform-arguments0-$.at[0]-nan]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_nonfinite_numbers_rejected_even_in_open_nested_values[read_waveform-arguments0-$.at[0]-inf]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_nonfinite_numbers_rejected_even_in_open_nested_values[read_waveform-arguments0-$.at[0]--inf]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_nonfinite_numbers_rejected_even_in_open_nested_values[call_registered-arguments1-$.kwargs.payload[0]-nan]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_nonfinite_numbers_rejected_even_in_open_nested_values[call_registered-arguments1-$.kwargs.payload[0]-inf]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_nonfinite_numbers_rejected_even_in_open_nested_values[call_registered-arguments1-$.kwargs.payload[0]--inf]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_alias_is_validated_using_canonical_schema",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_none_is_empty_object_without_default_injection",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_valid_open_arguments_preserved",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_schema_validators_built_once",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_unknown_tool_preserves_dispatch_behavior",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_mcp_validation",
+      "name": "test_all_advertised_fusion_schemas_are_valid",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_copy_uses_existing_client_and_preserves_failure",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_copy_rejects_same_cellview_before_execution",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_named_map_reaches_existing_xstream_and_keeps_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_map_registry_is_per_instance",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_xstream_requires_map_and_rejects_unused_environment",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra0-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra1-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra2-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_exit_and_artifact_are_both_required[extra3-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_refuses_stale_existing_output",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_keeps_timestamped_diagnostic_lines[2026/11/23 23:02:52 WARNING This OS does not appear to be a Cadence supported Linux configuration.-warnings-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_oa",
+      "name": "test_standalone_keeps_timestamped_diagnostic_lines[2026/11/23 23:02:52 ERROR Export failed.-errors-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_drc_zero_exit_with_violations_is_not_clean",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_drc_clean_and_missing_report_in_fresh_runs",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[CELL foo CORRECT\\nOVERALL COMPARISON RESULTS\\n # INCORRECT #\\nCELL SUMMARY\\nCORRECT child-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[OVERALL COMPARISON RESULTS\\n # CORRECT #\\nCELL SUMMARY\\nINCORRECT text-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[OVERALL COMPARISON RESULTS\\n no verdict\\nCELL SUMMARY\\nCORRECT child-None]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[CORRECT child-None]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_only_overall_section[OVERALL COMPARISON RESULTS\\n NOT COMPARED\\n-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_lvs_report_execution",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_three_phases_and_recursive_netlist",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_missing_products_not_success[pass\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_missing_products_not_success[output(\"PEX NETLIST\").write_text(\"M1 d g s b nch\\\\n\")\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_missing_products_not_success[output(\"PEX NETLIST\").write_text(\".include missing.pxi\\\\nC1 d s 1f\\\\n\")\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_stops_after_failed_phase[sys.exit(9)\\n-2-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_stops_after_failed_phase[time.sleep(2)\\n-0.05-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_missing_executable_returns_evidence",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_extensions_are_invoked_and_instance_scoped",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unsupported_deck_syntax_fails_before_execution[LAYOUT PATH \"one\" \"two\"]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unsupported_deck_syntax_fails_before_execution[LAYOUT PATH old\\\\]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unsupported_deck_syntax_fails_before_execution[INCLUDE rules extra]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_missing_required_io_statement_rejected",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_drc_missing_count_is_unknown",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_rejects_external_old_include",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_pex_registered_report_parser_preserves_metadata",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_absolute_database_output_is_rebased_without_touching_old_file",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[PEX NETLIST SIMPLE \"/old/net.simple\" HSPICE]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[MASK SVDB DIRECTORY \"/old/svdb\" XRC]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[PEX REPORT DISTRIBUTED \"../old/report.dist\" ASCII]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[PEX REPORT LUMPED \"$OUTPUT/report.lump\" ASCII]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical",
+      "name": "test_unmanaged_output_must_be_local_literal_path[LVS REPORT \"/old/lvs.rep\"]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_public_client_oa_facade",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_discovery_reports_presence_not_license_checkout",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_physical_cli_violations_are_not_success",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_integration",
+      "name": "test_physical_cli_requires_source_for_lvs",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_tools_schema_and_readonly_discovery",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[drc-TOTAL DRC RuleChecks Executed: 1737\\nTOTAL DRC Results Generated: 29\\n--False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[drc-TOTAL DRC RuleChecks Executed: 3\\nTOTAL DRC Results Generated: 0\\n--True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[lvs-OVERALL COMPARISON RESULTS\\n CORRECT\\nCELL SUMMARY\\n--True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[pex--C1 d s 1f\\nR1 d e 2\\n-True]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_stdio_keeps_execution_and_verification_distinct[rcx--M1 d g s b nch\\n-False]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_mcp",
+      "name": "test_physical_validation_rejects_unknown_and_missing_before_run",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_streaming",
+      "name": "test_inspection_streams_files_and_counts_each_include_once",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_streaming",
+      "name": "test_inspection_tracks_missing_empty_and_external_includes",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_streaming",
+      "name": "test_inspection_requires_nonempty_parasitic_network[]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_physical_streaming",
+      "name": "test_inspection_requires_nonempty_parasitic_network[* no parasitics\\nM1 d g s b nch\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_availability_preserves_context_and_marks_unverified",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_coverage_counts_signatures_without_claiming_verification",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_empty_registry_coverage_is_defined",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_malformed_registry_fails_at_load",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_parse_rejects_nested_and_keyword_signatures",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry.RegistryTests",
+      "name": "test_search_returns_named_records_with_limit",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_lazy",
+      "name": "test_client_creation_does_not_read_packaged_registry",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_lazy",
+      "name": "test_first_concurrent_read_loads_once_and_keeps_instance_isolation",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_lazy",
+      "name": "test_custom_registry_still_validates_at_constructor",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_sessions",
+      "name": "test_views_are_lazy_and_load_packaged_input_once",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_sessions",
+      "name": "test_get_isolates_nested_records_and_keeps_changes",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_sessions",
+      "name": "test_search_copies_only_results_and_coverage_does_not_materialize",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_sessions",
+      "name": "test_raw_materializes_independent_full_mutable_dictionary",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_sessions",
+      "name": "test_raw_setter_replaces_view_and_retains_validation",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_registry_sessions",
+      "name": "test_live_signatures_stay_in_session_overlay",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_unknown_and_nil_are_not_signatures[unknown]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_unknown_and_nil_are_not_signatures[nil]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_unknown_and_nil_are_not_signatures[ unknown ]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_unknown_and_nil_are_not_signatures[\\nnil\\n]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_parenthesized_unknown_remains_a_parameter_name",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_failed_unknown_call_reprobes_only_on_next_explicit_call[unknown]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_failed_unknown_call_reprobes_only_on_next_explicit_call[nil]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_unknown_signature",
+      "name": "test_packaged_unknown_record_can_receive_live_signature_in_session",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_pinned_upstream_has_required_result_capabilities",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_old_same_version_upstream_has_actionable_error[check_points]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_old_same_version_upstream_has_actionable_error[check_netlist_options]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_upstream_compatibility",
+      "name": "test_old_same_version_upstream_has_actionable_error[copy_point_netlist]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_invalid_psf_retains_parser_failure[]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_invalid_psf_retains_parser_failure[this is not PSF]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_empty_directory_is_not_success",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_at_requires_time_axis",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_transient_nearest_samples_and_stats",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_frequency_data_without_time_sampling_still_readable",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_waveform_mcp",
+      "name": "test_transient_directory_and_missing_signal",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[false]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[true]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[1]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[value3]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_only_boolean_true_grants_known_write_permission[None]",
+      "status": "PASS"
+    },
+    {
+      "class": "tests.test_write_permission",
+      "name": "test_explicit_true_grants_only_allowlisted_writes",
+      "status": "PASS"
+    }
+  ],
+  "live_tests": [
+    {
+      "class": "test_call_smoothness",
+      "name": "test_sustained_python_and_mcp_calls",
+      "status": "PASS"
+    },
+    {
+      "class": "test_connected_signoff",
+      "name": "test_connected_fixture",
+      "status": "PASS"
+    },
+    {
+      "class": "test_fusion_release",
+      "name": "test_installed_namespaces_and_identity",
+      "status": "PASS"
+    },
+    {
+      "class": "test_fusion_release",
+      "name": "test_variadic_keywords_symbols_and_repeated_calls",
+      "status": "PASS"
+    },
+    {
+      "class": "test_fusion_release",
+      "name": "test_same_client_concurrent_calls",
+      "status": "PASS"
+    },
+    {
+      "class": "test_fusion_release",
+      "name": "test_error_propagation_and_next_request",
+      "status": "PASS"
+    },
+    {
+      "class": "test_fusion_release",
+      "name": "test_upstream_library_schematic_and_generic_share_session",
+      "status": "PASS"
+    },
+    {
+      "class": "test_fusion_release",
+      "name": "test_real_spectre_op_dc_transient",
+      "status": "PASS"
+    },
+    {
+      "class": "test_layout_signoff",
+      "name": "test_geometry_group_transform_saved_reopened",
+      "status": "PASS"
+    },
+    {
+      "class": "test_layout_signoff",
+      "name": "test_n65_pcell_saved_reopened",
+      "status": "PASS"
+    },
+    {
+      "class": "test_layout_signoff",
+      "name": "test_export_real_gds[geometry]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_layout_signoff",
+      "name": "test_export_real_gds[nch_probe]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_maestro_signoff",
+      "name": "test_native_oa_netlist_spectre",
+      "status": "PASS"
+    },
+    {
+      "class": "test_maestro_signoff",
+      "name": "test_maestro_config_sweep_results",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_cache",
+      "name": "test_repeated_alias_probes_once",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_cache",
+      "name": "test_unknown_function_recovers_after_context_load",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_cli_delegates_require_separate_isolated_configuration[status]",
+      "status": "SKIP"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_cli_delegates_require_separate_isolated_configuration[capture_session]",
+      "status": "SKIP"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_library_reads[list_libraries]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_library_reads[list_cells]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_targeted_skill_finder[lookup_skill]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_targeted_skill_finder[describe_skill]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_evaluate_error_and_recovery",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_individual_schematic_handlers",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_batched_schematic_handler",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_screenshot_uses_owned_gui",
+      "status": "PASS"
+    },
+    {
+      "class": "test_mcp_surface",
+      "name": "test_read_waveform_real_rc_transient",
+      "status": "PASS"
+    },
+    {
+      "class": "test_physical_api",
+      "name": "test_copy_and_reopen_top_level_geometry",
+      "status": "PASS"
+    },
+    {
+      "class": "test_physical_api",
+      "name": "test_named_layer_map_reaches_export[xstream]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_physical_api",
+      "name": "test_named_layer_map_reaches_export[oa2strm]",
+      "status": "PASS"
+    },
+    {
+      "class": "test_physical_api",
+      "name": "test_real_calibre_api_reports_design_status_and_pex",
+      "status": "PASS"
+    },
+    {
+      "class": "test_remote_endurance_hold",
+      "name": "test_hold_owned_session",
+      "status": "SKIP"
+    },
+    {
+      "class": "test_rpc_performance",
+      "name": "test_rpc_serial_batch_and_logging",
+      "status": "PASS"
+    },
+    {
+      "class": "test_runtime_inventory",
+      "name": "test_runtime_binding_inventory",
+      "status": "PASS"
+    },
+    {
+      "class": "test_workbench_signoff",
+      "name": "test_symbol_ports_labels_and_order",
+      "status": "PASS"
+    },
+    {
+      "class": "test_workbench_signoff",
+      "name": "test_library_technology_categories_and_scratch_rename",
+      "status": "PASS"
+    },
+    {
+      "class": "test_workbench_signoff",
+      "name": "test_file_transfer_and_mcp_real_call",
+      "status": "PASS"
+    },
+    {
+      "class": "test_workbench_signoff",
+      "name": "test_dialog_inspection_and_recoverable_receipt",
+      "status": "PASS"
+    },
+    {
+      "class": "test_workbench_signoff",
+      "name": "test_spectre_pool_two_actual_jobs",
+      "status": "PASS"
+    }
+  ],
+  "live_nonce_cache_max": 16384,
+  "mcp_cache": {
+    "status": "PASS",
+    "alias_cache_kind": "positive_signature",
+    "nil_negative_cache_verified_live": false,
+    "unknown_function_recovery_verified": true,
+    "registry_file_unchanged": true
+  },
+  "performance": {
+    "scope": "authenticated localhost TCP on 220; isolated owned GUI; arithmetic only",
+    "version": "0.3.2",
+    "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:13:31) [GCC 14.3.0]",
+    "test_sha256": "62e88d322989d5ac45121a3b1d40e7fe8ef668b5fb47fa6cff6360f1e977300c",
+    "startup_measurement": "includes launch of main and independent control MCP workers",
+    "limitations": [
+      "not WAN/SSH latency",
+      "not production SLO or large OA/solver throughput",
+      "MCP client bound to owned session; profile discovery not timed"
+    ],
+    "screening_targets": {
+      "steady_p95_ms": 50,
+      "steady_p99_ms": 100,
+      "failures": 0,
+      "python_rss_growth_mib": 10
+    },
+    "measurements": {
+      "first_raw": {
+        "n": 1,
+        "median_ms": 1.284397,
+        "p95_ms": 1.284397,
+        "p99_ms": 1.284397,
+        "max_ms": 1.284397
+      },
+      "first_generic": {
+        "n": 1,
+        "median_ms": 668.099965,
+        "p95_ms": 668.099965,
+        "p99_ms": 668.099965,
+        "max_ms": 668.099965
+      },
+      "python_raw_500": {
+        "n": 500,
+        "median_ms": 0.7702735,
+        "p95_ms": 1.747485,
+        "p99_ms": 2.041446,
+        "max_ms": 39.908357
+      },
+      "python_generic_500": {
+        "n": 500,
+        "median_ms": 0.694041,
+        "p95_ms": 1.730012,
+        "p99_ms": 1.908787,
+        "max_ms": 40.978101
+      },
+      "python_evidence_500": {
+        "n": 500,
+        "median_ms": 0.7546595,
+        "p95_ms": 1.836492,
+        "p99_ms": 2.026868,
+        "max_ms": 23.265455
+      },
+      "python_batch20_100": {
+        "n": 100,
+        "median_ms": 1.6786910000000002,
+        "p95_ms": 1.788682,
+        "p99_ms": 1.960394,
+        "max_ms": 3.001455
+      },
+      "python_recreate_raw_100": {
+        "n": 100,
+        "median_ms": 1.1698024999999999,
+        "p95_ms": 2.299831,
+        "p99_ms": 3.261613,
+        "max_ms": 19.149771
+      },
+      "python_ciw_logging_100": {
+        "n": 100,
+        "median_ms": 0.785883,
+        "p95_ms": 1.717409,
+        "p99_ms": 1.734661,
+        "max_ms": 41.245343
+      },
+      "mcp_start_to_first_ping_ms": 253.008132,
+      "mcp_first_evaluate": {
+        "n": 1,
+        "median_ms": 3.057801,
+        "p95_ms": 3.057801,
+        "p99_ms": 3.057801,
+        "max_ms": 3.057801
+      },
+      "mcp_first_registry_search": {
+        "n": 1,
+        "median_ms": 689.460719,
+        "p95_ms": 689.460719,
+        "p99_ms": 689.460719,
+        "max_ms": 689.460719
+      },
+      "mcp_first_registered_after_search": {
+        "n": 1,
+        "median_ms": 8.704694,
+        "p95_ms": 8.704694,
+        "p99_ms": 8.704694,
+        "max_ms": 8.704694
+      },
+      "mcp_evaluate_500": {
+        "n": 500,
+        "median_ms": 0.9607055,
+        "p95_ms": 1.930658,
+        "p99_ms": 2.978021,
+        "max_ms": 36.993343
+      },
+      "mcp_registered_500": {
+        "n": 500,
+        "median_ms": 0.971852,
+        "p95_ms": 1.945557,
+        "p99_ms": 3.666071,
+        "max_ms": 41.438124
+      },
+      "independent_channel_ping": {
+        "n": 20,
+        "median_ms": 0.19276149999999997,
+        "p95_ms": 0.807082,
+        "p99_ms": 1.367924,
+        "max_ms": 1.367924
+      },
+      "same_channel_ping_behind_1s_call_ms": 1003.274014
+    },
+    "python_rss": {
+      "before_kib": 190976,
+      "after_kib": 190976,
+      "growth_mib": 0.0
+    },
+    "mcp_rss": {
+      "before_registry_kib": 43136,
+      "after_search_kib": 183112,
+      "after_registered_kib": 183112,
+      "after_1000_calls_kib": 183112
+    },
+    "completed_without_call_failures": true,
+    "screening_passed": true,
+    "steady_calls": 2500
+  },
+  "ssh_endurance": {
+    "status": "PASS",
+    "elapsed_s": 1800.0001325244084,
+    "requests": 3600,
+    "errors": 0,
+    "windows": [
+      {
+        "start_s": 0.0,
+        "end_s": 300.0,
+        "kind": "getVersion",
+        "requests": 300,
+        "errors": 0,
+        "p50_ms": 42.8736787289381,
+        "p95_ms": 84.96425207704306,
+        "p99_ms": 211.8790540844202,
+        "max_ms": 256.86202850192785
+      },
+      {
+        "start_s": 0.0,
+        "end_s": 300.0,
+        "kind": "plus",
+        "requests": 300,
+        "errors": 0,
+        "p50_ms": 43.83579082787037,
+        "p95_ms": 91.7388629168272,
+        "p99_ms": 120.73319219052792,
+        "max_ms": 160.80115735530853
+      },
+      {
+        "start_s": 300.0,
+        "end_s": 600.0,
+        "kind": "getVersion",
+        "requests": 300,
+        "errors": 0,
+        "p50_ms": 42.94104967266321,
+        "p95_ms": 97.96340856701136,
+        "p99_ms": 198.87435343116522,
+        "max_ms": 213.08324858546257
+      },
+      {
+        "start_s": 300.0,
+        "end_s": 600.0,
+        "kind": "plus",
+        "requests": 300,
+        "errors": 0,
+        "p50_ms": 44.12492364645004,
+        "p95_ms": 107.77333844453096,
+        "p99_ms": 167.87751019001007,
+        "max_ms": 260.704830288887
+      },
+      {
+        "start_s": 600.0,
+        "end_s": 900.0,
+        "kind": "getVersion",
+        "requests": 300,
+        "errors": 0,
+        "p50_ms": 42.92390216141939,
+        "p95_ms": 73.86027462780476,
+        "p99_ms": 160.80415435135365,
+        "max_ms": 194.97511815279722
+      },
+      {
+        "start_s": 600.0,
+        "end_s": 900.0,
+        "kind": "plus",
+        "requests": 300,
+        "errors": 0,
+        "p50_ms": 44.23765651881695,
+        "p95_ms": 92.58146490901709,
+        "p99_ms": 154.91542033851147,
+        "max_ms": 193.0443635210395
+      },
+      {
+        "start_s": 900.0,
+        "end_s": 1200.0,
+        "kind": "getVersion",
+        "requests": 300,
+        "errors": 0,
+        "p50_ms": 42.05126129090786,
+        "p95_ms": 48.944249749183655,
+        "p99_ms": 102.75181569159031,
+        "max_ms": 169.96503435075283
+      },
+      {
+        "start_s": 900.0,
+        "end_s": 1200.0,
+        "kind": "plus",
+        "requests": 300,
+        "errors": 0,
+        "p50_ms": 42.91681945323944,
+        "p95_ms": 50.77059660106897,
+        "p99_ms": 95.8044109866023,
+        "max_ms": 228.79511211067438
+      },
+      {
+        "start_s": 1200.0,
+        "end_s": 1500.0,
+        "kind": "getVersion",
+        "requests": 300,
+        "errors": 0,
+        "p50_ms": 42.20652673393488,
+        "p95_ms": 52.7955861762166,
+        "p99_ms": 154.93509639054537,
+        "max_ms": 246.9668984413147
+      },
+      {
+        "start_s": 1200.0,
+        "end_s": 1500.0,
+        "kind": "plus",
+        "requests": 300,
+        "errors": 0,
+        "p50_ms": 43.76842640340328,
+        "p95_ms": 52.79941391199827,
+        "p99_ms": 121.85015995055437,
+        "max_ms": 135.84021478891373
+      },
+      {
+        "start_s": 1500.0,
+        "end_s": 1800.0,
+        "kind": "getVersion",
+        "requests": 300,
+        "errors": 0,
+        "p50_ms": 42.84599423408508,
+        "p95_ms": 44.96364761143923,
+        "p99_ms": 135.94130240380764,
+        "max_ms": 180.9642966836691
+      },
+      {
+        "start_s": 1500.0,
+        "end_s": 1800.0,
+        "kind": "plus",
+        "requests": 300,
+        "errors": 0,
+        "p50_ms": 42.87415184080601,
+        "p95_ms": 45.88466603308916,
+        "p99_ms": 85.84588766098022,
+        "max_ms": 110.77399179339409
+      }
+    ],
+    "at_least_30_minutes": true,
+    "local_rss_before_kib": 184912,
+    "local_rss_after_kib": 185892,
+    "remote_rss": {
+      "virtuoso_rss_kib": {
+        "before_kib": 656220,
+        "after_kib": 672144,
+        "max_kib": 672144
+      },
+      "daemon_rss_kib": {
+        "before_kib": 21676,
+        "after_kib": 22652,
+        "max_kib": 22652
+      }
+    },
+    "transport": "OpenSSH local 127.0.0.1 forwarding to remote 127.0.0.1; no direct remote TCP",
+    "nonce_cache": "unmodified default",
+    "post_validation": {
+      "status": "PASS",
+      "local_remote_before_after_production_py_identical": true,
+      "production_python_files": 18,
+      "token_absent_from_local_result_files": true,
+      "local_files_scanned": 11,
+      "owned_remote_pids_exist": {
+        "3477889": false,
+        "3478692": false
+      },
+      "owned_tunnel_pid_exists": false,
+      "nonce_config": "unmodified default, see nonce-config.json",
+      "scope": "1800-second real SSH read-only interval load; includes shared-host activity; not an OA write or simulator workload endurance proof"
+    },
+    "report_sha256": "65a53704c1244e8ebb25854f40ae754f71b0ff320b2b043f7fec33e3e30259a2",
+    "post_validation_sha256": "399349cd9822f311917cd4828f8249c00a9cc59f298bc3dcc33e569ba2e8924b",
+    "latency_slo": "No SSH latency SLO was declared; PASS means duration/correctness/cleanup, not p99 below 100ms"
+  },
+  "new_runtime_dependencies": {
+    "jsonschema": {
+      "version": "4.26.0",
+      "installed_bytes_excluding_pyc": 478946
+    },
+    "attrs": {
+      "version": "26.1.0",
+      "installed_bytes_excluding_pyc": 234681
+    },
+    "jsonschema-specifications": {
+      "version": "2025.9.1",
+      "installed_bytes_excluding_pyc": 47697
+    },
+    "referencing": {
+      "version": "0.37.0",
+      "installed_bytes_excluding_pyc": 116229
+    },
+    "rpds-py": {
+      "version": "2026.9.1",
+      "installed_bytes_excluding_pyc": 1086273
+    }
+  },
+  "valid_signatures": 61941,
+  "source_records": 74785,
+  "source_payload_sha256": {
+    "src/virtuoso_fusion/__init__.py": "8d891740e23848729742c309a1acd3220b3e1f86d2ea408c77b0299559a73066",
+    "src/virtuoso_fusion/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/virtuoso_fusion/availability.py": "c936cf5d4e0050c15f1ff633c790edfeb316794e4e3d19f5e61d617310b4562f",
+    "src/virtuoso_fusion/cli.py": "2ba1382a95ffd4ca6f7a17ad9fe6093777a37f7917226fc6e175748100ac7407",
+    "src/virtuoso_fusion/client.py": "f6e19089b1c82a61bcaf90f21dc6cb5ceb93593794a2b78b8aa54e61cf852a82",
+    "src/virtuoso_fusion/environment.py": "a3444a51ec033938f089e3db82fffc3f5c2fd403cc83577e1c158c1e8e6cdb95",
+    "src/virtuoso_fusion/generic.py": "af65f98a191083583b1daee028f45d24c2592befce22583a06d15d2074b9bc5e",
+    "src/virtuoso_fusion/maestro.py": "437f067c9bbc5826d51aedbc9caa4779dc096b208b6fd79859d54813bf227a4d",
+    "src/virtuoso_fusion/mcp.py": "d27ab4ebef6cb39340bdf3fd81ae8c81e2a534b326e32dd69b08568d736b4d75",
+    "src/virtuoso_fusion/mcp_validation.py": "2de7eedcbf0af8eea2d7ed119cb1c985973786077c4ce6fb277186149d8113db",
+    "src/virtuoso_fusion/oa.py": "f74446c67c06260625fde2ba105ff52442248b0dfd9b69d15d7bca226f526b0f",
+    "src/virtuoso_fusion/physical.py": "0e71d541315034be3604467c5d31a975a79e5062c52fc23bcdac92b7b09b1918",
+    "src/virtuoso_fusion/policy.py": "9c80addb40535a00e104f0b9d83cf1f636e653349889cc3cd6e41778d34a0cda",
+    "src/virtuoso_fusion/registry.py": "f5f712d13742913e90e504af9f47d2f955ee623a76867626196b4b778da6b692",
+    "src/virtuoso_fusion/values.py": "bb1d080bd908a68b29cdbbfac375eb743758318f2ce6c290036a14f2e342090d",
+    "src/virtuoso_fusion/waveform.py": "422b3d6598d71ae52f130e501d4fc9830d04ea0c867ca721fbb8946506c44afb"
+  },
+  "evidence_sha256": {
+    "unit-release.xml": "0003ba7848e7bc99cc3f3931306527b1783014ee7bd3d1928cfc55ad6d68cf34",
+    "installed-release.xml": "c5d1461de100ddf18f0f6cf259728b66e2c00e08e8e42807ef2ceaff5a7edbe5",
+    "build4-live/live.xml": "5c10b32daf7d493ef6df2df8fa1405af6d04898623ef0b7001503507e17351fd",
+    "build4-live/call-smoothness.json": "af9c7744ba2e6661673addd82b2cf07aa8c439f29dfeb930711615430435b4f0",
+    "build4-live/mcp-cache-report.json": "138bc2e75c5c35b867a626a3c0685d700db09571e0d7cddc2be27ae4b1df388f"
+  },
+  "unimplemented": [
+    "async job API (design only)",
+    "AI provider-format compatibility layer"
+  ],
+  "unresolved": [
+    "default nonce capacity may reject dense bursts",
+    "legacy-root install and import shadowing",
+    "52 DRC results and unclosed ERC"
+  ]
+}

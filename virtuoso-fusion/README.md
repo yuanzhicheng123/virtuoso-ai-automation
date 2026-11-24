@@ -1,8 +1,19 @@
-# Virtuoso Fusion 0.3.1
+# Virtuoso Fusion 0.3.2
 
 本目录为已验证的 Fusion 0.3 系列工程。AI Agent/模型兼容层目前为[设计草案](docs/codex/AGENT_COMPATIBILITY_DESIGN.md)，尚未实现。
 
-在仓库根目录可用独立虚拟环境安装：`python -m pip install ./virtuoso-fusion`。依赖固定上游Git提交，需要网络；已有环境升级注意下文同版本依赖问题。
+从仓库根目录先进入 `virtuoso-fusion/`，再建立虚拟环境并安装：
+
+```bash
+cd virtuoso-fusion
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install .
+python -m pip check
+python -c 'import virtuoso_fusion; print(virtuoso_fusion.__version__)'
+```
+
+根目录保留的旧 `virtuoso_bridge/` 会遮蔽已安装依赖；Python脚本/交互调用请在本目录或仓库外运行。依赖固定上游Git提交，需要网络；已有环境升级注意下文同版本依赖问题。
 
 一个 Python 入口同时使用 Virtuoso 工程操作与注册表驱动的通用 SKILL 调用。
 
@@ -18,7 +29,7 @@ Python 3.10+。使用新的虚拟环境，保留已有 0.8.1 环境：
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-(umask 022; python -m pip install /path/to/virtuoso_fusion-0.3.1-py3-none-any.whl)
+(umask 022; python -m pip install /path/to/virtuoso_fusion-0.3.2-py3-none-any.whl)
 python -m pip check
 virtuoso-fusion coverage
 ```
@@ -29,7 +40,8 @@ virtuoso-fusion coverage
 
 ```bash
 python -m pip install --force-reinstall --no-deps /path/to/virtuoso_bridge-1.0.0-py3-none-any.whl
-python -m pip install --no-deps /path/to/virtuoso_fusion-0.3.1-py3-none-any.whl
+python -m pip install "jsonschema>=4.18,<5"
+python -m pip install --no-deps /path/to/virtuoso_fusion-0.3.2-py3-none-any.whl
 python -m pip check
 python -c 'import virtuoso_fusion; print(virtuoso_fusion.__version__)'
 ```
@@ -128,3 +140,10 @@ python tools/prepare_resources.py --check
 0.3.1 修复 MCP `read_waveform` 的无效PSF误报成功及无时间轴时的伪采样。`at` 仅表示秒，不表示频率；AC复数幅相统计仍未由这个MCP入口完整提供。逐项验证记录见 [GitHub库验证报告](docs/codex/GITHUB_VALIDATION_20261124.md)。
 
 调用延迟、预热与复用建议见 [流畅调用约定](docs/CALLING_GUIDE.md) 和 [2500次连续调用实测](docs/codex/CALL_SMOOTHNESS_031.md)。此实测为220本机轻量调用，不是WAN或长仿真SLO。
+
+
+0.3.2统一执行MCP输入Schema校验，非法类型、额外字段、超限数组和非有限数字在handler前返回错误。以前依赖静默忽略/截断的调用须按tools/list修正参数。
+
+MCP检索与冷客户端通用调用共享私有只读注册表基础，实际访问的记录才复制到会话；实时签名与写授权相互隔离。已加载或自定义registry保持原对象，显式读取会话raw仍会生成完整独立字典。nil/unknown探测缓存按会话复用，失败不冻结负缓存；裸unknown不再当有效签名，当前有效签名61941项，仍不是工程验证率。
+
+PEX网表改为逐行扫描。增加的jsonschema依赖只在MCP模块导入时装载；普通Python工程入口无需导入它。本轮改动、性能收益与真实SSH持续验证见 [0.3.2报告](docs/codex/OPTIMIZATION_032_REPORT.md)。长任务异步接口目前仅有[独立设计](docs/codex/LONG_TASK_DESIGN.md)，同步MCP调用仍会阻塞同通道。

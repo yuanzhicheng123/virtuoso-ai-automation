@@ -283,15 +283,16 @@ def _inspect_netlist(netlist):
         if not path.is_file() or path.stat().st_size == 0:
             missing.append(str(path))
             continue
-        for line in path.read_text(errors="replace").splitlines():
-            include = re.match(r"\s*\.(?:include|inc)\s+(?:\"([^\"]+)\"|'([^']+)'|(\S+))", line, re.I)
-            if include:
-                included = next(value for value in include.groups() if value is not None)
-                pending.append(path.parent / included)
-            elif re.match(r"\s*[rR][^\s]*\s+\S+\s+\S+\s+\S+", line):
-                resistors += 1
-            elif re.match(r"\s*[cC][^\s]*\s+\S+\s+\S+\s+\S+", line):
-                capacitors += 1
+        with path.open(errors="replace") as stream:
+            for line in stream:
+                include = re.match(r"\s*\.(?:include|inc)\s+(?:\"([^\"]+)\"|'([^']+)'|(\S+))", line, re.I)
+                if include:
+                    included = next(value for value in include.groups() if value is not None)
+                    pending.append(path.parent / included)
+                elif re.match(r"\s*[rR][^\s]*\s+\S+\s+\S+\s+\S+", line):
+                    resistors += 1
+                elif re.match(r"\s*[cC][^\s]*\s+\S+\s+\S+\s+\S+", line):
+                    capacitors += 1
     return {"complete": not missing and not external and resistors + capacitors > 0,
             "files": sorted(map(str, seen)), "missing_files": missing, "external_files": external,
             "resistors": resistors, "capacitors": capacitors}
