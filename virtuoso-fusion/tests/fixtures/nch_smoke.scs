@@ -1,0 +1,13 @@
+simulator lang=spectre
+global 0
+include "@MODEL@" section=tt
+parameters wn=1u ln=60n
+VD (d 0) vsource dc=1.2
+VG (g 0) vsource dc=0.6 type=pulse val0=0.6 val1=0.9 delay=0 rise=10p fall=10p width=20n period=40n
+VS (s 0) vsource dc=0
+VB (b 0) vsource dc=0
+M0 (d g s b) nch w=wn l=ln m=1 nf=1
+op1 dc oppoint=rawfile
+sw1 dc dev=VG param=dc start=0 stop=1.2 step=0.1
+tr1 tran stop=40n maxstep=0.2n
+simulatorOptions options temp=27 tnom=27 reltol=1e-4

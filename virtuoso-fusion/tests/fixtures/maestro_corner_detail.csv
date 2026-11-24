@@ -1,0 +1,11 @@
+,,Parameter,Nominal,,,,,,nominal_27
+
+
+Point,Test,Output,Nominal,Spec,Weight,Pass/Fail,Min,Max,nominal_27
+Parameters: c_val=1p,,,,,,,,,
+1,AC,BW,158.8e6,> 1G,,fail,158.8e6,158.8e6,158.8e6
+1,AC,/OUT,,,,,,,
+Parameters: c_val=100f,,,,,,,,,
+2,AC,BW,1.588e9,> 1G,,pass,1.588e9,1.588e9,1.588e9
+2,AC,/OUT,,,,,,,
+

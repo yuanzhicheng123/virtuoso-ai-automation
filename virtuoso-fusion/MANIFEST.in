@@ -1,0 +1,7 @@
+include LICENSE THIRD_PARTY_NOTICES.md README.md
+recursive-include src/virtuoso_fusion/_data *
+recursive-include src/virtuoso_fusion/_upstream *
+recursive-include tools *.py
+recursive-include tests *.py *.scs *.csv *.json
+recursive-include docs *.md
+global-exclude __pycache__ *.py[cod]

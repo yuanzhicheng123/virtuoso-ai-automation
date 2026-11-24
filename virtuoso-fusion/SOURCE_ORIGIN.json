@@ -1,0 +1,19 @@
+{
+  "fusion_source_commit": "8a2f8107c23bda23e710ec9ebdb4a8fb1b8a4e2d",
+  "fusion_version": "0.3.0",
+  "upstream_commit": "672b451416b1ef3cc560db4196365075e94c8d4e",
+  "added_design": "docs/codex/AGENT_COMPATIBILITY_DESIGN.md (proposal, not implemented)",
+  "publication_edits": [
+    "README.md",
+    "LICENSE",
+    "docs/codex/STATE.md"
+  ],
+  "excluded": [
+    "evidence/",
+    "build/",
+    "dist/",
+    "virtual environments",
+    "PDK decks/models",
+    "credentials"
+  ]
+}

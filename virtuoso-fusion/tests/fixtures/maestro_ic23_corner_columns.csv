@@ -1,0 +1,9 @@
+,Parameter,,,,,,pn_tt_0p8,pn_ss_0p9
+,design_wrapper.lib.scs,,,,,,tt_pre,ss_pre
+,vdd,,,,,,800e-3,900e-3
+
+
+Test,Output,Spec,Weight,Pass/Fail,Min,Max,pn_tt_0p8,pn_ss_0p9
+PNOISE,/CMPCK,,,,,,,
+PNOISE,noise,< 1m,,pass,365e-6,456e-6,456e-6,365e-6
+PNOISE,FoM1,,,,5.591,7.043,7.043,5.591

@@ -1,0 +1,7 @@
+No public license grant is provided for the original Fusion code or inherited
+local registry data. Making this repository available on GitHub does not
+grant an additional license to use, modify, or redistribute those materials.
+
+Third-party code and documentation retain their original licenses. The complete
+MIT license for the vendored virtuoso-bridge-lite snapshot is included at
+src/virtuoso_fusion/_upstream/LICENSE and in THIRD_PARTY_NOTICES.md.

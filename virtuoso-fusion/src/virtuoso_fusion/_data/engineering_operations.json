@@ -1,0 +1,354 @@
+{
+ "schema": "engineering-operations/v1",
+ "count": 14,
+ "operations": {
+  "schematic.resolve_terminal_geometry": {
+   "category": "geometry",
+   "risk": "read",
+   "preconditions": [
+    "instance 有 master symbol",
+    "terminal 有 pin figure"
+   ],
+   "postconditions": [
+    "返回父 cellview 坐标点"
+   ],
+   "verification": "dbTransformPoint 后坐标与 pin 中心一致",
+   "evidence": "ENGINEERING_VALIDATED",
+   "unsupported": [
+    "多 pin 端子未定义规则时返回 UNSUPPORTED_GEOMETRY"
+   ]
+  },
+  "schematic.connect_terminal_to_port": {
+   "category": "connect",
+   "risk": "write",
+   "preconditions": [
+    "可编辑 schematic",
+    "basic/ipin 可用",
+    "无同名冲突"
+   ],
+   "postconditions": [
+    "顶层 pin + 导线",
+    "schCheck 目标浮空消失"
+   ],
+   "verification": "schCheck=[0,0] + 保存重开回读",
+   "evidence": "EXECUTED",
+   "idempotency": "已存在则 ALREADY_SATISFIED；冲突返回 CONFLICT"
+  },
+  "device.set_parameters": {
+   "category": "param",
+   "risk": "write",
+   "preconditions": [
+    "device=tsmcN65/nch",
+    "nf=1",
+    "m=1",
+    "width∈{500n,800n,1u}"
+   ],
+   "postconditions": [
+    "wf/w 同步"
+   ],
+   "verification": "回读 wf/w 一致",
+   "evidence": "ENGINEERING_VALIDATED"
+  },
+  "schematic.check": {
+   "category": "verify",
+   "risk": "read",
+   "preconditions": [
+    "cellview open"
+   ],
+   "postconditions": [
+    "计数+markers 落盘"
+   ],
+   "verification": "markers 消息与计数一致",
+   "evidence": "EXECUTED"
+  },
+  "cell.save_reopen_verify": {
+   "category": "persist",
+   "risk": "write",
+   "preconditions": [
+    "cellview 已修改"
+   ],
+   "postconditions": [
+    "重开计数/关系一致"
+   ],
+   "verification": "重开后 length(instances/nets) 与属性回读",
+   "evidence": "EXECUTED"
+  },
+  "netlist.export_verified": {
+   "category": "netlist",
+   "risk": "read",
+   "preconditions": [
+    "lib 在 cds.lib 中可见",
+    "OCEAN cwd=库目录"
+   ],
+   "postconditions": [
+    "input.scs 生成"
+   ],
+   "verification": "器件行 w= 与契约一致",
+   "evidence": "ENGINEERING_VALIDATED"
+  },
+  "simulate.evaluate": {
+   "category": "sim",
+   "risk": "read",
+   "preconditions": [
+    "网表已生成",
+    "PDK section 可用"
+   ],
+   "postconditions": [
+    "OP/DC/Tran 结果"
+   ],
+   "verification": "acceptance 6 项 + 数值断言",
+   "evidence": "ENGINEERING_VALIDATED"
+  },
+  "device.contract_read": {
+   "category": "pdk",
+   "risk": "read",
+   "requirement": [
+    "D03"
+   ],
+   "preconditions": [
+    "symbol view 可读",
+    "CDF 可访问"
+   ],
+   "postconditions": [
+    "返回端子/参数计数/propMapping/termOrder"
+   ],
+   "verification": "返回字段与已知观察值一致；不修改设计",
+   "evidence": "EXECUTED 2026-10-26: tsmcN65/nch, terminals=[S,G,B,D], 99 CDF params, simInfo propMapping 已读",
+   "supported": {
+    "pdk": "tsmcN65",
+    "device": "nch",
+    "sim": "spectre"
+   },
+   "evidence_path": "audit/2026-10-26-cap/capabilities_live.json",
+   "last_verified": "2026-10-26",
+   "notes": "master 端子顺序为 S,G,B,D；网表 termOrder 为 (D G S B)，两者不可混用"
+  },
+  "design.electrical_snapshot": {
+   "category": "snapshot",
+   "risk": "read",
+   "requirement": [
+    "D02",
+    "D04"
+   ],
+   "preconditions": [
+    "schematic view 可读"
+   ],
+   "postconditions": [
+    "instances/connections/pins/schCheck"
+   ],
+   "verification": "保存重开前后快照一致；D/G/S/B 映射可核对",
+   "evidence": "EXECUTED 2026-10-26: vlV01_d500/tb, schCheck=[0,0], M0.{D,G,S,B}->{D,G,S,B}",
+   "evidence_path": "audit/2026-10-26-cap/capabilities_live.json",
+   "last_verified": "2026-10-26"
+  },
+  "simulate.run_unified": {
+   "category": "sim",
+   "risk": "read",
+   "requirement": [
+    "D06",
+    "D11"
+   ],
+   "input_schema": [
+    "design_revision",
+    "analysis_type",
+    "model_binding",
+    "testbench",
+    "signals",
+    "measurement_spec",
+    "accuracy_profile",
+    "run_id"
+   ],
+   "output_schema": [
+    "execution_status",
+    "evaluation_valid",
+    "analysis_completed",
+    "metrics",
+    "warnings",
+    "violations",
+    "evidence_id"
+   ],
+   "preconditions": [
+    "testbench 存在",
+    "Spectre 可用"
+   ],
+   "postconditions": [
+    "metrics 来自本次 run"
+   ],
+   "verification": "acceptance 6 项 + 数值断言",
+   "evidence": "EXECUTED 2026-10-26 (unified entry, run_id=unified_500n_20261026)",
+   "evidence_path": "audit/2026-10-26-unified/result.json",
+   "runtime_executed": true,
+   "last_verified": "2026-10-26",
+   "handler": "tools/capability_run.py -> capabilities.simulate -> SpectreRunner",
+   "supported": {
+    "analyses": [
+     "op",
+     "dc",
+     "tran",
+     "ac",
+     "sp"
+    ],
+    "device": "tsmcN65/nch",
+    "nf": 1,
+    "m": 1,
+    "width": "500n"
+   },
+   "negative_tests": {
+    "T1_port_binding": "REJECTED (PORT_BINDING_MISMATCH)",
+    "T2_missing_analysis": "EVALUATION_INVALID"
+   },
+   "evidence_ac": "EXECUTED 2026-10-27: acA(1/0deg) + acB(0.5/45deg); 51 pts 10Hz-1MHz",
+   "ac_evidence_path": "audit/2026-10-27-ac/result_ac.json",
+   "ac_metrics": {
+    "gm_external_ac": "6.03725e-4 S",
+    "gm_rel_diff_AB": 1.01e-06,
+    "gm_ac_vs_dc_rel": 7.44e-07
+   },
+   "ac_limits": [
+    "仅 tsmcN65/nch 单指 500n",
+    "10Hz-1MHz",
+    "非SP/NF/压缩点"
+   ],
+   "ac_via_entry": "EXECUTED 2026-10-27 (run_id=unified_ac_20261027, gm=6.03725e-4 S)",
+   "negative_via_entry": {
+    "T1_zero_mag": "REJECTED",
+    "T2_bad_freq": "REJECTED"
+   },
+   "sp_executed": "EXECUTED 2026-10-27 run_id=unified_sp_20261027 (2-port, z0=50, P1=G,P2=D, 10Hz-1MHz)",
+   "sp_evidence_path": "audit/2026-10-27-sp/result_sp.json",
+   "sp_crosscheck": {
+    "S21": "PASS (9.6e-4)",
+    "S11_S22": "FAIL at low freq (1.59e-2, 1/f fixture)",
+    "S12": "PASS (7.9e-10)",
+    "fixture_capacitor_hypothesis": "REFUTED (C 1F->1e6F 结果不变)",
+    "root_cause_current": "AC-Y 门极电流在低频被噪声淹没（Y11 实部 2.17e-9 vs 期望 j1.6e-10）",
+    "gate_cap_from_ac": "0.44 fF (imag 2.78e-9 A @1MHz)",
+    "s11_native_implied_cap": "~2.5 uF at port (unexplained vs 0.44 fF DUT)",
+    "open_issue": "C 1F->1e6F 结果完全相同，需 diff net.scs 排除旧网表后判定 port 元素行为",
+    "netlist_verified": "spA c=1 vs spB c=1e6 网表不同但 S11 相同 -> 电容无关"
+   },
+   "sp_limits": [
+    "仅 50Ω 实数参考阻抗",
+    "仅 P1=G/P2=D",
+    "夹具隔直电容未去嵌",
+    "10Hz-1MHz"
+   ],
+   "sp_skill_feasibility": {
+    "status": "FEASIBLE_IN_SKILL",
+    "evidence": "audit/2026-10-27-skill-sp/REPORT.md",
+    "requirement": "schematic 需含 analogLib/port 实例 P1/P2（实例名即端口名）",
+    "outputs": [
+     "/s11",
+     "/s21",
+     "/s12",
+     "/s22"
+    ],
+    "read_path": "getData 在 nograph OCEAN 不存在，待试 ocnGetData / v()"
+   },
+   "sp_native_read": {
+    "status": "READER_VERIFIED",
+    "interface": "spm(analysis, i, j) -> waveform; drGetWaveformXVec/YVec; drGetElem",
+    "evidence": "audit/2026-10-28-sp-reader/",
+    "schema": "freq_hz,s11_re,s11_im,s12_re,s12_im,s21_re,s21_im,s22_re,s22_im",
+    "matrix_order": "by name (Sij = row i, col j); outputs() order NOT used",
+    "points": 51,
+    "fixture_status": "FAIL: ports open (S11=S22=1, S21=S12=0)",
+    "engineering_valid": false,
+    "note": "getData 实际存在（getd=t），原失败为调用/命名问题，根因未完全确认"
+   }
+  },
+  "testbench.build_from_spec": {
+   "category": "schematic",
+   "risk": "write",
+   "requirement": [
+    "D04",
+    "D05"
+   ],
+   "impl": "vskill/phase2/schematic_ops.py::build",
+   "preconditions": [
+    "库可创建",
+    "master 存在",
+    "spec 通过 check_spec"
+   ],
+   "postconditions": [
+    "实例/网络/连接/导线建立",
+    "schCheck=(0,0)"
+   ],
+   "verification": "verify() + 网表连通性",
+   "evidence": "EXECUTED 2026-11-13 vlTBgen2",
+   "evidence_path": "audit/2026-11-13-generic/"
+  },
+  "sp.read_and_export": {
+   "category": "sim",
+   "risk": "read",
+   "requirement": [
+    "D07"
+   ],
+   "impl": "OCEAN spm + drGetWaveformXVec/YVec + drGetElem (见 /tmp/ocn_gen.ocn)",
+   "postconditions": [
+    "51 点 4 复数波形 CSV"
+   ],
+   "evidence": "EXECUTED 2026-11-13",
+   "evidence_path": "audit/2026-11-13-generic/sp_gen.csv"
+  },
+  "skill.call_generic": {
+   "category": "skill",
+   "risk": "read",
+   "requirement": [
+    "D02",
+    "D03",
+    "D04"
+   ],
+   "impl": "vskill/skillcall.py::call (registry-driven arg order + type coercion)",
+   "coverage": {
+    "symbols": 74785,
+    "with_signature": 24020,
+    "read_only_with_signature": 23489,
+    "gui_only": 26587,
+    "no_signature": 50765
+   },
+   "evidence": "EXECUTED 2026-11-13: 25/27 + 5/6 real calls across math/list/string/env/dd/cdf",
+   "evidence_path": "audit/2026-11-13-skillcall/REPORT.md",
+   "limits": [
+    "50,765 无签名不可通用调用",
+    "26,587 需 GUI 上下文",
+    "registry 缺项 getpid",
+    "getq 类型标注不符"
+   ]
+  },
+  "skill.mine_arglists": {
+   "category": "registry",
+   "risk": "read",
+   "requirement": [
+    "D02"
+   ],
+   "impl": "SKILL (arglist nm) 批量挖掘 + 文本导出",
+   "pilot": {
+    "sample": 3000,
+    "ok": 2280,
+    "yield": 0.76
+   },
+   "projection": {
+    "no_signature": 50765,
+    "expected_gain": 38600,
+    "coverage_after": 0.84
+   },
+   "evidence": "audit/2026-11-14-mining/mined_10k.txt",
+   "blocked_by": [
+    "lineread 会解析行内容",
+    "parseString→arglist 返回 0（根因未确认）"
+   ],
+   "next": "按 2000 个/批的字面量方式跑 26 批",
+   "progress": {
+    "chunks_done": 20,
+    "chunks_total": 51,
+    "mined": 15588,
+    "coverage": 0.53,
+    "remaining_chunks": 31,
+    "note": "并行 4 路会卡住；必须顺序执行"
+   },
+   "registry_v2": "audit/2026-10-22/registry/api_registry_v2.json",
+   "runner": "/tmp/run_chunks.sh (1000 符号/文件, 120s/文件)"
+  }
+ }
+}

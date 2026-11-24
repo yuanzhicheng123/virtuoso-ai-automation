@@ -1,0 +1,231 @@
+{
+  "point": [
+    {
+      "pointID": 1,
+      "designPointNumber": 1,
+      "merit": 18.8243646025658,
+      "cornerID": 1,
+      "groupID": null
+    },
+    {
+      "pointID": 2,
+      "designPointNumber": 1,
+      "merit": 18.8243646025658,
+      "cornerID": 2,
+      "groupID": null
+    },
+    {
+      "pointID": 3,
+      "designPointNumber": 2,
+      "merit": 1.0,
+      "cornerID": 1,
+      "groupID": null
+    },
+    {
+      "pointID": 4,
+      "designPointNumber": 2,
+      "merit": 1.0,
+      "cornerID": 2,
+      "groupID": null
+    }
+  ],
+  "corner": [
+    {
+      "cornerID": 1,
+      "name": ""
+    },
+    {
+      "cornerID": 2,
+      "name": "nominal_27"
+    }
+  ],
+  "error": [
+    {
+      "errorID": 1,
+      "message": "running"
+    },
+    {
+      "errorID": 2,
+      "message": "netlisting"
+    },
+    {
+      "errorID": 3,
+      "message": "netlisting finished"
+    },
+    {
+      "errorID": 4,
+      "message": "simulating"
+    },
+    {
+      "errorID": 5,
+      "message": "simulation finished"
+    },
+    {
+      "errorID": 6,
+      "message": "evaluating"
+    },
+    {
+      "errorID": 7,
+      "message": "done"
+    }
+  ],
+  "testStatus": [
+    {
+      "pointID": 1,
+      "testID": 1,
+      "hostID": 1,
+      "startTime": "1795406271.0",
+      "stopTime": "1795406272.0",
+      "statusCode": 3,
+      "errorID": 7,
+      "origPointID": 1,
+      "memoryUsed": "",
+      "cpuCount": 0
+    },
+    {
+      "pointID": 2,
+      "testID": 1,
+      "hostID": 1,
+      "startTime": "1795406273.0",
+      "stopTime": "1795406273.0",
+      "statusCode": 3,
+      "errorID": 7,
+      "origPointID": 2,
+      "memoryUsed": "",
+      "cpuCount": 0
+    },
+    {
+      "pointID": 3,
+      "testID": 1,
+      "hostID": 1,
+      "startTime": "1795406275.0",
+      "stopTime": "1795406275.0",
+      "statusCode": 3,
+      "errorID": 7,
+      "origPointID": 3,
+      "memoryUsed": "",
+      "cpuCount": 0
+    },
+    {
+      "pointID": 4,
+      "testID": 1,
+      "hostID": 1,
+      "startTime": "1795406277.0",
+      "stopTime": "1795406277.0",
+      "statusCode": 3,
+      "errorID": 7,
+      "origPointID": 4,
+      "memoryUsed": "",
+      "cpuCount": 0
+    }
+  ],
+  "result": [
+    {
+      "resultID": 1,
+      "name": "BW",
+      "testID": 1,
+      "type": "0",
+      "expression": "bandwidth(mag(VF(\"/OUT\")) 3 \"low\")",
+      "resultOrder": 1,
+      "visible": "1"
+    },
+    {
+      "resultID": 2,
+      "name": "/OUT",
+      "testID": 1,
+      "type": "1",
+      "expression": "",
+      "resultOrder": 2,
+      "visible": "0"
+    }
+  ],
+  "resultValue": [
+    {
+      "pointID": 1,
+      "resultID": 1,
+      "value": 158781749.06068113,
+      "errorID": null
+    },
+    {
+      "pointID": 1,
+      "resultID": 2,
+      "value": "",
+      "errorID": null
+    },
+    {
+      "pointID": 2,
+      "resultID": 1,
+      "value": 158781749.06068113,
+      "errorID": null
+    },
+    {
+      "pointID": 2,
+      "resultID": 2,
+      "value": "",
+      "errorID": null
+    },
+    {
+      "pointID": 3,
+      "resultID": 1,
+      "value": 1587817490.606811,
+      "errorID": null
+    },
+    {
+      "pointID": 3,
+      "resultID": 2,
+      "value": "",
+      "errorID": null
+    },
+    {
+      "pointID": 4,
+      "resultID": 1,
+      "value": 1587817490.606811,
+      "errorID": null
+    },
+    {
+      "pointID": 4,
+      "resultID": 2,
+      "value": "",
+      "errorID": null
+    }
+  ],
+  "specValue": [
+    {
+      "pointID": 1,
+      "specID": 1,
+      "value1": 1000000000.0,
+      "value2": null,
+      "errorID1": null,
+      "errorID2": null,
+      "specStatus": 2
+    },
+    {
+      "pointID": 2,
+      "specID": 1,
+      "value1": 1000000000.0,
+      "value2": null,
+      "errorID1": null,
+      "errorID2": null,
+      "specStatus": 2
+    },
+    {
+      "pointID": 3,
+      "specID": 1,
+      "value1": 1000000000.0,
+      "value2": null,
+      "errorID1": null,
+      "errorID2": null,
+      "specStatus": 0
+    },
+    {
+      "pointID": 4,
+      "specID": 1,
+      "value1": 1000000000.0,
+      "value2": null,
+      "errorID1": null,
+      "errorID2": null,
+      "specStatus": 0
+    }
+  ],
+  "source_sha256": "f26b77a00b63c899531f714012ae11186167fb06ea557ce63b3b160146cae339"
+}
