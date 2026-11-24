@@ -1,0 +1,139 @@
+{
+  "scope": "authenticated localhost TCP on 220; isolated owned GUI; arithmetic only",
+  "version": "0.3.1",
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:13:31) [GCC 14.3.0]",
+  "test_sha256": "62e88d322989d5ac45121a3b1d40e7fe8ef668b5fb47fa6cff6360f1e977300c",
+  "startup_measurement": "includes launch of main and independent control MCP workers",
+  "limitations": [
+    "not WAN/SSH latency",
+    "not production SLO or large OA/solver throughput",
+    "MCP client bound to owned session; profile discovery not timed"
+  ],
+  "screening_targets": {
+    "steady_p95_ms": 50,
+    "steady_p99_ms": 100,
+    "failures": 0,
+    "python_rss_growth_mib": 10
+  },
+  "python_rss": {
+    "before_kib": 188900,
+    "after_kib": 188900,
+    "growth_mib": 0.0
+  },
+  "mcp_rss": {
+    "before_registry_kib": 39736,
+    "after_search_kib": 179724,
+    "after_registered_kib": 316608,
+    "after_1000_calls_kib": 316608
+  },
+  "completed_without_call_failures": true,
+  "screening_passed": true,
+  "steady_calls": 2500,
+  "measurements": {
+    "first_raw": {
+      "n": 1,
+      "median_ms": 1.104049,
+      "p95_ms": 1.104049,
+      "p99_ms": 1.104049,
+      "max_ms": 1.104049
+    },
+    "first_generic": {
+      "n": 1,
+      "median_ms": 641.381369,
+      "p95_ms": 641.381369,
+      "p99_ms": 641.381369,
+      "max_ms": 641.381369
+    },
+    "python_raw_500": {
+      "n": 500,
+      "median_ms": 1.604217,
+      "p95_ms": 1.73391,
+      "p99_ms": 1.930469,
+      "max_ms": 41.266363
+    },
+    "python_generic_500": {
+      "n": 500,
+      "median_ms": 1.6213790000000001,
+      "p95_ms": 1.740231,
+      "p99_ms": 1.95233,
+      "max_ms": 41.981713
+    },
+    "python_evidence_500": {
+      "n": 500,
+      "median_ms": 1.729822,
+      "p95_ms": 1.816093,
+      "p99_ms": 2.114152,
+      "max_ms": 42.001109
+    },
+    "python_batch20_100": {
+      "n": 100,
+      "median_ms": 1.5867740000000001,
+      "p95_ms": 1.770658,
+      "p99_ms": 1.959763,
+      "max_ms": 4.344413
+    },
+    "python_recreate_raw_100": {
+      "n": 100,
+      "median_ms": 2.0452135,
+      "p95_ms": 2.364071,
+      "p99_ms": 2.697616,
+      "max_ms": 4.723343
+    },
+    "python_ciw_logging_100": {
+      "n": 100,
+      "median_ms": 1.6186289999999999,
+      "p95_ms": 1.744269,
+      "p99_ms": 7.471874,
+      "max_ms": 10.653307
+    },
+    "mcp_start_to_first_ping_ms": 211.21913,
+    "mcp_first_evaluate": {
+      "n": 1,
+      "median_ms": 2.400599,
+      "p95_ms": 2.400599,
+      "p99_ms": 2.400599,
+      "max_ms": 2.400599
+    },
+    "mcp_first_registry_search": {
+      "n": 1,
+      "median_ms": 654.499024,
+      "p95_ms": 654.499024,
+      "p99_ms": 654.499024,
+      "max_ms": 654.499024
+    },
+    "mcp_first_registered_after_search": {
+      "n": 1,
+      "median_ms": 643.611518,
+      "p95_ms": 643.611518,
+      "p99_ms": 643.611518,
+      "max_ms": 643.611518
+    },
+    "mcp_evaluate_500": {
+      "n": 500,
+      "median_ms": 1.7401710000000001,
+      "p95_ms": 1.888299,
+      "p99_ms": 2.319287,
+      "max_ms": 40.962622
+    },
+    "mcp_registered_500": {
+      "n": 500,
+      "median_ms": 0.7828470000000001,
+      "p95_ms": 1.714534,
+      "p99_ms": 2.063247,
+      "max_ms": 41.37737
+    },
+    "independent_channel_ping": {
+      "n": 20,
+      "median_ms": 0.060799,
+      "p95_ms": 0.200786,
+      "p99_ms": 0.326001,
+      "max_ms": 0.326001
+    },
+    "same_channel_ping_behind_1s_call_ms": 1003.292288
+  },
+  "raw_report_sha256": "87528b7189b632d760fdb59ae868690404eb4e781d108cf4399493c8b85e150f",
+  "live_result_sha256": "00e82dfb17f454ea23c0e1faab847c745e353d62e2cc86c3b4f9c2506596497f",
+  "source_base_commit": "63d0706c435edfcf340727fa881869c2dd4f5a42",
+  "live_path": "/home/lihong/virtuoso-fusion-20261123/signoff/smoothness-031/final/live-ee_3cnqo",
+  "owned_processes_stopped": true
+}

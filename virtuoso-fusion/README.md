@@ -126,3 +126,5 @@ python tools/prepare_resources.py --check
 0.2.1 修复 oa2strm 时间戳 WARNING/ERROR 的结构化捕获，并让真机验收脚本读取 JUnit：全部跳过不能记为通过。全库验证见 [当前状态](docs/codex/STATE.md) 和 [上游与公开接口审计](docs/codex/FULL_SURFACE_AUDIT.md)。固定上游仍有 bsd-csh 输出污染及 group-writable legacy 部署迁移限制。新安装与新部署使用进程级 `umask 022` 已验证；这不会修复已有0664部署，也不应直接放松其权限检查。220显式认证入口验证通过，跨平台/配置组合不承诺全覆盖。
 
 0.3.1 修复 MCP `read_waveform` 的无效PSF误报成功及无时间轴时的伪采样。`at` 仅表示秒，不表示频率；AC复数幅相统计仍未由这个MCP入口完整提供。逐项验证记录见 [GitHub库验证报告](docs/codex/GITHUB_VALIDATION_20261124.md)。
+
+调用延迟、预热与复用建议见 [流畅调用约定](docs/CALLING_GUIDE.md) 和 [2500次连续调用实测](docs/codex/CALL_SMOOTHNESS_031.md)。此实测为220本机轻量调用，不是WAN或长仿真SLO。
