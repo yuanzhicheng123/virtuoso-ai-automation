@@ -63,7 +63,9 @@ def test_call_registered_preserves_failure_and_limits_write_opt_in(monkeypatch):
         monkeypatch.setitem(mcp.server._CLIENT, 'obj', client)
         result = mcp.server.dispatch_tool('call_registered', {'name': 'dbSave', 'args': [None], 'allow_write': True, 'timeout': 2}, {})
         assert result['isError'] is True
-        assert result['structuredContent'] == failure.model_dump(mode='json')
+        assert result['structuredContent']['fusion_error']['stage'] == 'execution'
+        assert {key: value for key, value in result['structuredContent'].items()
+                if key != 'fusion_error'} == failure.model_dump(mode='json')
         assert calls == [('dbSave(nil)', 2, False)]
         assert client.allow_write is False
         denied = mcp.server.dispatch_tool('call_registered', {'name': 'dbSave', 'args': [None]}, {})

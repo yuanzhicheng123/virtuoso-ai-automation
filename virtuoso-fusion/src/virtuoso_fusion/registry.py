@@ -73,8 +73,15 @@ class ApiRegistry:
                 return self._overlay[fn]
         return self.raw.get(fn)
 
-    def _remember_signature(self, fn, raw):
+    def _forget_signature(self, fn):
         record = self.get(fn)
+        if record is not None:
+            for field in ('arglist_raw', 'params', 'zero_args', 'params_source'):
+                record.pop(field, None)
+        return record
+
+    def _remember_signature(self, fn, raw):
+        record = self._forget_signature(fn)
         if record is None:
             records = self._overlay if self._base is not None else self.raw
             record = records.setdefault(fn, {'name': fn})

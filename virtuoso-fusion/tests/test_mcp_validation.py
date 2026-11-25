@@ -104,11 +104,11 @@ def test_schema_validators_built_once(monkeypatch):
     definitions = mcp.server._tool_defs()
     wrapped = mcp_validation.make_dispatch(lambda *args: {'accepted': True}, definitions,
                                           mcp.server.ALIASES, mcp.server._tool_error)
-    assert len(constructed) == len(definitions) == 31
+    assert len(constructed) == len(definitions) == 32
     for _ in range(10):
         assert wrapped('registry_search', {'query': 'getVersion'}, {})['accepted']
         assert wrapped('registry_search', {'query': 'getVersion', 'limit': 201}, {})['isError']
-    assert len(constructed) == 31
+    assert len(constructed) == 32
 
 
 def test_unknown_tool_preserves_dispatch_behavior(guarded):

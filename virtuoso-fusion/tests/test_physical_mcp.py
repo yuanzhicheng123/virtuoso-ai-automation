@@ -37,7 +37,7 @@ def test_physical_tools_schema_and_readonly_discovery(tmp_path):
                                 'decks': [str(deck), str(tmp_path / 'missing')]}),
     ])
     definitions = {item['name']: item for item in listing['tools']}
-    assert len(definitions) == 31
+    assert len(definitions) == 32
     for name in ('discover_tools', 'run_physical'):
         assert definitions[name]['inputSchema']['additionalProperties'] is False
     assert definitions['discover_tools']['annotations']['readOnlyHint'] is True

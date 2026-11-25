@@ -14,7 +14,7 @@ from .values import Symbol
 from .physical import PhysicalVerification
 from .environment import discover_tools
 
-__version__ = "0.3.2"
+__version__ = "0.3.3"
 __all__ = [
     "FusionClient", "GenericSkill", "ApiRegistry", "Symbol",
     "ExecutionStatus", "VirtuosoResult", "SimulationResult",

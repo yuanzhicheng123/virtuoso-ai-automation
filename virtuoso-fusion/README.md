@@ -1,4 +1,4 @@
-# Virtuoso Fusion 0.3.2
+# Virtuoso Fusion 0.3.3
 
 本目录为已验证的 Fusion 0.3 系列工程。AI Agent/模型兼容层目前为[设计草案](docs/codex/AGENT_COMPATIBILITY_DESIGN.md)，尚未实现。
 
@@ -29,7 +29,7 @@ Python 3.10+。使用新的虚拟环境，保留已有 0.8.1 环境：
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-(umask 022; python -m pip install /path/to/virtuoso_fusion-0.3.2-py3-none-any.whl)
+(umask 022; python -m pip install /path/to/virtuoso_fusion-0.3.3-py3-none-any.whl)
 python -m pip check
 virtuoso-fusion coverage
 ```
@@ -41,7 +41,7 @@ virtuoso-fusion coverage
 ```bash
 python -m pip install --force-reinstall --no-deps /path/to/virtuoso_bridge-1.0.0-py3-none-any.whl
 python -m pip install "jsonschema>=4.18,<5"
-python -m pip install --no-deps /path/to/virtuoso_fusion-0.3.2-py3-none-any.whl
+python -m pip install --no-deps /path/to/virtuoso_fusion-0.3.3-py3-none-any.whl
 python -m pip check
 python -c 'import virtuoso_fusion; print(virtuoso_fusion.__version__)'
 ```
@@ -117,7 +117,7 @@ virtuoso-fusion upstream --help
 virtuoso-fusion-mcp
 ```
 
-CLI 的准确选项以 `--help` 为准。MCP保留固定上游的工具和skill资源，再增加 `registry_search`、`registry_coverage`、`call_registered`、`discover_tools` 和 `run_physical`，当前共31个工具。物理验证在同一 stdio 连接中同步执行；超时按阶段计算，取消通知不会终止外部进程。新增通用调用的写许可按次显式设置，不修改缓存客户端的全局权限。stdio输出只用于协议消息。
+CLI 的准确选项以 `--help` 为准。MCP保留固定上游的工具和skill资源，再增加 `registry_search`、`registry_coverage`、`call_registered`、`refresh_signature`、`discover_tools` 和 `run_physical`，当前共32个工具。物理验证在同一 stdio 连接中同步执行；超时按阶段计算，取消通知不会终止外部进程。新增通用调用的写许可按次显式设置，不修改缓存客户端的全局权限。stdio输出只用于协议消息。
 
 ## 验证与来源
 
@@ -147,3 +147,5 @@ python tools/prepare_resources.py --check
 MCP检索与冷客户端通用调用共享私有只读注册表基础，实际访问的记录才复制到会话；实时签名与写授权相互隔离。已加载或自定义registry保持原对象，显式读取会话raw仍会生成完整独立字典。nil/unknown探测缓存按会话复用，失败不冻结负缓存；裸unknown不再当有效签名，当前有效签名61941项，仍不是工程验证率。
 
 PEX网表改为逐行扫描。增加的jsonschema依赖只在MCP模块导入时装载；普通Python工程入口无需导入它。本轮改动、性能收益与真实SSH持续验证见 [0.3.2报告](docs/codex/OPTIMIZATION_032_REPORT.md)。长任务异步接口目前仅有[独立设计](docs/codex/LONG_TASK_DESIGN.md)，同步MCP调用仍会阻塞同通道。
+
+0.3.3 为通用调用增加阶段化错误和显式签名刷新。模型应根据 `fusion_error` 区分调用前拒绝与执行结果未知，详见 [错误与恢复约定](docs/ERROR_CONTRACT.md)。原始请求凭据保留，不自动重放写操作。

@@ -1,6 +1,7 @@
 """Registry-assisted calls over the same executor as the engineering interfaces."""
 import re
 
+from .diagnostics import call_failure
 from .policy import Policy
 from .registry import ApiRegistry
 from .values import to_skill, validate_name
@@ -22,36 +23,65 @@ class GenericSkill:
 
         A SKILL argument named timeout must be supplied positionally.
         """
-        validate_name(fn)
-        allowed, reason = self.policy.check(fn, allow_write=self.allow_write)
-        if not allowed:
-            raise PermissionError(f'{reason}: {fn}')
-        options = {'retry_connect': False}
-        if timeout is not None:
-            options['timeout'] = timeout
-        if self.auto_signature:
-            probe = self._ensure_signature(fn, options)
-            if probe is not None and not probe.ok:
-                return probe
+        result, _ = self._call(fn, args, kwargs, timeout)
+        return result
+
+    def _call(self, fn, args, kwargs, timeout):
+        # Keep SKILL keyword data separate from Python's fn/self/timeout controls.
+        stage = 'validation'
+        reason = None
         try:
+            validate_name(fn)
+            stage = 'policy'
+            allowed, reason = self.policy.check(fn, allow_write=self.allow_write)
+            if not allowed:
+                raise PermissionError(f'{reason}: {fn}')
+            options = {'retry_connect': False}
+            if timeout is not None:
+                options['timeout'] = timeout
+            if self.auto_signature:
+                stage = 'signature_probe'
+                probe = self._ensure_signature(fn, options)
+                if probe is not None and not probe.ok:
+                    return probe, stage
+            stage = 'argument_binding'
             ordered = self.order_args(fn, args, kwargs)
+            stage = 'encoding'
             code = fn + '(' + ' '.join(to_skill(value) for value in ordered) + ')'
+            stage = 'execution'
             result = self.executor(code, **options)
-        except Exception:
-            self._probed.discard(fn)
+        except Exception as exc:
+            if stage != 'validation':
+                self._probed.discard(fn)
+            exc.fusion_error = call_failure(stage, fn, str(exc),
+                                           code=reason if stage == 'policy' else None,
+                                           metadata=getattr(getattr(exc, 'result', None), 'metadata', None))
             raise
         if self.auto_signature and not result.ok:
             # A failed call must not freeze a missing signature before its context loads.
             self._probed.discard(fn)
-        return result
+        return result, stage
 
-    def ensure_signature(self, fn, *, timeout=None):
-        """Cache successful live arglist output in memory and retain probe evidence."""
-        validate_name(fn)
-        options = {'retry_connect': False}
-        if timeout is not None:
-            options['timeout'] = timeout
-        return self._ensure_signature(fn, options)
+    def ensure_signature(self, fn, *, timeout=None, force=False):
+        """Cache live arglist output; force discards stale metadata before probing.
+
+        A failed forced probe leaves the signature uncached for the next call.
+        This probes the signature only and never executes the target function.
+        """
+        stage = 'validation'
+        try:
+            validate_name(fn)
+            stage = 'signature_probe'
+            if force:
+                self._probed.discard(fn)
+                self.reg._forget_signature(fn)
+            options = {'retry_connect': False}
+            if timeout is not None:
+                options['timeout'] = timeout
+            return self._ensure_signature(fn, options)
+        except Exception as exc:
+            exc.fusion_error = call_failure(stage, fn, str(exc))
+            raise
 
     def order_args(self, fn, args, kwargs):
         if not kwargs:

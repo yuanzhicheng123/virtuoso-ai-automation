@@ -1,9 +1,10 @@
 # RFIC-GPT · Virtuoso AI 自动化能力库
 
-## 新版 Virtuoso Fusion 0.3.2
+## 新版 Virtuoso Fusion 0.3.3
 
-新版工程位于 **[virtuoso-fusion/](virtuoso-fusion/README.md)**，提供统一 Python API、31个MCP工具、Maestro兼容、按需加载注册表，以及已验证的OA/LVS/PEX/前后仿链路。根目录原有RFIC-GPT工程和历史记录继续保留。使用新版先 `cd virtuoso-fusion` 再安装/运行，避免根目录旧同名包遮蔽依赖。
+新版工程位于 **[virtuoso-fusion/](virtuoso-fusion/README.md)**，提供统一 Python API、32个MCP工具、Maestro兼容、按需加载注册表，以及已验证的OA/LVS/PEX/前后仿链路。根目录原有RFIC-GPT工程和历史记录继续保留。使用新版先 `cd virtuoso-fusion` 再安装/运行，避免根目录旧同名包遮蔽依赖。
 
+- [0.3.3错误诊断与签名刷新报告](virtuoso-fusion/docs/codex/ERRORS_033_REPORT.md)
 - [0.3.2优化与验收报告](virtuoso-fusion/docs/codex/OPTIMIZATION_032_REPORT.md)
 - [新版验收范围与已知缺口](virtuoso-fusion/docs/codex/STATE.md)
 - [性能与模拟/RF自动化架构分析](virtuoso-fusion/docs/codex/ARCHITECTURE_PERFORMANCE_REVIEW.md)

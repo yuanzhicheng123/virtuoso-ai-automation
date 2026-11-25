@@ -163,3 +163,51 @@ def test_unknown_function_recovers_after_context_load(cache_session):
         assert base.get(name) is None
         assert hashlib.sha256(base.path.read_bytes()).hexdigest() == report['registry_file_sha256_before']
         report['unknown_function_recovery_verified'] = True
+
+
+def test_explicit_refresh_after_redefinition(cache_session):
+    client, mcp, report = cache_session
+    name = 'vfRefresh_' + uuid.uuid4().hex[:16]
+    with evidence_step(report, 'refresh_redefined_function') as step:
+        assert client.execute_skill(f'procedure({name}(a b) plus(a b))').ok
+        first = mcp.server.dispatch_tool('call_registered',
+            {'name': name, 'kwargs': {'a': 1, 'b': 2}}, {})
+        assert not first.get('isError'), first
+        assert client.execute_skill(f'procedure({name}(x y) plus(x y))').ok
+        count = len(report['executions'])
+        stale = mcp.server.dispatch_tool('call_registered',
+            {'name': name, 'kwargs': {'x': 20, 'y': 22}}, {})
+        step['stale_signature_error'] = stale
+        assert stale['structuredContent']['fusion_error']['stage'] == 'argument_binding'
+        assert stale['structuredContent']['outcome'] == 'not_started'
+        assert len(report['executions']) == count
+        refreshed = mcp.server.dispatch_tool('refresh_signature', {'name': name}, {})
+        step['refresh_result'] = refreshed
+        assert not refreshed.get('isError') and refreshed['structuredContent']['signature_available']
+        assert [item['skill'] for item in report['executions'][count:]] == [f"arglist('{name})"]
+        recovered = mcp.server.dispatch_tool('call_registered',
+            {'name': name, 'kwargs': {'x': 20, 'y': 22}}, {})
+        step['recovered_result'] = recovered
+        assert not recovered.get('isError'), recovered
+        assert int(recovered['structuredContent']['output'].strip()) == 42
+        assert mcp._registry_data().get(name) is None
+
+
+def test_diagnostic_rejections_do_not_reach_ciw(cache_session):
+    _, mcp, report = cache_session
+    with evidence_step(report, 'diagnostic_rejections_before_ciw') as step:
+        count = len(report['executions'])
+        step['responses'] = []
+        for tool, args, code in [
+            ('call_registered', {'name': 'dbSave'}, 'WRITE_NEEDS_EXPLICIT_ALLOW'),
+            ('call_registered', {'name': 'plus', 'args': [{}]}, 'VALUE_ENCODING_FAILED'),
+            ('call_registered', {'name': 'plus', 'kwargs': {'wrong': 1}}, 'ARGUMENT_BINDING_FAILED'),
+            ('refresh_signature', {'name': 'bad)'}, 'INVALID_FUNCTION_NAME'),
+            ('call_registered', {'name': 'plus', 'timeout': 'oops'}, 'INVALID_ARGUMENTS'),
+        ]:
+            result = mcp.server.dispatch_tool(tool, args, {})
+            step['responses'].append({'tool': tool, 'result': result})
+            assert result['isError']
+            assert result['structuredContent']['outcome'] == 'not_started'
+            assert result['structuredContent']['fusion_error']['code'] == code
+        assert len(report['executions']) == count

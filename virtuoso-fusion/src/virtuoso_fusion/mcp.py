@@ -2,6 +2,7 @@
 import json
 
 from .client import FusionClient
+from .diagnostics import call_failure, error_response
 from .environment import discover_tools
 from .generic import GenericSkill
 from .physical import PhysicalVerification
@@ -11,7 +12,7 @@ from .mcp_validation import make_dispatch
 from ._upstream import mcp_server as server
 
 server._AdapterClient = FusionClient
-server.SERVER_INFO = {'name': 'virtuoso-fusion', 'version': '0.3.2',
+server.SERVER_INFO = {'name': 'virtuoso-fusion', 'version': '0.3.3',
                       'title': 'Virtuoso Fusion — engineering APIs and registered SKILL'}
 _original_tool_defs = server._tool_defs
 _registry = None
@@ -35,11 +36,38 @@ def _registry_coverage(args):
 
 
 def _call_registered(args):
-    client = server._client()
-    caller = _session_callers(client)[args.get('allow_write', False)]
-    return server._bridge_result(caller.call(
-        args['name'], *args.get('args', []), timeout=args.get('timeout', 60),
-        **args.get('kwargs', {})))
+    try:
+        caller = _session_callers(server._client())[args.get('allow_write', False)]
+        result, stage = caller._call(args['name'], args.get('args', []),
+                                     args.get('kwargs', {}), args.get('timeout', 60))
+    except Exception as exc:
+        return _registered_error(exc, args['name'], 'call_registered')
+    response = server._bridge_result(result)
+    if not result.ok:
+        return error_response(response, call_failure(stage, args['name'],
+                              'See the original errors and metadata in this response.'), 'call_registered')
+    return response
+
+
+def _refresh_signature(args):
+    try:
+        caller = _session_callers(server._client())[False]
+        result = caller.ensure_signature(args['name'], timeout=args.get('timeout', 60), force=True)
+    except Exception as exc:
+        return _registered_error(exc, args['name'], 'refresh_signature')
+    response = server._bridge_result(result)
+    if not result.ok:
+        return error_response(response, call_failure('signature_probe', args['name'],
+                              'See the original arglist errors and metadata.'), 'refresh_signature')
+    response['structuredContent']['signature_available'] = caller.reg.has_signature(caller.reg.get(args['name']) or {})
+    return response
+
+
+def _registered_error(exc, function, tool):
+    detail = getattr(exc, 'fusion_error', call_failure('connection_setup', function, str(exc)))
+    response = (server._exception_result(exc) if detail['stage'] in
+                ('signature_probe', 'execution') else server._tool_error(str(exc)))
+    return error_response(response, detail, tool)
 
 
 def _session_callers(client):
@@ -98,6 +126,11 @@ def _tool_defs():
          'inputSchema': {'type': 'object', 'properties': {'query': {'type': 'string'}, 'limit': {'type': 'integer', 'minimum': 1, 'maximum': 200, 'default': 20}}, 'required': ['query'], 'additionalProperties': False}, 'annotations': readonly},
         {'name': 'registry_coverage', 'description': 'Signature coverage of the offline snapshot, not validated engineering coverage.',
          'inputSchema': {'type': 'object', 'properties': {}, 'additionalProperties': False}, 'annotations': readonly},
+        {'name': 'refresh_signature', 'description': 'Invalidate this session’s cached signature for one function and read its current arglist. Never invokes the target function. Use after redefining or loading SKILL code; nil/unknown means keyword binding remains unavailable.',
+         'inputSchema': {'type': 'object', 'properties': {
+             'name': {'type': 'string'},
+             'timeout': {'type': 'number', 'exclusiveMinimum': 0, 'default': 60}},
+             'required': ['name'], 'additionalProperties': False}, 'annotations': readonly},
         {'name': 'call_registered', 'description': 'Call a registered SKILL function through Fusion without automatic replay. allow_write applies to this call only; this guard does not restrict upstream evaluate or engineering tools.',
          'inputSchema': {'type': 'object', 'properties': {
              'name': {'type': 'string'}, 'args': {'type': 'array', 'default': []},
@@ -112,7 +145,7 @@ def _tool_defs():
 server._tool_defs = _tool_defs
 server.TOOL_NAMES = [tool['name'] for tool in _tool_defs()]
 server.IMPL.update(read_waveform=read_waveform, registry_search=_registry_search, registry_coverage=_registry_coverage,
-                   call_registered=_call_registered, discover_tools=_discover_tools,
+                   call_registered=_call_registered, refresh_signature=_refresh_signature, discover_tools=_discover_tools,
                    run_physical=_run_physical)
 
 server.dispatch_tool = make_dispatch(
